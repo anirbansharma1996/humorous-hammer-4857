@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Page</title>
+    <style>
+      /* html {
+        scroll-behavior: smooth;
+      } */
+      body {
+        color: aliceblue;
+        background-color: #0d1e41;
+        margin-top: 0px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      div > img {
+        width: 100%;
+        transition: 0.5s ease;
+      }
+      div > img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      #arrow {
+        width: 5%;
+      }
+      #navbar {
+        width: 95%;
+        margin: auto;
+        height: 60px;
+        border: 1px solid;
+      }
+      #main_body {
+        margin-top: 10px;
+      }
+
+      /***************************font style********************************/
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      h2:hover {
+        text-decoration: underline;
+      }
+      h1 {
+        font-size: 42px;
+        font-weight: 600;
+        margin-top: -10px;
+      }
+      p {
+        font-weight: 200;
+        font-size: 15px;
+        color: var(-black60);
+      }
+      #topics {
+        margin-left: 5%;
+      }
+      a {
+        text-decoration: none;
+        color: #efefef;
+      }
+
+      /*****************************top body******************************/
+
+      #head_container {
+        width: 90%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        margin: auto;
+        gap: 20px;
+      }
+      #head_container > div {
+        padding: 10px;
+      }
+      hr {
+        margin: -10px 0px;
+        width: 69%;
+        background-color: #efefef;
+        height: 0px;
+      }
+
+      /**************************hotjar tools***************************/
+
+      #hotjar_tools {
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        margin-top: 50px;
+      }
+      .hotjar_tools1 {
+        width: 140%;
+        padding: 10px;
+      }
+      .hotjar_tools2 {
+        width: 70%;
+        margin-left: 45%;
+      }
+      .hotjar_tools2 > div {
+        padding: 10px;
+      }
+      .hotjar_tools3 {
+        width: 80%;
+        margin-left: 20%;
+      }
+      .hotjar_tools3 > div {
+        margin: 30px 0px;
+      }
+      .hotjar_tools3 > div:last-child {
+        margin-top: 32%;
+      }
+
+      /****************************do_more_with_hotjar***************************/
+
+      #do_more_with_hotjar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        gap: 0 28px;
+      }
+      #do_more_with_hotjar > div {
+        padding-top: 10%;
+      }
+
+      /***************** px_insights_and_behavior_analytics****************/
+
+      #px_insights_and_behavior_analytics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, auto);
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 0 28px;
+      }
+      #px_insights_and_behavior_analytics > div {
+        padding-top: 10%;
+      }
+
+      /*************************best_practices**********************/
+      #best_practices {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(10, auto);
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 0 30px;
+      }
+      #best_practices > div {
+        padding-top: 10%;
+      }
+
+      /***********************footer**************************/
+      #footer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        gap: 20px;
+      }
+      #footer > div {
+        padding-left: 10%;
+      }
+      /*****************footer_icon***************/
+      #footer_icon {
+        width: 85%;
+        margin: auto;
+        height: 30px;
+        display: flex;
+      }
+      #footer_icon > div {
+        width: 100%;
+        height: 30px;
+      }
+      #footer_icon > div:first-child {
+        width: 450%;
+      }
+      #footer_icon > div:last-child {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+      /*****************footer****************/
+      #footer_end {
+        width: 85%;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <!------------------------ header-part ------------------->
+
+    <div id="main_body">
+      <div id="head_container">
+        <div class="head_container1">
+          <p>LEARN/GUIDS</p>
+          <h1>
+            Best practices <br />
+            and expert <br />
+            insight
+          </h1>
+          <p>
+            Guides to better understand user behavior, prioritize product
+            initiatives, improve UX, and increase conversions
+          </p>
+
+          <p>JUMP TO</p>
+          <hr />
+          <h4>
+            <a href="#hotjar_tools">Hotjar tools</a>
+
+            <img
+              src="https://www.hotjar.com/images/arrow-down-ember.svg"
+              alt=""
+              style="margin-left: 38%"
+              id="arrow"
+            />
+          </h4>
+          <hr />
+          <h4>
+            <a href=" #do_more_with_hotjar"> Do more with Hotjar</a>
+            <img
+              src="https://www.hotjar.com/images/arrow-down-ember.svg"
+              alt=""
+              style="margin-left: 19%"
+              id="arrow"
+            />
+          </h4>
+          <hr />
+          <h4>
+            <a href=" #px_insights_and_behavior_analytics"
+              >PX insights and behaviour</a
+            >
+            <img
+              src="https://www.hotjar.com/images/arrow-down-ember.svg"
+              alt=""
+              style="margin-left: 7%"
+              id="arrow"
+            />
+            <br />
+            analysis
+          </h4>
+          <hr />
+          <h4>
+            <a href=" #best_practices">Best Practices: Marketers and</a>
+            <img
+              src="https://www.hotjar.com/images/arrow-down-ember.svg"
+              alt=""
+              id="arrow"
+            />
+            <br />
+            <a href="#best_practices"> product or website owners</a>
+          </h4>
+          <hr />
+        </div>
+        <div class="head_container2">
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/5FTM6xaUDTT4zDxqcgTEH5/a68a0b1e353050da6d1bcf005933ed0a/PX-guide-hero.svg"
+            alt=""
+          />
+          <h2>
+            What are product experience insights? <br />(and why every product
+            team needs <br />
+            them)
+          </h2>
+          <p>
+            Product experience insights help teams see how customers really use
+            their products, making it easier t..
+          </p>
+        </div>
+        <div class="head_container3">
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/7Jr3h71MuYPLN4cyvi7rlJ/2419704b6749d4176384adfa15ebf951/Product_Managment_101_illustrator-01.svg"
+            alt=""
+          />
+          <h2>
+            Product management 101: a complete <br />
+            guide
+          </h2>
+          <p>
+            Your introduction to Product managetment: what it is,what a product
+            manager does, and best practices
+          </p>
+        </div>
+      </div>
+      <br />
+      <!-------------- hotjar-tools ------------------------->
+
+      <p id="topics">HOTJAR TOOLS</p>
+      <div id="hotjar_tools">
+        <div class="hotjar_tools1">
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/7ddUqkRHENLp65ybfpxC27/ac88f31a04b5509ecdcc512c85347b23/Heatmaps-guide-hero.svg"
+            alt=""
+          />
+          <h2 style="font-size: 28px; margin-bottom: -8px">
+            The complete guide to heatmaps
+          </h2>
+          <p>
+            Heatmaps are a powerful way to understand what users do on your
+            website pages where they click, how far they scroll, what they look
+            or ignore.
+          </p>
+        </div>
+        <div class="hotjar_tools2">
+          <div>
+            <img
+              src="https://images.ctfassets.net/lh3zuq09vnm2/4AW1feFMKj1vgtj3dTuwQp/d25999a7354f06edde6552f8421e1e88/recordings-guide-hero.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://images.ctfassets.net/lh3zuq09vnm2/v4sBfYhcw3H2h8PHjGiSe/b0504b112c8faee857700749f6096047/NPS-guide-hero.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="hotjar_tools3">
+          <div>
+            <h2>Recordings: the complete guid</h2>
+            <p>
+              Everything about session recordings:what they are,how they help
+              improve...
+            </p>
+          </div>
+          <div>
+            <h2>What is Net Promoter Score? Your introduction to NPS</h2>
+            <p>
+              Net Promoter Score (NPS) is a customer Loyalty and Satisfaction...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------Do more With Hotjar-------------------->
+
+      <p id="topics">DO MORE WITH HOTJAR</p>
+      <div id="do_more_with_hotjar">
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/7pxZX8ZEhaqvYZXOYzjGdL/11021aad34fec84640ce642fe7296217/Hotjar-for-teams-hero.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Improve alignment accross your entire team with Hotjar
+          </h2>
+          <p>
+            Communicate and collaborate with your team directly in Hotjar,and
+            make quick decisions o...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F4vW3JOTC80ojWfTaQ93acj%2F38898e8095ab6e777e32b6e974b2fc9c%2FHotjar___s_Dashboard_what_it_is_and_why_you_should_use_it_1.5x.png&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Hotjar's Dashboard: what it is and why you should use it
+          </h2>
+          <p>
+            Your Hotjar Dashboard provides a visual overview of some of your
+            most meaningful...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F3qMmeJ88S9ztDJZhGTwXML%2F256850d48bec335ff17afcdb8ed5dd61%2FHotjar___s_Highlights_what_is_it_and_what_does_it_do_1.5x.png&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Hotjar’s Highights:what is it and what does it do?
+          </h2>
+          <p>
+            With Highlights, a Hotjar feature that facilitates and simplifies
+            team collaboration,...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F6tDkhgCg9KNbAjEBhAYIm5%2F86bb847a0cf72b3100dac0ac0054b171%2F_Intro_to_UAs_____what_they_are_and_how_to_use_them_1.5x.png&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Get insights customized to your site with User Attributes in Hotjar
+          </h2>
+          <p>
+            Want more from your data? Learn how to use Hotjar's User Attributes
+            to get valueable...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F2xxM7XwzaMNuxRFoS9IrXh%2Fd63da9be6a5f72af3c5d8e99c564b7c2%2FDo-more-with-Hotjar0_Placeholder1.png&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            What are Events in Hotjar? (and why you should use them)
+          </h2>
+          <p>
+            Learn how to use Hotjar’s Events for deeper insights based on custom
+            actions unique to your business...
+          </p>
+        </div>
+      </div>
+
+      <!------------PX insights and behavior analytics------------>
+
+      <p id="topics">PX INSIGHTS AND BEHAVIOR ANALYTICS</p>
+      <div id="px_insights_and_behavior_analytics">
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/2AEDwOg71AEOHKkHbPYNxv/dc8175848bddbc45a70075ccea56b0a9/behaviour-analytics-guide-hero.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            The beginner's guide to behavior analytics
+          </h2>
+          <p>
+            Behavior analytics is the key to understanding your customers,
+            and...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F3xJA5uX55NLwpa1hTrrnCB%2Fea378b36f3be926896284c532a709166%2FPXinsights-Placeholder4__1_.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            The ultimate guide to collecting, understanding, and acting on
+            customer analytics
+          </h2>
+          <p>
+            How do you learn more about your customers, their behavior, what
+            they...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/Dxmgbte0ViihV47DfHBfH/5b8d9e06c4c466ed8383e86e6392491b/customer-experience-guide-hero.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            understanding customer experience
+          </h2>
+          <p>
+            What customerexperience (CX) is,why it's important for your
+            business,and...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/6Uz2UTvWb2wj4igjbrLv5k/bdeb0d67e601f8ea96d4d2977a4e6a40/google-analytics-guide-hero.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Google Analytics: terms and definitions
+          </h2>
+          <p>
+            A glossary of the most frequently used terms in the world of the
+            Google Analytics..
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/5FTM6xaUDTT4zDxqcgTEH5/a68a0b1e353050da6d1bcf005933ed0a/PX-guide-hero.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            What are product experience insights? (and why every product team
+            needs them)
+          </h2>
+          <p>
+            Product experience insights help teams see how customers really use
+            their...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F7erYvnLDOd4ZFPmNwsixa4%2F99994090a92ab574d8b7e190af66fa3e%2FProduct_discovery_hub_discovery.png&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            What is product discovery and why does it matter?
+          </h2>
+          <p>
+            When you start working on a new product-or a new initiative on an...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/7Jr3h71MuYPLN4cyvi7rlJ/2419704b6749d4176384adfa15ebf951/Product_Managment_101_illustrator-01.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Product management 101: a complete guide
+          </h2>
+          <p>
+            Your introduction to product management: what it is, what a produ...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/1aJm4xqmbM6mkwpdifPBdy/922777d3968feafa1ebfa49f7ace6d2d/illu_pxba_person_holding_product_management_glossary.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Product management glossary
+          </h2>
+          <p>
+            Our PM glossary translates industry jargon and complex terms into
+            simple...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F5c6a2IQDSrKuVMDhWEKBK5%2F857c0a5d41a1791860dc072eac3cf55b%2FPX_-_Product_research.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Product research: the key to building a product people will love
+          </h2>
+          <p>
+            You want to build a long-term vision for your product, and work on
+            something...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F1DphVve3spcXMxpKYzO3lT%2Fe1868f8e606338af81b5a4baa6a3be13%2FPXinsights-Placeholder1.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            How to ue qualitative data analysis to understand customer behaviour
+            in 5 steps
+          </h2>
+          <p>
+            What and how people feel is part of any experience-and the more
+            emotionally...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/3RN7bdKhkGKwXDbgtJZK5h/6ed7307d6ae60d6b214e62be3e3ed0a7/usability-testing-guide-hero.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Usability testing: your 101 intriduction
+          </h2>
+          <p>
+            A multi-chapter look at website Usability testing, its benefits
+            and...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/4bkHEZrn9NWM1uhYXpqDuV/565bfc0e77b8f6aa729e21e52239a136/Illustrator_export.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            The complete guide to UX
+          </h2>
+          <p>
+            Introduction to UX design: key principels,best practices, and
+            mistakes...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/1xyOFkqI15dycpTskWdD4l/09efadd30ee481cb1eb2f7520c0050de/website-tracking.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Website tracking guide
+          </h2>
+          <p>
+            Whether you're a casual internet user or you work on a website or
+            product, website tracking and product analytics...
+          </p>
+        </div>
+      </div>
+
+      <!----------- BEST PRACTICES: MARKETERS AND PRODUCT OR WEBSITE OWNERS ------------->
+
+      <p id="topics">BEST PRACTICES: MARKETERS AND PRODUCT OR WEBSITE OWNERS</p>
+      <div id="best_practices">
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/2snFbDiooTuC4fgzFK8ixe/046bfa1c24ab070a5f1ac6e1786cdd3d/CRO-guide-hero.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            CRO: the user-centric approach
+          </h2>
+          <p>The user-centric approach to conversion Rate Optimization (CRO)</p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F2kKNr4M7itWewCY3a5999t%2F3ce80753be5982851384d69990aef413%2FBest-Practices-Placeholder3.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            What is customer activation and why does it matter?
+          </h2>
+          <p>
+            Bussiness often find themselves with customers who pay the
+            subscription fee, yet never (or rarely) use their product,...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/1c3qkVtyYYYsugsgnjudGr/5a49cf86007270123fb085f40340b699/customer-journey.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Customer journey mapping in 2 and 1/2 days
+          </h2>
+          <p>
+            How to create a customer journey map that improves customer success.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F4tqUzvCIaElnJu89fIjBcf%2Fae0516b4939843ab84bbd6a6bd994f33%2FBest-Practices-Placeholder2.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Customer Satisfaction: what it is,why it matters, and ways to
+            improve it
+          </h2>
+          <p>
+            Increasing your customer Satisfaction rates isn't as simple as
+            sending out a survey every once in a while. Truly...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/i8hw4bHOXVanHi30vShNM/194d4e25e54a37c62cf72a4cf62184c2/design_thinking_v2.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            What is design thinking and why does it matter?
+          </h2>
+          <p>
+            Solving problems is a pivotal part of product developmet.But some
+            issues that comeup during product developme...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F3WniDTaN4FHErx5QA34yNe%2Fefbcd702b13185cd0b70924aa944b5e7%2FBest-Practices-Placeholder2__4_.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Product growth: what is growth product management?
+          </h2>
+          <p>
+            if there's one thing that teach powerhouses have in common,it's an
+            appetite for growth-and it was only a matter of tim...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F72K38b8E3eRKmoj7AksNSV%2F175a371e12b6a9bc6277aa7f47568175%2FBest-Practices-Placeholder2.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            A 5-step product design process
+          </h2>
+          <p>
+            All companies know the pressure to innovate, stay competitive,and
+            meet rapidly changing customer needs...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F1b4xwSWxf2tGbG66GPN0YK%2Fd26a06219dc5af6b909a070c0f7abb8e%2FProduct_experimentation.png&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            A 5-step product design process
+          </h2>
+          <p>
+            All companies know the pressure to innovate, stay competitive,and
+            meet rapidly changing customer needs...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F7hnHc68NXN6DRrwaQsQLJ5%2Ff2c5224e4d1b5c58e6f06317415f1776%2Fproduct_planning_v2-01.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Product experimentation: what is it and why does it matter?
+          </h2>
+          <p>
+            In the world of product-the world of continuous discovery,learning,
+            and feedback-there is no 'end'...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F3T8P2YiPrigQGabApaJtZ%2F3ccad435fd7dc18124c8f9712bbe72a8%2FProduct_prioritization.png&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Product planning: the definite guide for product managers
+          </h2>
+          <p>Excellent products don't appear out of thin air.</p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F5bnLAkIQp8f544IzL4xV0T%2F22ff1e4ce85a9d7f80648e18e3dd1d71%2FBest-Practices-Placeholder2__4_.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            How product prioritization helps PMs streamline their
+            decision-making
+          </h2>
+          <p>
+            "This or that?or this, then that? But we might need to do that
+            before this because my bosss is more interested in the...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F4oQCLKmVfHS8s8gm7aQ2kb%2F2721537d299e0df64ad345aefb60aec3%2FTeam_analyzing_dashboard_with_metrics.png&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Product roadmaps: what they are and how to create one that works
+          </h2>
+          <p>
+            When you're travelling to a new destination, maps help you naviagte
+            from A to B. They won't show you every twist and...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F7oEy3mEisk5JqWanzSf6al%2F4bae7c20fcc2ce80f68ef61f53e02f11%2FBest-Practices-Placeholder3__1_.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            How to build a brilliant product strategy: a guid
+          </h2>
+          <p>
+            The best strategies help product teams stay on course as they
+            navigate obstacles and changes...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/YFIhMMnuLhC1Y4bx8kWPn/74d679d4e2c8fe8156e8c836e4521089/Person_watering_lightbulb.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Product-led growth: what it is, how it is,how it works and examples
+          </h2>
+          <p>
+            Wheather you're launching a new product or pivoting an existing
+            business strategy,product-led growth can help...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F2AxbYWNIRr2YN9u9iAv8gb%2Ff083afc55c8a22c5f8ef44561880ec78%2Fguide_research_process-01.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            The essential guide to growing your early-stage SaaS startup
+          </h2>
+          <p>
+            If you're an early-stage SaaS startup with a fresh Minimum Viable
+            Product (MVP),congratulations!...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2FcQZgHnTH3I6pFclcm8zvS%2F49890ee4d4b9a2ea580df68c3db90e26%2FBest-Practices-Placeholder4.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            A 7-step adaptable UX research process
+          </h2>
+          <p>
+            Every team knows how important great UX research is for satisfying
+            and converting users. But with so many tasks...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F61RtrGgC17VvVTnoGTACc6%2F309d3478fe1e784d048937dc376b720f%2FBest-Practices-Placeholder4.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            A 5-step process to design an amazing web app
+          </h2>
+          <p>
+            It's tricky to create a web application that's highly interactive,
+            works seamlessly across multiple devices, and....
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/5shv2pVN2f3EQFoxi8waWm/50fcd8b3560b0752c94c17d1608c273f/Person_analysing_with_huge_loupe.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            What makes a goos website: 6 characteristics to prioritize
+          </h2>
+          <p>
+            It's easy to assume you already know what makes a good website. But
+            more than you think goes into creating a site...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F7r24Ey5ouCH4B20yXaAKKu%2Ff170bf4aa6426863469a7a191d39506e%2FBest-Practices-Placeholder1.jpg&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            8 website monitoring best practices to keep your site running
+            smoothly
+          </h2>
+          <p>
+            Steller website performance isn't nice-to-hve: it's the difference
+            between visitors bouncing off your site versus...
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F2KFsXbUDebGMNuwPIYmIHg%2Fce5b1e1b72a2ac87bd104534b9560fe4%2F-Website_Optimization_guide-_Why_is_it_important.png&w=1920&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <h2 style="margin-top: 10px; font-weight: 500">
+            Why is website optimization important?
+          </h2>
+          <p>
+            Imagine the senario: you've spent tons of time building a website,
+            only to discover that one clicks on it-an...
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr style="width: 100%" />
+    <div id="footer">
+      <div>
+        <h2>Product</h2>
+        <p>Product tour</p>
+        <p>Heatmaps</p>
+        <p>session recordings</p>
+        <p>Feedback</p>
+        <p>surveys</p>
+        <hr style="margin: 10px 0" />
+        <p>Integrations</p>
+        <p>Survey templates</p>
+        <p>Highlights</p>
+        <p>Workspaces</p>
+        <p>Dashboard</p>
+        <p>Trends</p>
+      </div>
+      <div>
+        <h2>Why Hotjar</h2>
+        <p>For product teams</p>
+        <p>For product managers</p>
+        <p>For product designers</p>
+        <p>For researchers</p>
+        <p>Case studies</p>
+      </div>
+      <div>
+        <h2>Learn</h2>
+        <p>Guides</p>
+        <p>Blog</p>
+        <p>Product forge</p>
+        <p>Product updates</p>
+        <p>support</p>
+        <p>
+          Product management <br />
+          101
+        </p>
+        <p>product management <br />glossary</p>
+        <p>UX design</p>
+        <p>Product experience insights</p>
+        <p>Website tracking</p>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <p>About us</p>
+        <p>Careers</p>
+        <p>Privacy</p>
+        <p>Press</p>
+      </div>
+      <div></div>
+      <div>
+        <h2>Compliance</h2>
+        <p>Legal overview</p>
+        <p>Compliance & security</p>
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+        <p>Acceptable Use Policy</p>
+      </div>
+    </div>
+    <hr style="width: 85%; margin: auto; margin-top: 50px" />
+    <div id="footer_icon">
+      <div></div>
+      <div>
+        <img
+          style="width: 10%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/2xYBSWqzEcgQBCSZvzi2Ba/4900f94996692c866f7bc6e8d270156d/Facebook.svg"
+          alt=""
+        />
+        <img
+          style="width: 10%; padding-left: 4%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/2gmz7xiNP3FbVtmkrX0yOk/22c37a7312bb87516b445506a15bd4ab/Twitter.svg"
+          alt=""
+        />
+        <img
+          style="width: 10%; padding-left: 4%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/1aJwui56wNjZwTTH9ZTGkk/4a8f3d1a644fb2614a86fce9582e8e09/LinkedIn.svg"
+          alt=""
+        />
+        <img
+          style="width: 10%; padding-left: 4%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/2nncGYpZv80x0X0bG857Cz/8d256f52107275c5437b8b826345fc9c/Youtube.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div id="footer_end">
+      <div style="margin-top: 10px; margin-right: 10px">
+        <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
+      </div>
+      Copyright © 2014 - 2022 Hotjar Ltd. All rights reserved.
+      <div style="margin-left: 10%; display: flex">
+        <p>English (United States)</p>
+        &nbsp&nbsp&nbsp&nbsp<span style="margin-top: 10px">|</span>
+        &nbsp&nbsp&nbsp&nbsp
+        <p>Cookie info</p>
+        &nbsp&nbsp&nbsp&nbsp
+        <p>Cookie settings</p>
+        &nbsp&nbsp&nbsp&nbsp
+        <p>Do not track</p>
+      </div>
+    </div>
+  </body>
+</html>
