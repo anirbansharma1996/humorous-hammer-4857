@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotjar</title>
+    <link rel="stylesheet" href="./style/homepage.css">
+    <style>
+        
+        .light-mode {
+            background:black;
+            color: white;
+        }
+
+        #mode {
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        body {
+            background:white;
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+            transition: 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="icon">
+            <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="">
+            <h2>hotjar</h2>
+        </div>
+        <!-- <div class="navbar1"> -->
+        <p id="mensbtn">Products</p>
+        <p>Why Hotjar</p>
+        <p>Pricing</p>
+        <p>Learn</p>
+        <p>Company</p>
+        <!-- </div> -->
+        <div id="button1">
+            <button>Sign in</button>
+            <button>Get Started Free</button>
+            <span onclick="Mode()"><img id="mode"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"></span>
+        </div>
+    </div>
+
+    <!-- header section -->
+    <div id="header">
+        <h1>Understand <b>how users behave</b> on your site, what they need, and how they feel, fast.</h1>
+    </div>
+
+
+    <!-- icon section -->
+
+    <div id=icon1>
+        <div class="icon2">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/6zxMbtJI8T43Ia7uHg49YB/32b9315a40b4f1363fb448bd0cab5534/icon-no-card.svg"
+                alt="">
+            <h3>No Credit required</h3>
+        </div>
+        <div class="icon3">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/o8L9i7vSjKytR7aYfef7C/ead95db8958fa7ef66750e9ba4fea91e/icon-sign.svg"
+                alt="">
+            <h3>56,549 users signed up last month</h3>
+        </div>
+        <div class="icon4">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/6lgSqbFdgGqSyLx3sGk18/e768204f0c3755e5dd816762a402ac24/icon-privacy.svg"
+                alt="">
+            <h3>GDPR- & CCPA-ready</h3>
+        </div>
+    </div>
+
+    <!-- top video section -->
+
+    <div id="video">
+        <p>
+            <!-- <a href="https://www.hotjar.com?wvideo=x0n228lauc"> -->
+            <img
+                src="https://embed-ssl.wistia.com/deliveries/3950c660be3ee9e53448e483b5248003.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=324fbee0">
+
+        </p>
+
+        <div id="video_text">
+            <h3>
+                The slow, manual days of collating data and feedback are over
+            </h3>
+
+            <p>
+                Hotjar is an intuitive, visual way to discover, consolidate, and communicate user needs.
+            </p>
+
+            <div class="video_button">
+                <button>Sign up with email</button>
+                <button>Sign up with Google</button>
+
+            </div>
+            <p>Hotjar is free forever - upgrade anytime</p>
+        </div>
+    </div>
+
+    <div id="text">
+        <h2>Trusted by 900,000 websites in 180+ countries</h2>
+    </div>
+
+    <!-- logo section  -->
+
+
+    <!-- <div> -->
+    <!-- <div loop="Infinite" class="SocialProof__ImagesWrapperInner-sc-1w7up9w-8 wkwVO"> -->
+    <img src="https://images.ctfassets.net/lh3zuq09vnm2/1F2mq86JzeTrvpY7QdJZmh/b29471d788aabbc36a27d5dea6dae917/Nintendo.svg"
+        alt="">
+    <img src="https://images.ctfassets.net/lh3zuq09vnm2/7hhEfCdZPI7mPC24fFsC94/adf392604ef673a224307e48ac87bd96/Adobe.svg"
+        alt="">
+    <img src="https://images.ctfassets.net/lh3zuq09vnm2/7siImqwRupwoBHyJCaO1zy/2d7ec1ccc7761f76c8fe18de52e889a4/T-Mobile.svg"
+        alt="">
+    <img src="https://images.ctfassets.net/lh3zuq09vnm2/7EHGsWMc29UoHErPsvRAsi/0f8210b12ada1e9faa313b4d56274572/Panasonic.svg"
+        alt="">
+    <img src="https://images.ctfassets.net/lh3zuq09vnm2/4Y87kRrhSPSYgUbSWYxP1z/a13177cf43f99e7a79c691c54e271a98/Hubspot.svg"
+        alt="">
+    <img src="https://images.ctfassets.net/lh3zuq09vnm2/6Id0eTlVwUSuDcoeLXS6wh/ab8d55b51fbc0e2bc599a6f180ef6c99/Invision.svg"
+        alt="">
+    <img src="https://images.ctfassets.net/lh3zuq09vnm2/3A5yNJ7WfWikTXKsk7r4hh/4060c710bc560b59a0dd06b6521fbe94/Decathlon.svg"
+        alt="">
+    <img src="https://images.ctfassets.net/lh3zuq09vnm2/7dsuPwH4V8KJvCexSZueZc/272b2ef619de8ae4b443758413a19733/Unbounce_Logo.svg"
+        alt="">
+    <img src="https://images.ctfassets.net/lh3zuq09vnm2/5F3AqUH61Ll0Oa6eRQKyuT/7ea7e484e1e46495ed4fae2a1162a575/TechSmith.svg"
+        alt="">
+    <img src="https://images.ctfassets.net/lh3zuq09vnm2/18dCY8kGkSbfdNB2Eod1Pp/4768154e8873caa4c1574499dc4e2aab/Microsoft_Logo.svg"
+        alt="">
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- text section -->
+    <div id=text1>
+        <div class="text2">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg"
+                alt="">
+            <h3>No Credit required</h3>
+        </div>
+        <div class="text3">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg"
+                alt="">
+            <h3>56,549 users signed up last month</h3>
+        </div>
+        <div class="text4">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg"
+                alt="">
+            <h3>GDPR- & CCPA-ready</h3>
+        </div>
+    </div>
+
+    <div>
+        <h2 style="text-align:center; font-size:32px;">How it works</h2>
+        <p style="text-align:center; font-size:20px;">Understand how users really experience your site.</p>
+    </div>
+
+
+
+
+
+
+    <!-- grid images -->
+    <div id="upper">
+        <h3>observe</h3>
+    </div>
+    <div id="grid_images">
+
+        <div class="e">
+
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/5khXOtcSPp0ttREXhZirXR/bf41bc4a997d0ea49359482c4c36d257/Heatmaps.svg"
+                alt="">
+            <h3>Heatmaps</h3>
+            <p>Visualize User behaviour</p>
+            <a href="">Learn more</a>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/6Qv16uzcArgmj23zvPE1Zg/e7861ed2958dda93ffdbf313c8a228c1/Recordings.svg"
+                alt="">
+            <h3>Recording</h3>
+            <p>See what your user see</p>
+            <a href="">Learn more</a>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4COczjOFD9M9107Fg88Ol6/4a0040ffe4c7ebdd8d13c60b2408699a/Incoming-feedback.svg"
+                alt="">
+            <h3>feedback</h3>
+            <p>Discover how user feel</p>
+            <a href="">Learn more</a>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4FznAGtU4dktOtbIGubStD/e496e6120efcf17cbb4a8b514ecbec43/Surveys.svg"
+                alt="">
+            <h3>Survey</h3>
+            <p>Heals from your users</p>
+            <a href="">Learn more</a>
+        </div>
+
+    </div>
+
+
+    <!-- middle section -->
+
+    <div id="middle">
+        <div>
+            <h1>Learn how we keep end-user privacy at<br>
+                the heart of everything we do.
+            </h1>
+        </div>
+        <div>
+            <div class="side">
+                <div>
+                    <img src="https://images.ctfassets.net/lh3zuq09vnm2/5B8CskghnpgzwFXtm8Ugma/80bebef0f59d2b56882429ff1ab72942/Legal.svg"
+                        alt="">
+                    <h3>GDPR commitment</h3>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <img src="https://images.ctfassets.net/lh3zuq09vnm2/5B8CskghnpgzwFXtm8Ugma/80bebef0f59d2b56882429ff1ab72942/Legal.svg"
+                        alt="">
+                    <h3>CCPA commitment</h3>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <img src="https://images.ctfassets.net/lh3zuq09vnm2/5B8CskghnpgzwFXtm8Ugma/80bebef0f59d2b56882429ff1ab72942/Legal.svg"
+                        alt="">
+                    <h3>PCI compliance</h3>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <img src="https://images.ctfassets.net/lh3zuq09vnm2/6lgSqbFdgGqSyLx3sGk18/e768204f0c3755e5dd816762a402ac24/icon-privacy.svg"
+                        alt="">
+                    <h3>our Approach to Privacy</h3>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- image_text section -->
+
+
+    <div id="image_text">
+        <div class="I">
+            <div>
+                <h2>Get started with Hotjar</h2>
+                <p>It only takes a few minutes to get started with Hotjar.Understand your<br> users—start free, today.
+                </p>
+            </div>
+
+
+            <div class="T">
+                <button>Tour the Product</button>
+                <button>Get Started Free</button>
+                <p>No credit card required</p>
+            </div>
+        </div>
+
+        <div id="R">
+            <div class="S">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/3bfJrCwdekysmEeIxLraIu/085e9e50144c68cf4b4aafe4b00072ea/No-card.svg"
+                    alt="">
+                <p>No credit card required</p>
+            </div>
+
+            <div class="S">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/4zSu6L7p7Py0u7Bj0gHnZf/48fe73c51f6f33412e4ad73a93598917/Sign.svg"
+                    alt="">
+                <p>56,549 users signed up last month</p>
+            </div>
+
+            <div class="S">
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/2iq5dA7MNtpSxc5eYuWi4n/99753fbe18bdb2193c49f87419439a7e/Privacy.svg"
+                    alt="">
+                <p>GDPR- & CCPA-ready</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Images Section -->
+
+
+    <div id="image_section">
+        <div>
+            <h2>Hey product managers</h2>
+            <p>See how people are experiencing your product, figure out the changes they need most, and get buy-in for
+                your ideas. Fast.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="middle_img">
+            <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F2HTeG4kWdiRcHOivaSsJQB%2F71e05f8c3878aacf73a184d089c420d0%2Ffor-product-managers.png&w=1920&q=75"
+                alt="">
+        </div>
+    </div>
+
+
+
+    <div id="image_section1">
+
+
+        <div class="middle_img1">
+            <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F6ioTYDL5n45nynSHM19c8L%2F3fcb075f45c84cced4f980463fa429b9%2Ffor-product-designers.png&w=1920&q=75"
+                alt="">
+        </div>
+
+        <div>
+            <h2>Hi product designers</h2>
+            <p>Design products that resonate, with Hotjar’s help. Figure out what works, what doesn’t, and why.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+
+
+
+    <div id="image_section">
+        <div>
+            <h2>Hello researchers</h2>
+            <p>Map the user journey to spot patterns and trends. Develop a deeper understanding of your users with
+                Hotjar.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="middle_img">
+            <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F3Cia2mWk2TU13p9HZizWYu%2F80091dc0941557d025f9af856ad7cf57%2Ffor-researchers.png&w=1920&q=75"
+                alt="">
+        </div>
+    </div>
+
+
+    <div style="text-align:center; margin-top:40px;">
+        <h2>We play well with others</h2>
+        <p>Save time and effort. Integrate Hotjar with dozens of tools.SlackHubspot</p>
+    </div>
+
+
+    <div id="logo">
+        <div>
+        <img src="https://images.ctfassets.net/lh3zuq09vnm2/4IFt7MZ5PgBMD60CS1VT9d/c65abff8b46fa889cb948d4ecefe46d2/Property_1_convert-kit.svg"
+            alt="">
+        </div>
+        <div>
+        <img src="https://images.ctfassets.net/lh3zuq09vnm2/5XsPx6nAN2Sj6eu8BlnD1u/8bc2687273b40f88402a0f932513b133/Property_1_facebook-conversions.svg"
+            alt="">
+        </div>
+        <div>
+        <img src="https://images.ctfassets.net/lh3zuq09vnm2/PyiT66aM2oe3oZCnREAsN/f828aae8811c5fbb3bfca1c781d37d05/Property_1_Intercom.svg"
+            alt="">
+        </div>
+        <div>
+        <img src="https://images.ctfassets.net/lh3zuq09vnm2/3aOI76fPHJ2rXoJKr8J1X8/bc83614db5f299b1760cce21065f2198/Property_1_microsoft-excel.svg"
+            alt="">
+        </div>
+        <div>
+        <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VCGBnxidEWtUhJuqX5fcU/883c3b48b035e1ee690d77e704202d4d/Property_1_Zapier.svg"
+            alt="">
+        </div>
+        <div>
+        <img src="https://images.ctfassets.net/lh3zuq09vnm2/51S20iDqjIQ93v3WkVsMkF/4239d263eedcc041db764000d9a86bad/Gmail.svg"
+            alt="">
+        </div>
+        <div>
+        <img src="https://images.ctfassets.net/lh3zuq09vnm2/2rmAIb5zgDRa8qqxILCAhC/b2367c6c3edd8fa4dfcb2e7ecc1eabc0/Microsoft-teams.svg"
+            alt="">
+        </div>
+    </div>
+
+    <div class="explore">
+        <button>Explore integration</button>
+    </div>
+
+
+
+    <!-- scroll videos -->
+    <div id="iframe_video">
+
+        <div>
+            <iframe width="1195" height="672" src="https://www.youtube.com/embed/pd19qaO9mLA"
+                title="Invision prize Hotjar's straightforward, shareable insights" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- bottom images -->
+
+
+
+    <div id="bottom_images">
+        <div class="box">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/7ddUqkRHENLp65ybfpxC27/ac88f31a04b5509ecdcc512c85347b23/Heatmaps-guide-hero.svg"
+                alt="">
+            <p>The complete guide to heatmaps</p>
+            <p>Heatmaps are a powerful way to understand what users do on your website pages—where they click, how far
+                they scroll, what they look at or ignore.</p>
+        </div>
+
+        <div class="box2">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/2AEDwOg71AEOHKkHbPYNxv/dc8175848bddbc45a70075ccea56b0a9/behaviour-analytics-guide-hero.svg"
+                alt="">
+            <p>The beginner’s guide to behavior analytics</p>
+            <p>Behavior analytics is the key to understanding your customers, and how they really experience and
+                interact with your website or app.</p>
+        </div>
+
+        <div class="box3">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/5FTM6xaUDTT4zDxqcgTEH5/a68a0b1e353050da6d1bcf005933ed0a/PX-guide-hero.svg"
+                alt="">
+
+            <p>
+                What are product experience insights? (and why every product team needs them)</p>
+            <p>Product experience insights help teams see how customers really use their products, making it easier to
+                remove bugs, delight users, and reduce churn.</p>
+        </div>
+    </div>
+
+    <div id="explore_button">
+        <button>Explore all guide</button>
+    </div>
+
+    <!-- last Images -->
+
+
+    <div id="last_image">
+
+        <div class="I">
+            <div>
+                <h2>Get started with Hotjar</h2>
+                <p>It only takes a few minutes to get started with Hotjar.Understand your<br> users—start free, today.
+                </p>
+            </div>
+
+
+            <div class="T">
+                <button>Tour the Product</button>
+                <button>Get Started Free</button>
+                <p>No credit card required</p>
+            </div>
+        </div>
+
+        <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2FyBDals8aU8RWtb0xLnPkI%2F19b391bda8f43e16e64d40b55561e5cd%2FHow_tracking_user_behavior_on_your_website_can_improve_customer_experience.png&w=1920&q=75"
+            alt="">
+    </div>
+
+    <!-- footer part -->
+
+    <div id="footer">
+        <div id="container">
+            <div class="f1">
+                <p>Product</p>
+                <p>Product tour</p>
+                <p>Heatmaps</p>
+                <p>Session recordings</p>
+                <p>Feedback</p>
+                <p>Surveys</p>
+                <hr>
+                <p>Integrations</p>
+                <p>Survey templates</p>
+                <p>Highlights</p>
+                <p>Workspaces</p>
+                <p>Dashboards</p>
+                <p>Trends</p>
+
+            </div>
+
+            <div class="f1">
+                <p>Why Hotjar</p>
+                <p> For product teams</p>
+                <p> For product managers</p>
+                <p> For product designers</p>
+                <p> For researchers</p>
+                <p> Case studies </p>
+
+            </div>
+
+            <div class="f1">
+                <p>Website tracking</p>
+                <p> Learn</p>
+                <p>Guides</p>
+                <p>Blog</p>
+                <p>Product forge</p>
+                <p>Product updates</p>
+                <p>Support</p>
+                <p>Product management 101</p>
+                <p>Product management glossary</p>
+                <p>UX design</p>
+                <p>Product experience insights</p>
+            </div>
+
+
+            <div class="f1">
+                <p>Company</p>
+                <p>About us</p>
+                <p>Careers</p>
+                <p>Privacy</p>
+                <p>Press</p>
+            </div>
+
+            <div class="f2">
+                <p>Compliance</p>
+                <p>Legal overview</p>
+                <p>Compliance & security</p>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Acceptable Use Policy</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="fotter2">
+        swqqwqwq
+        <hr>
+        <div class="E">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/2xYBSWqzEcgQBCSZvzi2Ba/4900f94996692c866f7bc6e8d270156d/Facebook.svg"
+                alt="">
+
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/2gmz7xiNP3FbVtmkrX0yOk/22c37a7312bb87516b445506a15bd4ab/Twitter.svg"
+                alt="">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/1aJwui56wNjZwTTH9ZTGkk/4a8f3d1a644fb2614a86fce9582e8e09/LinkedIn.svg"
+                alt="">
+
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/2nncGYpZv80x0X0bG857Cz/8d256f52107275c5437b8b826345fc9c/Youtube.svg"
+                alt="">
+        </div>
+    </div>
+
+    <div id="copyright">
+        <div class="D">
+            <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="">
+            <p>Copyright © 2014 - 2022 Hotjar Ltd. All rights reserved.
+
+            </p>
+            <div class="Z">
+                <select name="" id="">
+                    <option value="">English</option>
+                    <option value="">brazil</option>
+                </select>
+                <hr>
+                <p>Cookie info</p>
+                <p>Cookie settings</p>
+                <p>Do not track</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="./scripts/homepage.js"></script>
+
+
+
+<script>
+      let count = 1;
+    function Mode() {
+        let element = document.body;
+        console.log(element)
+        element.classList.toggle('light-mode')
+        let image = document.querySelector("#mode");
+        if (count == 1) {
+            image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6Z5lcqZwAuyKWu7IGecyckeMiiaD3_A1WrVt0z007F5RJJeAbzU1b5GKPLoKfN9YeHw&usqp=CAU`
+            count = 0;
+            // document.getElementById('image_text').style.backgroundColor="black"
+        }
+        else {
+            image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU`
+            count = 1;
+        }
+    }
+</script>
+
+
+<!-- <iframe src="https://videos.ctfassets.net/lh3zuq09vnm2/2q1Ma50UnBKlnPbbRReO2j/f50946203d4a6bb26285a80a7275e571/heatmap-scrolling.mp4" frameborder="0"></iframe> -->
+
+
+<!-- <iframe src="https://www.hotjar.com/home/?wvideo=x0n228lauc"><img src="https://embed-ssl.wistia.com/deliveries/3950c660be3ee9e53448e483b5248003.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=324fbee0" width="400" height="225" style="width: 400px; height: 225px;"></a></p><p><a href="https://www.hotjar.com/home/?wvideo=x0n228lauc">Hotjar: Website Heatmaps &amp; Behavior Analytics Tools</a></p>" frameborder="0"></iframe> -->
