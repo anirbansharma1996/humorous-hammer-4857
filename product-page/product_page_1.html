@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Tour Page Part-1</title>
+    <style>
+         body{
+         background: rgb(31, 47, 82);
+         font-family: Arial, Helvetica, sans-serif;
+         color: rgb(233, 227, 227);
+         transition: 0.5s ease-in-out;
+        }
+        .ligth-mode{
+            background:white;
+            color: black;
+        }
+        #mode{
+            height: 40px;
+            border-radius: 5px;
+        }
+        .box5{
+            cursor: pointer;
+            transition: 0.4s;
+            padding-left: 15px;
+            padding-top: 8px;
+        }
+        .box5:hover{
+            background: rgb(228, 141, 12);
+            color: black;
+            border-radius: 8px;
+        }
+        #box1{
+          font-size: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          margin-left: 40px;
+          width: 55%;
+          margin-top: 90px;
+        }
+        #box1>h1{
+            font-size: 50px;
+            color: rgb(182, 153, 24);
+        }
+        .btn_style{
+            border: 0px;
+            background: rgb(167, 238, 238);
+            padding: 9px 9px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(20, 20, 85);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn_style:hover{
+            background: rgb(102, 172, 172);
+        }
+        #box2{
+            width: 90%;
+            margin: auto;
+            margin-top: 80px;
+            height: auto;
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        #box2:hover{
+            border: 3px rgb(196, 192, 8) solid;
+            border-radius: 5px;
+        }
+        #box2_child1{
+            width: 64%;
+            margin-top: 70px;
+            height: 75%;
+        }
+        #box2_child1>video{
+            width: 100%;
+            height: 100%;
+        }
+        #box2_child2{
+            width: 33%;
+            height: auto;
+            padding-bottom: 40px;
+        }
+        .tag{
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px 10px;
+            border-radius: 5px;
+        }
+        #box2_child2>div{
+            width: 100%;
+            height: 12%;
+            border: 1px solid;
+            margin-top: 14px;
+            margin-bottom: 13px;
+            border-radius:5px ;
+            cursor: pointer;
+        }
+        #box2_child2>div:hover{
+            border: 2px rgb(214, 203, 203) solid;
+        }
+        .img1{
+            height: 30px;
+            margin: 5px 12px;
+        }
+        .img1+span{
+            font-size: 20px;
+        }
+        @media all and (min-width:500px) and (max-width:900px){
+            #box2{
+                display: block;
+                width:90%;
+                margin: auto;
+                margin-top: 50px;
+                padding-top: -20px;
+            }
+            #box2_child1{
+                width:100%;
+                height: 50%;
+            }
+            #box2_child2{
+                width: 100%;
+                height: 50%;
+                font-size: auto;
+            }
+            #box1{
+                width:80%;
+                font-size: 16px;
+            }
+            #box1>h3{
+                text-align: justify;
+            }
+        }
+        @media all and (min-width:290px) and (max-width:499px){
+            #box2{
+                display: block;
+                width:90%;
+                margin: auto;
+                margin-top: 30px;
+                padding-top: -20px;
+            }
+            #box2_child1{
+                width:100%;
+                height: 50%;
+            }
+            #box2_child2{
+                width: 100%;
+                height: 50%;
+                font-size: auto;
+            }
+            #box1{
+                width:90%;
+                font-size: 14px;
+            }
+            #box1>h3{
+                text-align: justify;
+            }
+            #box1>h1{
+                font-size: 25px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <span onclick="Mode()"><img id="mode" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"></span>
+    
+    <div id="box1">
+        <p>PRODUCT/TOUR</p>
+        <h1>See Hotjar in action</h1>
+        <h3>Experience Hotjar for yourself with our interactive live demo, click around, and try all key features first-hand.</h3>
+        <button class="btn_style">Explore a live demo</button>
+    </div>
+
+    <div id="box2">
+         <div id="box2_child1">
+            <video src="https://videos.ctfassets.net/lh3zuq09vnm2/2q1Ma50UnBKlnPbbRReO2j/f50946203d4a6bb26285a80a7275e571/heatmap-scrolling.mp4" autoplay loop playsinline muted></video>
+         </div>
+         <div id="box2_child2">
+            <h1>Here's how it works</h1>
+            <p style="line-height:25px;">Hotjar is an intuitive, visual way to discover, consolidate, and communicate user needs.</p>
+            <span class="tag" style="background:rgb(252, 243, 117) ;">Observe</span>
+            <div>
+                <img class="img1" src="https://images.ctfassets.net/lh3zuq09vnm2/3fvft31gR35Q9BjAxVk4Zw/9f93e529be4989f97d5743844699cf2a/icon-heatmaps.svg">
+                <span>Visualize user behavior   ^ </span>
+            </div>
+            <div>
+                <img class="img1" src="https://images.ctfassets.net/lh3zuq09vnm2/76fQfkmWFtHn8xYHEbbzA0/f17539a8253616c98a87062824619972/icon-recordings.svg">
+                <span>See what users see   ^</span>
+            </div>
+            <span class="tag" style="background:rgb(200, 134, 226) ;">Ask?</span>
+            <div>
+                <img class="img1" src="https://images.ctfassets.net/lh3zuq09vnm2/6hX51iaEPtQHWldsN5Fy3Y/3a66ea3c6ba95bad60f90d9c31113980/icon-incoming-feedback.svg">
+                <span>Get feedback with context   ^</span>
+            </div>
+            <div>
+                <img class="img1" src="https://images.ctfassets.net/lh3zuq09vnm2/5sO4egYUhUh5eBDtoPB4RS/3102e823999e1e700e876eef2fcb83af/icon-surveys.svg">
+                <span>Hear from your users   ^</span>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
+<script>
+     let count=0;
+    function Mode(){
+        let element = document.body;
+        console.log(element)
+        element.classList.toggle('ligth-mode')
+        let image = document.querySelector("#mode");
+       if(count==0){
+           image.src=`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6Z5lcqZwAuyKWu7IGecyckeMiiaD3_A1WrVt0z007F5RJJeAbzU1b5GKPLoKfN9YeHw&usqp=CAU`
+           count=1;
+        }
+        else{
+            image.src=`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU`
+            count=0;
+        }
+    }
+</script>
