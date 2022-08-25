@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="https://theme.zdassets.com/theme_assets/1911667/21756e0851bed01eab3adfe2a6bc1c20248afeb9.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/slide.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link rel="stylesheet" href="./style/swip.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style/videoframe.css">
+    <script src="https://kit.fontawesome.com/d47f1ce933.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="header-bg-parent">
@@ -43,10 +48,146 @@
             <div class="slide"><img src="https://images.ctfassets.net/lh3zuq09vnm2/273wdVRRvnd4cJbAjYNLwP/e2f03c8a3987d8f9a2e8e01e9177afd4/Fiat.svg" alt=""></div>
         </section>
     </div>
+    <!-- ...........swiper........... -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper_slide">
+                <div class="part_1">
+                    <p>DISCOVER USER INSIGHTS</p>
+                    <h1>Spot endless opportunities to improve your product</h1>
+                    <p>Get inspired with endless new ideas to improve your product and grow your business with reliable user insights.</p>
+                </div>
+                <div class="part_2">
+                    <label id="text-overimage" style="background-image:url(.//image/Zenprint.jpeg);">
+                        <h3>"Hotjar reveals where in the customer journey people leave,<br>helping us reduce drop-offs and increase conversions."</h3>
+                    </label>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper_slide">
+                <div class="part_1">
+                    <p>VALIDATE YOUR IDEAS WITH RELIABLE DATA</p>
+                    <h1>Feel confident you’re meeting user needs</h1>
+                    <p>Stop guessing and understand exactly what your users want. Reduce assumptions and validate your ideas with real, unbiased insights.</p>
+                </div>
+                <div class="part_2">
+                    <label id="text-overimage" style="background-image:url(.//image/Hubspot_testimonial.png);">
+                        <h3>“Hotjar gave us the confidence to begin designing a new page template, which we A/B tested to get a final version.”</h3>
+                    </label>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper_slide">
+                <div class="part_1">
+                    <p>INCREASE TEAM ALIGNMENT</p>
+                    <h1>Get buy-in for your ideas with head-turning insights</h1>
+                    <p>Build a compelling case for your ideas with real user insights and feedback. Get everyone in your team on the same page. </p>
+                </div>
+                <div class="part_2">
+                    <label id="text-overimage" style="background-image:url(.//image/unbounce-Testimonials.png);">
+                        <h3>“For most projects, you’re going to have a lot of stakeholders to convince. Showing real user data from Hotjar really helps get their attention.”</h3>
+                    </label>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper_slide">
+                <div class="part_1">
+                    <p>SPOT UX ISSUES FAST AND PRIORITIZE FIXES</p>
+                    <h1>Discover every issue users encounter</h1>
+                    <p>Don’t rely on support tickets alone. Watch users getting stuck and collect feedback when they encounter an issue.</p>
+                </div>
+                <div class="part_2">
+                    <label id="text-overimage" style="background-image:url(.//image/Studentcrowd_testimonial.png);">
+                        <h3>“We wouldn't have been able to identify the problem without Hotjar.”</h3>
+                    </label>
+                </div>
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <!-- .........video section....... -->
+    <div class="main">
+        <div class="auto_video">
+            <video autoplay loop muted>
+                <source src="https://videos.ctfassets.net/lh3zuq09vnm2/2q1Ma50UnBKlnPbbRReO2j/f50946203d4a6bb26285a80a7275e571/heatmap-scrolling.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="main-accordion">
+            <h2>How it works</h2>
+            <p>Tools that power your team to discover, consolidate, and communicate user needs.</p>
+            <div class="accordion">
+            
+                <div>
+                  <input type="radio" name="example_accordion" id="section1" class="accordion__input">
+                  <label for="section1" class="accordion__label"></i> Heatmaps</label>
+                  <div class="accordion__content">
+                    <i class="fa-brands fa-glide-g"></i>
+                    <p>
+                        Heatmaps visually represent where users click, move, and scroll on your site. With this context, 
+                        you'll learn how users really behave.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <input type="radio" name="example_accordion" id="section2" class="accordion__input">
+                  <label for="section2" class="accordion__label">Recordings</label>
+                  <div class="accordion__content">
+                    <i class="fa-regular fa-face-disguise"></i>
+                    <p>
+                        Recordings are playbacks of users on your site. Watch full recordings of each visit, 
+                        including the clicks, mouse movements, u-turns, and rage clicks.
+                         Identify issues on the fly and spot solutions in seconds.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <input type="radio" name="example_accordion" id="section3" class="accordion__input">
+                  <label for="section3" class="accordion__label">Feedback</label>
+                  <div class="accordion__content">
+                    <i class="fa-duotone fa-message"></i>
+                    <p>
+                        A real-time suggestion box on your site, Feedback lets users express frustration or delight about individual parts of your site, 
+                        right down to the page, form, or image they're looking at
+                    </p>
+                  </div>
+                </div>
+                <div>
+                    <input type="radio" name="example_accordion" id="section3" class="accordion__input">
+                    <label for="section3" class="accordion__label">Surveys</label>
+                    <div class="accordion__content">
+                        <i class="fa-duotone fa-message"></i>
+                      <p>
+                        Surveys bring voice-of-customer to your decision-making. Gathering evidence for a new product or feature? 
+                        Use a targeted Survey to validate your ideas and better understand your users.
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- ...........swiper........... -->
 </body>
 </html>
 <script src="./script/extrenaljq.js"></script>
 <script>
+    // .........company logo.........
     $(document).ready(function(){
         $('.customer-logos').slick({
             slidesToShow: 6,
@@ -70,4 +211,21 @@
             }]
         });
     });
+</script>
+<!-- .....swiper js ...... -->
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // And if we need scrollbar
+});
 </script>
