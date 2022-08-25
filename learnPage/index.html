@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn Page</title>
     <style>
-      /* html {
+      html {
         scroll-behavior: smooth;
-      } */
+      }
       body {
         color: aliceblue;
         background-color: #0d1e41;
@@ -196,7 +196,7 @@
         justify-content: end;
         align-items: center;
       }
-      /*****************footer****************/
+      /*****************footer-end****************/
       #footer_end {
         width: 85%;
         margin: auto;
@@ -207,10 +207,29 @@
         justify-content: center;
         align-items: center;
       }
+       /****************************feedback**************************/
+    #feedback{
+      transform: rotateZ(90deg) ;
+      z-index: 1;
+    background-color:orangered;
+    position: fixed;
+    left: 95%;
+    top: 50%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border: 1px solid;
+    width: 8%;
+    height: 45px;
+    }
     </style>
   </head>
-
+  <!----------------------MAIN BODY-------------------------------->
   <body>
+    <div id="feedback">
+      <h5>feedback</h5>
+    </div>
+
     <div id="navbar"></div>
     <!------------------------ header-part ------------------->
 
@@ -283,9 +302,11 @@
             alt=""
           />
           <h2>
-            What are product experience insights? <br />(and why every product
-            team needs <br />
-            them)
+            <a href="innerPage.html">
+              What are product experience insights? <br />(and why every product
+              team needs <br />
+              them)
+            </a>
           </h2>
           <p>
             Product experience insights help teams see how customers really use
@@ -942,6 +963,8 @@
         </div>
       </div>
     </div>
+    <!-------------------------Footer----------------------------->
+
     <hr style="width: 100%" />
     <div id="footer">
       <div>
@@ -1000,6 +1023,9 @@
         <p>Acceptable Use Policy</p>
       </div>
     </div>
+
+    <!--------------------Footer Icon-------------------------->
+
     <hr style="width: 85%; margin: auto; margin-top: 50px" />
     <div id="footer_icon">
       <div></div>
@@ -1026,6 +1052,9 @@
         />
       </div>
     </div>
+
+    <!--------------------------PAGE END---------------------------------->
+
     <div id="footer_end">
       <div style="margin-top: 10px; margin-right: 10px">
         <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
