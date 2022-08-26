@@ -1,15 +1,28 @@
-
-/* body{
-    background-color: rgb(3, 3, 108)3, 3, 108);
-} */
-/* body{
-    background-color: rgb(4, 4, 127);
+/* body a{
     color:white;
+}   */
+
+.light-mode {
+    background: black;
+    color: white;
 }
 
-body a{
-    color:white;
-}  */
+#mode {
+    height: 30px;
+    border-radius: 5px;
+}
+
+body p{
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    /* color: white; */
+    transition: 0.5s ease-in-out;
+}
 .icon{
   display:flex ;
   margin-top: -10px;
@@ -17,26 +30,38 @@ body a{
   
 }
 .icon>img{
-    width: 40%;
+    width: 20%;
 }
 #navbar{
-    /* width: 90%; */
+    width: 100%;
     display: flex;
+    height:auto;
     justify-content: space-between;
-    font-size: 20px;
+    /* font-size: 20px; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     /* border: 1px solid red; */
-    z-index:2
+    position: fixed;
+    margin: auto;
+    margin-top: -20vh;
+    /* margin-left: 10px; */
+    z-index:1;
+    background-color: white;
 }
+
+.navbar1 {
+    width: 50%;
+    /* margin-left: 150px; */
+    display: flex;
+    gap:40px;
+    /* justify-content: space-evenly; */
+}
+
 /* #navbar{
 position:-webkit-sticky;
 } */
-
-/* .navbar1{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px; 
+/* 
+.navbar1{
+    margin-left: 70px;
 } */
 
 /* #navbar>div p{
@@ -47,7 +72,8 @@ position:-webkit-sticky;
 } */
 #button1{
 
-     margin-top: 20px; 
+     margin-top: 20px;
+     margin-right: 50px; 
 } 
 #button1{
  display: flex;
@@ -55,23 +81,26 @@ position:-webkit-sticky;
 padding-left: 100px;
 }
 #button1>button:nth-child(1){
-    height: 40px;
+    width:70px;
+    height: 30px;
      border-radius:10px ;
    border: 1px solid blue; 
    
 }
 #button1>button:nth-child(2){
-    height: 40px;
+    width:150px;
+    height: 32px;
     background-color: rgb(35, 35, 245);
     color:white;
     border-radius:10px ;
     border: 0px;
 }
 #header{
-    width: 65%;
+    width: 70%;
    font-size: 20px;
-   /* margin-top: -120px; */
-   margin-left: 50px;
+   margin-top: 20vh;
+   margin-left: 60px;
+   /* border: 1px solid red; */
 }
 #header b{
    color: rgb(239, 77, 13);
@@ -85,13 +114,21 @@ padding-left: 100px;
 .icon2{
     display:flex;
 }
+.icon2 h3{
+    margin-left: 10px;
+}
 .icon3{
     display:flex;
+}
+.icon3 h3{
+    margin-left: 10px;
 }
 .icon4{
     display:flex;
 }
-
+.icon4 h3{
+    margin-left: 10px;
+}
 /* .icon2 h3{
     display: flex;
     gap: 100px;
@@ -149,6 +186,14 @@ padding-left: 100px;
 .text4{
     display:flex;
 }
+#upper{
+  width: 6%; 
+  display: flex;
+  margin-left: 60px;
+}
+#upper>div h3:nth-child(2){
+margin-left: 500px;
+}
 
 #grid_images{
     width:80%;
@@ -156,25 +201,34 @@ padding-left: 100px;
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap:20px;
-    margin-top: 80px;
+    margin-top: 30px;
     margin-left:70px;
 }
-
+#grid_images img:hover{
+     transform: scale(0.9);
+}
 #grid_images>div{
   border:1px solid black;
 }
-#grid_images a{
-   padding-bottom: 120px;
+#grid_images>div>a>p {
+   padding-top:80px;
+   padding-left: 20px;
+   /* border:1px solid red; */
+}
+#grid_images>div>p,h3{
+   
+   padding-left: 20px;
+ 
 }
 
 #middle{
 display:flex;
- margin-top: 50px;
+ margin-top: 100px;
 }
 
-#middle>div>h1{
+#middle>div>h2{
     /* width:45%; */
-    margin-left: 60px;
+    margin-left: 80px;
 }
 .side{
     margin-left: 100px;
@@ -245,8 +299,11 @@ padding-left: 40px;
   display:flex;
   margin-top: 40px;
   margin-left: 100px;
+  cursor: pointer;
 }
-
+#image_section img:hover{
+    transform: scale(1.1);
+}
 #image_section>div:nth-child(1){
     margin-top: 70px;
     /* margin-right: 70px; */
@@ -270,8 +327,11 @@ padding-left: 40px;
   display:flex;
   margin-top: 50px;
   /* margin-left: 100px; */
+  cursor: pointer;
 }
-
+#image_section1 img:hover{
+    transform: scale(1.1);
+}
 #image_section1 button{
     margin-top: 40px;
     width:100px;
@@ -306,15 +366,16 @@ padding-left: 40px;
 }
 
 #logo div:hover{
-    transform: rotate(10deg);
+    transform: rotate(20deg);
     background:teal;
+    border-radius: 5px;
 }
 
 
 
 .explore{
     text-align: center;
-    
+    margin-top: 100px;
 }
 
 .explore>button{
@@ -334,10 +395,12 @@ margin-left: 70px;
 /* gap:10px;     */
 }
 
-#bottom_images img{
+#bottom_images>div>img{
     width: 80%;
     cursor: pointer;
 }
+
+
 
 #bottom_images img:hover{
     transform: scale(1.1);
@@ -353,18 +416,47 @@ margin-left: 70px;
 }
 
 #iframe_video{
-margin-top: 80px;
-margin-left:700px;  
+display: flex;
+margin-top: 90px;
+margin-left: 90px;
+   
 }
+#iframe_video>div{
+    width:30%;
+}
+/* #iframe_video>div+div{
+    position:relative;
+}
+#iframe_video>div>div>div{
+    background-color: rgb(230, 230, 3);
+    /* color: white;}*/ 
+#iframe_video>div>div>div+p{
+   
+    color: white;
+    font-size: 32px;
+} 
+
+/* .ds{
+    background-color: yellow;
+     position: absolute; 
+    z-index:1;
+} 
+
+/* .ds>div{
+     padding-left: 50px;
+}  */
+
 /* iframe video */
 #iframe_video iframe{
-    width:90%;
-    height:400px
+    width:130%;
+    height:400px;
+     margin-left:150px;
+    
 }
 
 
 #explore_button{
-    margin-top:40px;
+    margin-top:80px;
     margin-left:70px;
     
 }
@@ -373,6 +465,7 @@ margin-left:700px;
     color:blue;
     border: 1px solid blue;
     border-radius: 5px;
+    /* margin-top: 30px; */
 }
 
 
@@ -380,8 +473,11 @@ margin-left:700px;
     width:30%;
     margin-top:-220px;
     margin-left: 700px;
+    cursor: pointer;
 }
-
+#last_image>img:hover{
+    transform: scale(1.1);
+}
 #last_image{
     width:90%;
     height:400px;
@@ -451,12 +547,41 @@ margin-left:700px;
 .D{
     display: flex;
     gap: 10px;
+    margin-left: 30px;
 } 
 
+
 .Z{
-   
     display: flex;
-    gap: 10px;
-    margin-left: 450px;
+    gap: 20px;
+    margin-left: 200px;
+    /* border:1px solid yellow; */
 }
- 
+
+
+#parenttt{
+    height:250px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 70px;
+    /* border:1px solid red; */
+    background-color: white;
+    margin-top: 30px;
+  }
+
+  #parenttt1{
+    height:250px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 70px;
+    /* border:1px solid red; */
+    background-color: white;
+    margin-top: 30px;
+}
+#container>div>p{
+    cursor:pointer;
+}
+#container>div>p:hover{
+   transform: scale(1.1);
+   color:grey ;
+}

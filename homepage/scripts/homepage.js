@@ -12,3 +12,7 @@ document.getElementById("mensbtn").addEventListener("click",()=>{
         flag=false;
     }
 })
+
+function open(){
+    window.location.href="homepage.html"
+}
