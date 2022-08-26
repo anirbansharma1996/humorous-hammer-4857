@@ -16,7 +16,7 @@
       signupLS.forEach(function (ele) {
           if (ele.email === obj.email && ele.password === obj.password) {
               alert("Sign up Successful")
-              window.location.href = "index.html"
+              window.location.href = "homepage.html"
               localStorage.setItem("signin", JSON.stringify(ele));
               isSignedin = true;
           }

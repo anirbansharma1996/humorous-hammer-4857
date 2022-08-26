@@ -17,7 +17,7 @@
     <style>
         /* h3{
             font-size: 15px;
-            margin-right:0px;
+            margin-right:200px;
         } */
 
          #mensbtn{
@@ -38,6 +38,15 @@
            border-radius: 5px;
            border: 1px solid blue;
         }  */
+
+        #button1 a{
+            text-decoration: none;
+        }
+
+        #button1>button:nth-child(2) a{
+            color: white;
+            text-decoration: none;
+        }
     </style>
    
 </head>
@@ -56,8 +65,8 @@
             <p>Company</p>
         </div>
         <div id="button1">
-            <button>Sign in</button>
-            <button>Get Started Free</button>
+           <button> <a href="./signin.html">Sign in</a></button>
+          <button> <a href="./signup.html">Get Started Free</a></button>
             <span onclick="Mode()"><img id="mode"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"></span>
         </div>
