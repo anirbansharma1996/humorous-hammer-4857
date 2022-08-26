@@ -1,0 +1,32 @@
+#grid_container{
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+}
+#gridArray{
+    display: grid;
+    grid-gap: .9em;
+    grid-template-areas: 
+        "photoone phototwo photothree"
+        "photoone photofour photofive";
+        grid-template-columns: 1fr 20% 20%;
+}
+#gridArray > div:first-child{
+    grid-area: photoone;
+    height: 450px;
+}
+#gridArray > div:first-child img{
+    width: 400px;
+    height: 350px;
+}
+/* #photoArray h1{
+    font-family:;
+} */
+#gridArray h3{
+    text-align: center;
+}
+#gridArray p{
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+}
