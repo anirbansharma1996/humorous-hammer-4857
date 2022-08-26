@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pack{
+            display:flex;
+           justify-content: center;
+           gap:20px;
+           padding-bottom:40px ;
+        }
+        #head{
+            display: grid;
+            justify-content: center;
+        }
+        #para{
+           width: 60%;
+         display: flex;
+         text-align: center;
+         padding-bottom: 40px;
+
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+       #moveon{
+        display: flex;
+        gap:20px;
+       }
+       #ticks{
+        display: flex;
+        justify-content: space-around;
+        color: rgb(205, 177, 177);
+        margin-top: 30px;
+       }
+       #black1{
+      background-color: rgb(171, 166, 92);
+       }
+       #black2{
+        background-color:rgb(151, 169, 178);
+       }
+       #mark{
+        display: flex;
+        justify-content: space-between;
+       }
+      #pro1{
+        padding:10px;
+        border-radius: 10px;
+        border: 2px solid blue;
+      }
+      #pro2{
+       padding: 10px;
+       border-radius: 10px;
+       background-color: blue;
+       color:white;
+       border: 0px;
+    }
+    #saide{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    #sha{
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+       padding: 40px;
+       border-radius: 10px;
+    }
+    #inc{
+        font-size: 30px;
+        color: green;
+    }
+    #col{
+        color:green;
+    }
+    #back{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+       width: 30%;
+       height: 60px;
+       padding: 5px;
+    }
+    #bulg1{
+     padding: 10px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border: 0px;
+    border-radius: 10px;
+    }
+    #bulg2{
+        padding: 10px;
+        border: 0px;
+    }
+    #arrange{
+        border: 1px solid red;
+        height: 200px;
+        display: flex;
+    }
+    #arrange>div{
+        border: 1px solid red;
+        height: 100%;
+        width: 30%;  
+    }
+    #puri{
+        border: 1px solid blue;
+        height: 300px;
+        display: flex;
+        width: 100%;
+
+    }
+   
+    #ob{
+      font-weight: bold;
+      font-size: 30px;
+    }
+    #fea{
+        color: blue;
+
+    }
+    #use>img{
+        width: 70%;
+        height: 200px;
+    }
+    #rect{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid blue;
+        width: 100%;
+
+    }
+    #slight{
+        font-weight: bold;
+    }
+    #take{
+      border: 1px solid green;
+      width: 30%;
+    }
+    #high{
+       padding-left: 30px;
+    }
+    #roll{
+        font-size: 30px;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    </style>
+</head>
+<body>
+   
+  <div id="head"></div>
+  <h1>Trusted by 900,000 websites in 180+ countries</h1>
+  <div id="moveon"></div>
+  <div id="ticks">
+   <h3><img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg" alt="">  No credit card required</h3>
+   <h3><img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg" alt="">  56,549 users signed up last month</h3>
+   <h3><img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg" alt="">  GDPR- & CCPA-ready</h3>
+</div>
+<div id="mark">
+<div id="reduce"><h1>Build your package by picking plans for
+    <span id="black1">Observe</span> & <span id="black2">Ask</span></h1>
+    <div id="back">
+        <button id="bulg1">pay yearly</button>
+        <button id="bulg2">pay monthly</button>
+    </div>
+    
+</div>
+ <div id="sha">
+        <h3>PACKAGE:</h3>
+        <h4>Observe (Business) + Ask (Business)</h4>
+        <p>20% package discount applied</p>
+        <p>20% yearly discount applied</p>
+        <div id="saide">
+            <h3><span id="col">$178</span>
+               <span id="inc">$114</span> 
+                / mo</h3>
+                    <button id="pro1">Book a call</button>
+                    <button id="pro2">Try it free</button> 
+        </div>
+        <p style="color:rgb(145, 139, 133)">15 days trial. No credit card required</p>
+    </div>
+</div>
+<div>
+    <div id="arrange">
+        <div id="use"><img src="https://media.istockphoto.com/vectors/eye-icon-flat-design-style-vector-id951927550?k=20&m=951927550&s=612x612&w=0&h=_R03MwKsreVfUtCJgvXzspepjgcSUF5qhk4DZLD03t8=" alt=""></div>
+        <div><p><span id="ob">Observe</span>  <span id="fea">See all features</span></p>
+            <p>Visualize user behavior with <span id="tag1"><u>Heatmaps</u></span> and see what your users see with <span id="tag2"><u>Recordings.</u></span> </p>
+        </div>
+        <div>
+            <p>How many daily sessions do you need?</p>
+        </div>
+    </div>
+    <div id="puri">
+        <div id="take">
+            <div id="rect"><h3>Basic</h3><h3>$ <span id="roll">0</span> /forever</h3></div>
+            <div id="high">
+                <h3>35 daily sessions</h3>
+                <h3>Access to:</h3>
+                <h5>Automatic data capture</h5>
+                <h5>Unlimited heatmaps</h5>
+                <h5>Up to 1,050 sessions/month</h5>     
+            </div>
+        </div>
+        <div id="take">
+            <div id="rect"><h3>Plus</h3><h3>$ <span id="roll">32</span> /forever</h3></div>
+            <div id="high">
+                <h3>35 daily sessions</h3>
+                <h3>Access to:</h3>
+                <h5>Automatic data capture</h5>
+                <h5>Unlimited heatmaps</h5>
+                <h5>Up to 1,050 sessions/month</h5>     
+            </div>
+        </div>
+        <div id="take">
+            <div id="rect"><h3>Bussiness</h3><h3>$ <span id="roll">80</span> /forever</h3></div>
+            <div id="high">
+                <h3>35 daily sessions</h3>
+                <h3>Access to:</h3>
+                <h5>Automatic data capture</h5>
+                <h5>Unlimited heatmaps</h5>
+                <h5>Up to 1,050 sessions/month</h5>     
+            </div>
+        </div>
+        <div id="take">
+            <div id="rect"><h3>scale</h3><h3>$ <span id="roll">0</span> /forever</h3></div>
+            <div id="high">
+                <h3>35 daily sessions</h3>
+                <h3>Access to:</h3>
+                <h5>Automatic data capture</h5>
+                <h5>Unlimited heatmaps</h5>
+                <h5>Up to 1,050 sessions/month</h5>     
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="pric.js"></script>
