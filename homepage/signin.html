@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .icon{
+            display:flex;
+           margin-left: 550px;
+           font-size: 20px;
+        }
+      
+        /* .icon+div>button{
+             
+            background-color: rgba(47, 102, 240, 0.945); 
+            color: white;
+            width: 30%;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 40px;
+        } */
+       #parent{
+            margin-left: 60px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        #parent>div+div{
+          display: flex;
+          flex-direction: column;
+          width: 30%;
+          gap:20px;
+        }
+        #parent>div button:nth-child(1){
+            height:40px;
+            background-color:rgb(56, 106, 255);
+            color:white;
+            border:none;
+            border-radius:5px;
+        }
+        #parent>div button:nth-child(2){
+            height:40px;
+            background-color:grey;
+            color:white;
+            border:none;
+            border-radius:5px;
+        }
+
+        form{
+            display:grid;
+            grid-template-columns: repeat(1,1fr);
+            gap:10px;
+        }
+
+        form input{
+            width:30%;
+            height:40px;
+        }
+
+        form button{
+            width:30%;
+            height:40px;
+            margin-top: 30px;
+            border-radius: 5px;
+            border:none;
+            background-color:rgb(56, 106, 255);
+            color: white;
+        }
+
+        #flex{
+            display: flex;
+        }
+
+        #image img{
+            width:30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon">
+        <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="">
+        <h2>hotjar</h2>
+    </div>
+
+
+     <div id="flex">
+        <div id="parent">
+            <div>
+                <h2>Sign in</h2>
+                <p>Need a Hotjar account?<a href="./scripts/signup.js">Sign Up</a></p>
+            </div>
+
+            <div>
+                <button>Sign in with Google</button>
+                <button>Sign in SAML SSO</button>
+            </div>
+
+            <div>
+                <p style="margin-left:100px;">or signin with email</p>
+            </div>
+
+            <form action="">
+                <label for="">Email Address</label>
+                <input type="text" id="email" placeholder="Email Address">
+                <label for="">Password</label>
+                <input type="text"  id="password" placeholder="password">
+                <a href="">forgot password</a>
+                <button>Sign in</button>
+            </form>
+           
+        </div>
+     
+      <div id="image">
+        <img src="https://insights.hotjar.com/static/37d85d9a61db85c93d7f.png" alt="">
+      </div>
+    
+    
+    
+    
+    </div>
+</body>
+</html>
+
+<script src="./scripts/signin.js"></script>

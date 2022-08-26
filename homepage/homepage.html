@@ -6,48 +6,222 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotjar</title>
+    <link rel="icon" href="https://theme.zdassets.com/theme_assets/1911667/21756e0851bed01eab3adfe2a6bc1c20248afeb9.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style/homepage.css">
+    <link rel="stylesheet" href="./style/popup.css"> 
+    <link rel="stylesheet" href="./style/slide.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script> 
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+     -->
     <style>
-        
-        .light-mode {
-            background:black;
-            color: white;
-        }
+        /* h3{
+            font-size: 15px;
+            margin-right:0px;
+        } */
 
-        #mode {
-            height: 40px;
-            border-radius: 5px;
+         #mensbtn{
+            cursor: pointer;
+            transition: 0.5s;
         }
-
-        body {
-            background:white;
-            font-family: Arial, Helvetica, sans-serif;
-            color:black;
-            transition: 0.5s ease-in-out;
+        #hotjarbtn{
+            cursor: pointer;
         }
+        #learnbtn{
+            cursor: pointer;
+        }
+        /* #mensbtn:hover{
+           transform: scale(1.0);
+           background-color: lightgray;
+           color: black;
+           padding: 4px 7px ;
+           border-radius: 5px;
+           border: 1px solid blue;
+        }  */
     </style>
+   
 </head>
 
 <body>
     <div id="navbar">
         <div class="icon">
             <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="">
-            <h2>hotjar</h2>
+            <h2 onclick="open()">hotjar</h2>
         </div>
-        <!-- <div class="navbar1"> -->
-        <p id="mensbtn">Products</p>
-        <p>Why Hotjar</p>
-        <p>Pricing</p>
-        <p>Learn</p>
-        <p>Company</p>
-        <!-- </div> -->
+        <div class="navbar1">
+            <p id="mensbtn">Products</p>
+            <p id="hotjarbtn">Why Hotjar</p>
+            <p>Pricing</p>
+            <p id="learnbtn">Learn</p>
+            <p>Company</p>
+        </div>
         <div id="button1">
             <button>Sign in</button>
             <button>Get Started Free</button>
             <span onclick="Mode()"><img id="mode"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"></span>
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"></span>
         </div>
     </div>
+
+  <!-- popup functionality -->
+
+  <div id="popdown">
+    <!-- <span onclick="Mode()"><img id="mode"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"></span> -->
+    <div id="parent">
+        <div id="box1">
+            <div class="box5" id="next-page">
+                <img class="image"
+                    src="https://images.ctfassets.net/lh3zuq09vnm2/1mcY2mB8771rpkc01WpaAC/c0803cf3d2f110c3251d6095400b2f7d/Rocket-ember.svg">
+                <p>Product tour</p>
+                <p>See all Hotjar has to offer</p>
+            </div>
+        </div>
+        <div id="box2">
+            <div class="box3">
+                <div class="box4">
+                    <div>Observe</div>
+                </div>
+                <div class="box5">
+                    <img class="image"
+                        src="https://images.ctfassets.net/lh3zuq09vnm2/3fvft31gR35Q9BjAxVk4Zw/9f93e529be4989f97d5743844699cf2a/icon-heatmaps.svg">
+                    <p>Heatmaps</p>
+                    <p>Visualize user behaviour</p>
+                </div>
+                <div class="box5">
+                    <img class="image"
+                        src="https://images.ctfassets.net/lh3zuq09vnm2/76fQfkmWFtHn8xYHEbbzA0/f17539a8253616c98a87062824619972/icon-recordings.svg">
+                    <p>Recordings</p>
+                    <p>See what your users see</p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="box4">
+                    <div>Ask?</div>
+                </div>
+                <div class="box5">
+                    <img class="image"
+                        src="https://images.ctfassets.net/lh3zuq09vnm2/6hX51iaEPtQHWldsN5Fy3Y/3a66ea3c6ba95bad60f90d9c31113980/icon-incoming-feedback.svg">
+                    <p>Feedback</p>
+                    <p>Discover how your users feel</p>
+                </div>
+                <div class="box5">
+                    <img class="image"
+                        src="https://images.ctfassets.net/lh3zuq09vnm2/5sO4egYUhUh5eBDtoPB4RS/3102e823999e1e700e876eef2fcb83af/icon-surveys.svg">
+                    <p>Surveys</p>
+                    <p>Hear from your users</p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="box4"></div>
+                <div class="box5">
+                    <img class="image"
+                        src="https://images.ctfassets.net/lh3zuq09vnm2/2OXb4DK3kqPZI9XZwKDmBR/aa08742d712d15824a5605c8fa8a86b2/icon-integrations.svg">
+                    <p>Integrations</p>
+                    <p>Discover dozens of integrations</p>
+                </div>
+                <div class="box5">
+                    <img class="image"
+                        src="https://images.ctfassets.net/lh3zuq09vnm2/5kcQPD6YgY51U3d4ifrkii/5e412e881ace5932492c58c86030d41d/icon-survey-templates.svg">
+                    <p>Survey templates</p>
+                    <p>Launch successful surveys faster</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- pop funcationality -->
+
+
+     <!-- second popup funcationality -->
+
+
+     <div id="popup1">
+        <div id="parenttt">
+            <div>
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/2tNvAdB4QZnKkk8er4q3SY/00972c63148acdd80bba5deb1e3ca20d/Product_teams_.svg"
+                    alt="">
+                <h4>For product team</h4>
+                <p>Collaborate on user insights</p>
+            </div>
+            <div>
+              <img src="https://images.ctfassets.net/lh3zuq09vnm2/rei0bZGIntzeRG0WxjqMU/458bf0957e41b9a5fb0322613df89ebf/icon-product-management.svg" alt="">
+              <h4>For product managers</h4>
+              <p>Build products users love</p>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/2zSp0IQk0E9iOi36cn8n4n/eb85b848d9853ec849a934feeca55f4e/icon-product-design.svg" alt="">
+                <h4>For product designers</h4>
+                <p>Create designs that resonate</p>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7cgrCG4MpaK39UueExbDYI/71315bdec4d36e36cf57a23195cc92a4/icon-research.svg" alt="">
+                <h4>For researchers</h4>
+                <p>Discover insights others miss</p>
+                    
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/lh3zuq09vnm2/7bu3ttUQaMiusVYgmA5W0E/cb5706443bda65ea5dd0dd4c4ee73ca3/icon-case-studies.svg" alt="">
+                <h4>Case studies</h4>
+
+                   <p>Learn how others use Hotjar</p> 
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- third pop funcationality -->
+
+<div id="popup2">
+    <div id="parenttt1">
+        <div>
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/29cHXX50MaQFbFbNuuEobF/ef757d222544a89e87e2c23642a499eb/icon-guides.svg"
+                alt="">
+            <h4>Guides</h4>
+            <p>Get the most out of Hotjar</p>
+            
+
+        </div>
+        <div>
+          <img src="https://images.ctfassets.net/lh3zuq09vnm2/6E1bW5je6USepU41R2psoP/025fc489632d42f5455f7253653477a9/Blog.svg" alt="">
+          <h4>Blog</h4>
+          <p>News, analysis, tips, and tutorials</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/69OiEBqKuuE9y84cHDYFYD/8fb8702f45048de7342abacc186e7f78/Product-forge.svg" alt="">
+            <h4>Product forge</h4>
+            <p>Cutting-edge product insights</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/6WkKq86kztFCChLxHqxJ53/63ffc9f2001da8b5ad7292d53808278c/updates.svg" alt="">
+            <h4>Product updates
+
+              </h4>
+            <p>  What’s new</p>
+                
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/77BtJYrFoyCLErPB8o2dnA/4621264b773c3f9625ce987ece5bb4b6/Support.svg" alt="">
+            <h4>Support
+
+                </h4>
+
+               <p>Learn how to set up and use Hotjar</p> 
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/01sD7ikwsm8A9PzqXxeovt/d718ae8df27d248c66166bddf71aac42/Vector.svg" alt="">
+            <h4>Hotjar learning</h4>
+            <p>Courses to help you flourish</p>
+        </div>
+    </div>
+</div>
+
+
+
+
 
     <!-- header section -->
     <div id="header">
@@ -112,7 +286,7 @@
 
     <!-- <div> -->
     <!-- <div loop="Infinite" class="SocialProof__ImagesWrapperInner-sc-1w7up9w-8 wkwVO"> -->
-    <img src="https://images.ctfassets.net/lh3zuq09vnm2/1F2mq86JzeTrvpY7QdJZmh/b29471d788aabbc36a27d5dea6dae917/Nintendo.svg"
+    <!-- <img src="https://images.ctfassets.net/lh3zuq09vnm2/1F2mq86JzeTrvpY7QdJZmh/b29471d788aabbc36a27d5dea6dae917/Nintendo.svg"
         alt="">
     <img src="https://images.ctfassets.net/lh3zuq09vnm2/7hhEfCdZPI7mPC24fFsC94/adf392604ef673a224307e48ac87bd96/Adobe.svg"
         alt="">
@@ -131,12 +305,49 @@
     <img src="https://images.ctfassets.net/lh3zuq09vnm2/5F3AqUH61Ll0Oa6eRQKyuT/7ea7e484e1e46495ed4fae2a1162a575/TechSmith.svg"
         alt="">
     <img src="https://images.ctfassets.net/lh3zuq09vnm2/18dCY8kGkSbfdNB2Eod1Pp/4768154e8873caa4c1574499dc4e2aab/Microsoft_Logo.svg"
-        alt="">
+        alt=""> -->
     <!-- </div> -->
     <!-- </div> -->
 
-    <!-- text section -->
-    <div id=text1>
+  <!-- slide show -->
+
+   <div class="container1">
+     <!-- <h2 class="text-center font-weight-bold">143,088 teams put customers at the heart of their product with Hotjar
+    </h2>  -->
+    <section class="customer-logos slider">
+        <div class="slide"><img
+                src="https://images.ctfassets.net/lh3zuq09vnm2/7EHGsWMc29UoHErPsvRAsi/0f8210b12ada1e9faa313b4d56274572/Panasonic.svg"
+                alt=""></div>
+        <div class="slide"><img
+                src="https://images.ctfassets.net/lh3zuq09vnm2/1tJAYuyTeyoPE1bVOUAKqV/a5a0ad629fcbad9c5d982590b97a6766/Oberlo.svg"
+                alt=""></div>
+        <div class="slide"><img
+                src="https://images.ctfassets.net/lh3zuq09vnm2/4Y87kRrhSPSYgUbSWYxP1z/a13177cf43f99e7a79c691c54e271a98/Hubspot.svg"
+                alt=""></div>
+        <div class="slide"><img
+                src="https://images.ctfassets.net/lh3zuq09vnm2/7FUG0bJeL16YLJ9EHgsTX/44fe4afb6e70da4a60766df492ef615d/Ryanair.svg"
+                alt=""></div>
+        <div class="slide"><img
+                src="https://images.ctfassets.net/lh3zuq09vnm2/6Id0eTlVwUSuDcoeLXS6wh/ab8d55b51fbc0e2bc599a6f180ef6c99/Invision.svg"
+                alt=""></div>
+        <div class="slide"><img
+                src="https://images.ctfassets.net/lh3zuq09vnm2/5F3AqUH61Ll0Oa6eRQKyuT/7ea7e484e1e46495ed4fae2a1162a575/TechSmith.svg"
+                alt=""></div>
+        <div class="slide"><img
+                src="https://images.ctfassets.net/lh3zuq09vnm2/7dsuPwH4V8KJvCexSZueZc/272b2ef619de8ae4b443758413a19733/Unbounce_Logo.svg"
+                alt=""></div>
+        <div class="slide"><img
+                src="https://images.ctfassets.net/lh3zuq09vnm2/273wdVRRvnd4cJbAjYNLwP/e2f03c8a3987d8f9a2e8e01e9177afd4/Fiat.svg"
+                alt=""></div>
+    </section>
+</div> 
+
+
+
+
+
+<!-- text section -->
+<div id=text1>
         <div class="text2">
             <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg"
                 alt="">
@@ -166,38 +377,49 @@
 
     <!-- grid images -->
     <div id="upper">
-        <h3>observe</h3>
-    </div>
-    <div id="grid_images">
+        <div>
+            <h3 style="background-color: yellow;">observe</h3>
+            <hr style=width:1200%;>
+        </div>
 
+        <div>
+            <h3 style="margin-left:500px; background-color: pink;">Ask</h3>
+            <hr>
+        </div>
+    </div>
+    <!-- <hr style="width:90%; margin-left: 50px; "> -->
+    <div id="grid_images">
         <div class="e">
 
             <img src="https://images.ctfassets.net/lh3zuq09vnm2/5khXOtcSPp0ttREXhZirXR/bf41bc4a997d0ea49359482c4c36d257/Heatmaps.svg"
                 alt="">
             <h3>Heatmaps</h3>
             <p>Visualize User behaviour</p>
-            <a href="">Learn more</a>
+            <a href=""> <p>Learn more</p>
+                </a>
         </div>
         <div>
             <img src="https://images.ctfassets.net/lh3zuq09vnm2/6Qv16uzcArgmj23zvPE1Zg/e7861ed2958dda93ffdbf313c8a228c1/Recordings.svg"
                 alt="">
             <h3>Recording</h3>
             <p>See what your user see</p>
-            <a href="">Learn more</a>
+            <a href=""><p>Learn more</p></a>
         </div>
+
         <div>
             <img src="https://images.ctfassets.net/lh3zuq09vnm2/4COczjOFD9M9107Fg88Ol6/4a0040ffe4c7ebdd8d13c60b2408699a/Incoming-feedback.svg"
                 alt="">
             <h3>feedback</h3>
             <p>Discover how user feel</p>
-            <a href="">Learn more</a>
+            <a href=""> <p>Learn more</p></a>
         </div>
         <div>
             <img src="https://images.ctfassets.net/lh3zuq09vnm2/4FznAGtU4dktOtbIGubStD/e496e6120efcf17cbb4a8b514ecbec43/Surveys.svg"
                 alt="">
             <h3>Survey</h3>
             <p>Heals from your users</p>
-            <a href="">Learn more</a>
+            <a href=""> <p>Learn more</p>
+                </a>
         </div>
 
     </div>
@@ -207,11 +429,11 @@
 
     <div id="middle">
         <div>
-            <h1>Learn how we keep end-user privacy at<br>
+            <h2>Learn how we keep end-user privacy at<br>
                 the heart of everything we do.
-            </h1>
+            </h2>
         </div>
-        <div>
+        <!-- <div> -->
             <div class="side">
                 <div>
                     <img src="https://images.ctfassets.net/lh3zuq09vnm2/5B8CskghnpgzwFXtm8Ugma/80bebef0f59d2b56882429ff1ab72942/Legal.svg"
@@ -239,7 +461,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
     <!-- image_text section -->
 
 
@@ -341,32 +563,32 @@
 
     <div id="logo">
         <div>
-        <img src="https://images.ctfassets.net/lh3zuq09vnm2/4IFt7MZ5PgBMD60CS1VT9d/c65abff8b46fa889cb948d4ecefe46d2/Property_1_convert-kit.svg"
-            alt="">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4IFt7MZ5PgBMD60CS1VT9d/c65abff8b46fa889cb948d4ecefe46d2/Property_1_convert-kit.svg"
+                alt="">
         </div>
         <div>
-        <img src="https://images.ctfassets.net/lh3zuq09vnm2/5XsPx6nAN2Sj6eu8BlnD1u/8bc2687273b40f88402a0f932513b133/Property_1_facebook-conversions.svg"
-            alt="">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/5XsPx6nAN2Sj6eu8BlnD1u/8bc2687273b40f88402a0f932513b133/Property_1_facebook-conversions.svg"
+                alt="">
         </div>
         <div>
-        <img src="https://images.ctfassets.net/lh3zuq09vnm2/PyiT66aM2oe3oZCnREAsN/f828aae8811c5fbb3bfca1c781d37d05/Property_1_Intercom.svg"
-            alt="">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/PyiT66aM2oe3oZCnREAsN/f828aae8811c5fbb3bfca1c781d37d05/Property_1_Intercom.svg"
+                alt="">
         </div>
         <div>
-        <img src="https://images.ctfassets.net/lh3zuq09vnm2/3aOI76fPHJ2rXoJKr8J1X8/bc83614db5f299b1760cce21065f2198/Property_1_microsoft-excel.svg"
-            alt="">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/3aOI76fPHJ2rXoJKr8J1X8/bc83614db5f299b1760cce21065f2198/Property_1_microsoft-excel.svg"
+                alt="">
         </div>
         <div>
-        <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VCGBnxidEWtUhJuqX5fcU/883c3b48b035e1ee690d77e704202d4d/Property_1_Zapier.svg"
-            alt="">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VCGBnxidEWtUhJuqX5fcU/883c3b48b035e1ee690d77e704202d4d/Property_1_Zapier.svg"
+                alt="">
         </div>
         <div>
-        <img src="https://images.ctfassets.net/lh3zuq09vnm2/51S20iDqjIQ93v3WkVsMkF/4239d263eedcc041db764000d9a86bad/Gmail.svg"
-            alt="">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/51S20iDqjIQ93v3WkVsMkF/4239d263eedcc041db764000d9a86bad/Gmail.svg"
+                alt="">
         </div>
         <div>
-        <img src="https://images.ctfassets.net/lh3zuq09vnm2/2rmAIb5zgDRa8qqxILCAhC/b2367c6c3edd8fa4dfcb2e7ecc1eabc0/Microsoft-teams.svg"
-            alt="">
+            <img src="https://images.ctfassets.net/lh3zuq09vnm2/2rmAIb5zgDRa8qqxILCAhC/b2367c6c3edd8fa4dfcb2e7ecc1eabc0/Microsoft-teams.svg"
+                alt="">
         </div>
     </div>
 
@@ -378,6 +600,14 @@
 
     <!-- scroll videos -->
     <div id="iframe_video">
+        <div>
+            <p>HEAR FROM YOUR PEERS</p>
+            <h2>Discovering pain points</h2>
+            <p>Learn how Invision's digital product team uses Hotjar to improve the customer experience.
+
+            </p>
+            <button>See case studies</button>
+        </div>
 
         <div>
             <iframe width="1195" height="672" src="https://www.youtube.com/embed/pd19qaO9mLA"
@@ -385,6 +615,15 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
+
+        <!-- <div class="ds">
+            <div>
+            <p>
+                "Hotjar is a critical tool for us to understand our users and identify any pain points where they might be getting stuck."
+                Mike Fiorillo
+                Growth Product Manager, Invision</p>
+            </div>
+        </div> -->
     </div>
 
     <!-- bottom images -->
@@ -392,7 +631,7 @@
 
 
     <div id="bottom_images">
-        <div class="box">
+        <div>
             <img src="https://images.ctfassets.net/lh3zuq09vnm2/7ddUqkRHENLp65ybfpxC27/ac88f31a04b5509ecdcc512c85347b23/Heatmaps-guide-hero.svg"
                 alt="">
             <p>The complete guide to heatmaps</p>
@@ -400,7 +639,7 @@
                 they scroll, what they look at or ignore.</p>
         </div>
 
-        <div class="box2">
+        <div>
             <img src="https://images.ctfassets.net/lh3zuq09vnm2/2AEDwOg71AEOHKkHbPYNxv/dc8175848bddbc45a70075ccea56b0a9/behaviour-analytics-guide-hero.svg"
                 alt="">
             <p>The beginner’s guide to behavior analytics</p>
@@ -408,12 +647,10 @@
                 interact with your website or app.</p>
         </div>
 
-        <div class="box3">
+        <div>
             <img src="https://images.ctfassets.net/lh3zuq09vnm2/5FTM6xaUDTT4zDxqcgTEH5/a68a0b1e353050da6d1bcf005933ed0a/PX-guide-hero.svg"
                 alt="">
-
-            <p>
-                What are product experience insights? (and why every product team needs them)</p>
+            <p>What are product experience insights? (and why every product team needs them)</p>
             <p>Product experience insights help teams see how customers really use their products, making it easier to
                 remove bugs, delight users, and reduce churn.</p>
         </div>
@@ -539,7 +776,7 @@
             </p>
             <div class="Z">
                 <select name="" id="">
-                    <option value="">English</option>
+                    <option value="">English(united states)</option>
                     <option value="">brazil</option>
                 </select>
                 <hr>
@@ -560,7 +797,7 @@
 
 
 <script>
-      let count = 1;
+    let count = 1;
     function Mode() {
         let element = document.body;
         console.log(element)
@@ -569,10 +806,11 @@
         if (count == 1) {
             image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6Z5lcqZwAuyKWu7IGecyckeMiiaD3_A1WrVt0z007F5RJJeAbzU1b5GKPLoKfN9YeHw&usqp=CAU`
             count = 0;
-            // document.getElementById('image_text').style.backgroundColor="black"
+            document.getElementById('navbar').style.backgroundColor="black"
         }
         else {
             image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU`
+            document.getElementById('navbar').style.backgroundColor="white"
             count = 1;
         }
     }
@@ -583,3 +821,34 @@
 
 
 <!-- <iframe src="https://www.hotjar.com/home/?wvideo=x0n228lauc"><img src="https://embed-ssl.wistia.com/deliveries/3950c660be3ee9e53448e483b5248003.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=324fbee0" width="400" height="225" style="width: 400px; height: 225px;"></a></p><p><a href="https://www.hotjar.com/home/?wvideo=x0n228lauc">Hotjar: Website Heatmaps &amp; Behavior Analytics Tools</a></p>" frameborder="0"></iframe> -->
+
+ <script>
+    $(document).ready(function () {
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 0,
+                setting: {
+                    slidesToshow: 4
+                }
+            }, {
+                 breakpoint: 0,
+                setting: {
+                    slidesToshow: 1
+                }
+            }]
+        });
+    });
+</script>  
+
+ <script src="./scripts/homepage2.js"></script> 
+
+ <script src="./scripts/homepage3.js"></script>
+ 
