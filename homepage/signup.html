@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sign up</title>
+    <link rel="icon" href="https://theme.zdassets.com/theme_assets/1911667/21756e0851bed01eab3adfe2a6bc1c20248afeb9.ico" type="image/x-icon">
     <style>
         .icon {
             display: flex;
@@ -27,7 +28,7 @@
             margin-left: 40px;
         }
 
-        #parent1{
+        #parent1 {
             width: 40%;
         }
 
@@ -85,27 +86,39 @@
             border-radius: 10px;
         }
 
-        #flex{
-            width:100%;
+        #flex {
+            width: 100%;
             /* height:400px; */
-            display:flex;
+            display: flex;
         }
 
-        body{
-            height:900px;
+        body {
+            height: 900px;
         }
-        
 
-        #images{
-            width:60%;
-            height:800px;
+
+        #images {
+            width: 60%;
+            height: 800px;
             background-color: bisque;
             /* margin-: 300px; */
         }
-        #images img{
-            width:80%;
+
+        #images img {
+            width: 80%;
             margin-top: 160px;
             margin-left: 90px;
+        }
+
+        #images>div+div{
+            margin-left: 100px;
+        }
+
+        #images>div>h2{
+            margin-left: 100px;
+        }
+        #images>div>p{
+            margin-left: 100px;
         }
     </style>
 </head>
@@ -122,56 +135,62 @@
     <div id="flex">
 
         <div id="parent1">
-        <div id="boxx1">
-            <h2>Create your Hotjar account</h2>
-            <button>signup with Google </button>
+            <div id="boxx1">
+                <h2>Create your Hotjar account</h2>
+                <button>signup with Google </button>
 
 
-        </div>
-        <div class="boxx2">
+            </div>
+            <div class="boxx2">
 
-          
-            
+
+
                 <p>or signup with email</p>
-            
-            
+
+
+            </div>
+
+            <form action="">
+                <label for="">Full Name</label>
+                <input type="text" id="name" placeholder="e.g Mary jackson">
+                <label for="">Email Address</label>
+                <input type="text" id="email" placeholder="e.g Mary jackson@nasa.com">
+                <label for="">Password</label>
+                <input type="number" id="password" placeholder="Set password">
+
+            </form>
+
+            <div id="ins">
+                <p>8 characters min.</p>
+                <p>One uppercase</p>
+                <p>One lowercase</p>
+            </div>
+
+            <div id="terms">
+                <p>I accept the terms and agreements</p>
+            </div>
+
+
+            <div id="signup">
+                <button id="form1" onclick="btn()">Get Started</button>
+                
+            </div>
+
+            <div>
+                </a><p style="margin-left:50px;">Already have an account?<a href="signin.html">Sign in now.</a> </p>
+            </div>
         </div>
-
-        <form action="">
-            <label for="">Full Name</label>
-            <input type="text" id="name" placeholder="e.g Mary jackson">
-            <label for="">Email Address</label>
-            <input type="text" id="email" placeholder="e.g Mary jackson@nasa.com">
-            <label for="">Password</label>
-            <input type="number" id="password" placeholder="Set password">
-
-        </form>
-
-        <div id="ins">
-            <p>8 characters min.</p>
-            <p>One uppercase</p>
-            <p>One lowercase</p>
-        </div>
-
-        <div id="terms">
-            <p>I accept the terms and agreements</p>
-        </div>
-
-
-        <div id="signup">
-            <button id="form1" onclick="btn()">Get Started</button>
-        </div>
-    </div>
 
         <!-- flex  -->
 
         <div id="images">
             <div>
                 <img src="https://insights.hotjar.com/static/f109fbf4cabb33d9326c.jpg" alt="">
-                <h2>Understand how users really experience your site</h2>
-                    <p>
-                    Hotjar is an intuitive, visual way to discover, consolidate, and communicate user needs.</p>
-                    <p>Already have an account? Sign in now.</p>
+                
+                    <h2>Understand how users really experience your site</h2>
+                    <p>Hotjar is an intuitive, visual way to discover, consolidate, and communicate user needs.</p>
+                    
+                
             </div>
         </div>
     </div>
