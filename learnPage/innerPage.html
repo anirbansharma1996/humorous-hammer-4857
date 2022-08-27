@@ -6,6 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inner Page</title>
     <style>
+
+.icon {
+        display: flex;
+        margin-top: -10px;
+        margin-left: 70px;
+      }
+      .icon > img {
+        width: 20%;
+      }
+      .ligth-mode {
+        background: white;
+        color: black;
+      }
+
+      #mode {
+        height: 30px;
+        border-radius: 5px;
+      }
+
+      #navbar {
+        margin: auto;
+        margin-top: -16vh;
+        width: 100%;
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: fixed;
+        z-index: 1;
+        color: aliceblue;
+        background-color: #0d1e41;
+      }
+
+      .navbar1 {
+        width: 50%;
+        margin-left: 50px;
+        display: flex;
+        gap: 40px;
+      }
+
+      #button1 {
+        margin-top: 10px;
+        margin-right: 80px;
+      }
+      #button1 {
+        display: flex;
+        gap: 20px;
+        padding-left: 100px;
+      }
+      #button1 > button:nth-child(1) {
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid blue;
+      }
+      #button1 > button:nth-child(2) {
+        width: 150px;
+        height: 32px;
+        background-color: rgb(35, 35, 245);
+        color: white;
+        border-radius: 10px;
+        border: 0px;
+      }
+      /********************************************/
       body {
         color: aliceblue;
         background-color: #0d1e41;
@@ -54,26 +119,21 @@
         color: #efefef;
       }
       /********************navbar*****************/
-
-      #navbar {
-        width: 95%;
-        margin: auto;
-        height: 60px;
-        border: 1px solid;
-      }
       #navbar_2 {
-        /* z-index: 1;
+        z-index: 1;
         width: 100%;
-        position: fixed; */
+        position: fixed;
         background-color: #ffccdd;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
         margin: auto;
-        height: 71px;
+        height: 60px;
         border: 1px solid;
         color: black;
+        margin-top: -16px;
+       
       }
       #navbar_2 > div:nth-child(2) {
         border: 1px solid;
@@ -105,7 +165,6 @@
 
       /**************animation div****************/
       #animation{ 
-       
         background-image: url('https://www.hotjar.com/images/orb-dark-mode.svg') ;
         text-align: center;
        width: 85%;
@@ -265,7 +324,28 @@
     
 
     <!---------------------------MAIN BODY HTML---------------------------------------------->
-    <div id="navbar">NAV WILL GO HERE</div>
+    <div id="navbar">
+      <div class="icon">
+        <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
+        <a href="../homepage/homepage.html"><h2 style="font-size:25px;">hotjar</h2></a>
+      </div>
+      <div class="navbar1">
+        <p id="mensbtn">Products</p>
+        <p id="hotjarbtn">Why Hotjar</p>
+        <p><a href="../price/prices.html">Pricing</a></p>
+        <p id="learnbtn">Learn</p>
+        <p>Company</p>
+      </div>
+      <div id="button1">
+        <button style="width:45%;"><a href="../homepage/signin.html" style="color:rgb(1, 1, 1);"> <h5 style="margin-top:-5px;">Sign in</p> </a></button>
+        <button style="width:80%;" ><a href="../homepage/signup.html" style="color:white;"> <h6 style="margin-top:-2px; font-size: 13px;">Get Started Free</p></a></button>
+        <span onclick="Mode()"
+          ><img
+            id="mode" style="width:140%"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"
+        /></span>
+      </div>
+    </div>
     <div id="navbar_2">
       <div>
         <p>PX insights guide</p>

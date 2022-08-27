@@ -324,3 +324,10 @@ display: flex;
 justify-content: end;
 
 }
+#head{
+    margin-top: 15vh;
+}
+body{
+    width: 85%;
+    margin: auto;
+}
