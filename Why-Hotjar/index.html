@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Why-Hotjar</title>
     <link rel="icon" href="https://theme.zdassets.com/theme_assets/1911667/21756e0851bed01eab3adfe2a6bc1c20248afeb9.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/slide.css">
@@ -23,7 +23,61 @@
     
     <script src="https://kit.fontawesome.com/4f512a7ed6.js" crossorigin="anonymous"></script>
 </head>
+<style>
+  .light-mode {
+  background-color: #202641;
+  color: white;
+ 
+}
+
+#mode {
+  height: 30px;
+  border-radius: 5px;
+}
+#mensbtn {
+        cursor: pointer;
+        transition: 0.5s;
+        margin: 20px;
+      }
+      #hotjarbtn {
+        cursor: pointer;
+        margin: 20px;
+      }
+      #learnbtn {
+        cursor: pointer;
+        margin: 20px;
+      }
+      .navbar1 p{
+        margin: 20px;
+      }
+</style>
 <body>
+
+  <div id="navbar">
+    <div class="icon">
+      <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
+      <h2>hotjar</h2>
+    </div>
+    <div class="navbar1">
+      <p id="mensbtn">Products</p>
+      <p id="hotjarbtn">Why Hotjar</p>
+      <!-- <p id="p_tag"> <a href="../price/prices.html"> Pricing</a></p> -->
+      <p id="p_tag">price</p>
+      <p id="learnbtn">Learn</p>
+      <p>Company</p>
+    </div>
+    <div id="button1">
+      <button><a href="./signin.html">Sign in</a></button>
+      <button>
+        <a href="./signup.html" style="color: white">Get Started Free</a>
+      </button>
+      <span onclick="Mode()"
+        ><img
+          id="mode"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"
+      /></span>
+    </div>
+  </div>
     <section class="header-bg-parent">
         <div class="header-col1">
             <p>WHY HOTJAR / FOR PRODUCT TEAMS</p>
@@ -241,7 +295,12 @@
         <section id="gridArray">
             <div>
                 <h1>Share the wealth and bring your entire team along your users’ journey.</h1>
-                <img src="https://www.norikoh.com/wp-content/uploads/2022/03/event-space-47.png" alt="">
+                <div class="grid_auto_video">
+                    <video autoplay loop muted>
+                        <source src="https://drive.google.com/uc?export=download&id=1y1iJIXNRCWsScYMNvKnqrPLvXyc_11le" type="video/mp4">
+                    </video>
+                </div>
+                <!-- <img src="https://www.norikoh.com/wp-content/uploads/2022/03/event-space-47.png" alt=""> -->
             </div>
             <div>
                 <h3>Export, share & comment</h3>
@@ -380,7 +439,122 @@
         </div>
     </div>
      <!-- ...footer-cards...... -->
+<<<<<<< HEAD
+ <!-- ...footer... -->
 
+     <hr style="width: 100%" />
+     <div id="footer-main">
+      <div id="footer">
+        <div>
+          <h2>Product</h2>
+          <p>Product tour</p>
+          <p>Heatmaps</p>
+          <p>session recordings</p>
+          <p>Feedback</p>
+          <p>surveys</p>
+          <hr style="margin: 10px 0" />
+          <p>Integrations</p>
+          <p>Survey templates</p>
+          <p>Highlights</p>
+          <p>Workspaces</p>
+          <p>Dashboard</p>
+          <p>Trends</p>
+        </div>
+        <div>
+          <h2>Why Hotjar</h2>
+          <p>For product teams</p>
+          <p>For product managers</p>
+          <p>For product designers</p>
+          <p>For researchers</p>
+          <p>Case studies</p>
+        </div>
+        <div>
+          <h2>Learn</h2>
+          <p>Guides</p>
+          <p>Blog</p>
+          <p>Product forge</p>
+          <p>Product updates</p>
+          <p>support</p>
+          <p>
+            Product management <br />
+            101
+          </p>
+          <p>product management <br />glossary</p>
+          <p>UX design</p>
+          <p>Product experience insights</p>
+          <p>Website tracking</p>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <p>About us</p>
+          <p>Careers</p>
+          <p>Privacy</p>
+          <p>Press</p>
+        </div>
+        <div></div>
+        <div>
+          <h2>Compliance</h2>
+          <p>Legal overview</p>
+          <p>Compliance & security</p>
+          <p>Terms of Service</p>
+          <p>Privacy Policy</p>
+          <p>Acceptable Use Policy</p>
+        </div>
+      </div>
+  
+      <!--------------------Footer Icon-------------------------->
+  
+      <hr style="width: 85%; margin: auto; margin-top: 55px;" />
+      <div id="footer_icon" >
+        <div></div>
+        <div>
+          <img
+            style="width: 35px; padding-left: 6%; margin-top: 55px;"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB5CAMAAAAqJH57AAAAYFBMVEX///8AAABlZWXj4+Pz8/M2Njbp6elaWloICAgzMzMkJCT29vb5+fnLy8vZ2dnd3d1TU1O5ublfX18WFhYQEBBubm6zs7OTk5NKSkoeHh6pqalCQkLAwMCAgICcnJw9PT39e6zbAAABbUlEQVRoge3ae2+CMBQF8OJ4yGuCgwkM9ft/yy2bj6XetsT0lCw7518Tfmm54PVapfykrN8P/TB20U+SV0/XdWQ3fURamgrPlu2w1d2vRcdwd0oe2RDyLLtwOd4YXLQ8G12wfLTAUHlvg4FyZYdxcmWuLbBsvcdI+eSCUXLthEFy+baW3LthjLxgr0HyeS150ZKjHCA3i+TMP7yzgl3xnXF48S+b317JBODuqUzPcjEjWWWurx7eaxo2+4h2lcpEGFDJetJOgscUL8vP1AkPq1Ys6wBLVgexrgPAcmm3IWSx8Qvyi1WUoS9NypQpU6ZM2Z04vSUW5zJ1qqX0A9d5tL1G7P/uH1/iacZcDaJmj5cuOM6fkHMvsmmaS5kyZcqUKVNe7ftZbvoc8TOzSTfZLftCcppMS++pBfwdcQNCjMP+TadPmTJlypQpU6ZMmTJlypQpU6ZMmTJlypQp/3VZPGka5N+E8nHR45NHXD8BtUUYehC5YpgAAAAASUVORK5CYII="
+            alt=""
+          />
+          <img
+            style="width: 35px; padding-left: 6%; margin-top: 55px;"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAZlBMVEX///8AAAD19fX8/PycnJzh4eHw8PDt7e35+flLS0vZ2dmYmJjMzMzo6OhxcXG4uLhlZWV5eXnBwcGpqakeHh4vLy8kJCRra2tFRUU0NDQVFRVZWVkPDw+jo6MICAiRkZGIiIg+Pj5o8+pWAAAEPUlEQVRoge2a2bqqMAxGZZ7KLIIiAu//kkcFtiApNKH4nQvW1d4y/LRN0yTt6XRwcHBw8L+iWUaSVnoaur76U2EriZ2HMtAGqf8rZaO5Kl+cg0QD73WZVOX49q38pkzm95r1Waa2fgaVXwTm9FbLy5TSHv/ifd2Bwiy5yi/GjTSa1y/h+GlXKenS7n1RWlH0/kYrdToznFhBpCgxVTpZk1aU5nSyWeVAHXHyX4/XNGkGG9mUIL98/sknz1fv3yqKtHvhyHG5WpMX9L2R4qXVDCt9n84va/BG+JbHWOmpjT+H7O8CdswTtPTQt1b/DennEs7a7ZbWajvJFbd7RTC6WGLWn5SrAZO9BH0WZJ/2T9ySYwhLmw5PBOSRuwZryrd1BoN7mb4iA9w/DHK0b2Ux/Fn+zbPvz/fgle8bDW/kPddP3866TqzfLfTcHnA/L5kP20NkpodU6bF3iYDrpcvVHNBpylPH1oC31GuzLYAeW+UrZuF0XhZyRDvsWXwmQvbVn4x3o7MUV6noFUwZT64BfrTlJDakS9UG1gvI2AaKdPapHRb/i3k0wGuWHVTWuJDZmfh268Br7JXX3Erdn/U9oc89qP+81cfupe5u1gbDA7H+u8TjFEtbjsqFtRErcVuHrPuCGq0NjTe2EY9b5gT10uyA4awS7mP90c3wHCU2/qHAdZPgiiKX+dqo9sZLDkNEecxDEuMWGz9p+WVeBPGfk9tJjf3HvJi75m4hvhdRxfYVjwArG8Vru840KOnBOwkakFv7xdR+AU1vbswklzMY9eMjEAoOGPju7lXewPn1bzqds4oV609uh5Pk4WsXeACv1vGDKc4tpxj7a/NLCrv7lzs/tdRoWaU4SxUstd1XezGpJeQ4GJakn8ldu6N0s6x9snacaaslFNvbK3Zw1qSfMFypUJjl8kmPlu7h2zPBKq2WBOs7IEjgJBDETuR2/XV9d9KP8lqvqjqOCpENGHEEmk3I5oUQaPaGCukyQtsw+/j0q5iR79Jw0b2AHUZceKd1h/hFfP9FevwC1vM4SM4TCrG9lx65Q76+/TBGyyVKY7d3NXl1F/yGvkbchZnRUk64MCmL+B032AOqJyFqFQpWICydvO3XQzxA0cGadoN0s0X6iW0mehOTSiLkMytj1JgSOAfcvS0EjGR0uQRpE78x8SJCeXEQLaXZuoSxTogeBrNsgqghMTO8k11Kj1VRs4MLzZH+NTmJyR613HIIzw45Rw+FwAz1ZC6obtpsKuu2qP5OoviZguleE0dbl45n2oWc1Ya02DAiGBmTUmUpQpIrk5BttynZvDWqB+s4p9sOPjNyTdOh9fYEs6ZYerPNjf1hs/lZ6iXOeSjzlLnJYkfIrd3bOJR/vlw10thZdG83J6hczokbGfpuFUfF7AtuRR7rzPjBeX7b9A2WhGnl6VUaJq7hWzIiwIODg4MD6fwDMx1AyLwIx8UAAAAASUVORK5CYII="
+            alt=""
+          />
+          <img
+            style="width: 35px; padding-left: 6%;margin-top: 55px;"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAZlBMVEUAAAD////r6+sbGxsqKiqenp7i4uIYGBgnJyenp6fy8vKbm5sGBgYwMDAjIyP6+vra2trLy8u6urpOTk5nZ2eRkZE5OTmvr69sbGwODg4+Pj5hYWFcXFyEhISLi4vU1NR3d3dHR0eV93YnAAAClklEQVRoge3b25qiMAwA4ICCFMRycCh4At7/JRdhdGFow+58jb1Jruai8lvAkDYMeH8jF11ZVWUnco8+4PVHnDTwjiaJPwWLGTvS6iNwfIZV1LSTHmH/snYBLj417Fc6d5Ap5/yEb3oX4EoLC5MLIChh3+wC0F1m8B4Y/EUIHzH4SAfnmAtAlj0hwWGycw2anDWPkgxOcRi2D/FLGL23KOGtIINPrmBjop6iJ4O/cPhBBhc4XJDBEoclGex1mNtRuQMcYnBICHt3s0t2a42w1JZ6z+jJrvBUc4WGtNnQnejv8jbTyk1G6H4X9KGmwK0o5/tewsjup9sRr57eD4FsURGcSU/zAh4WFKqe1FqRLl5W8GeDYYZ/ETKOw7xQShV5FsemdP98SKgk0EayLD8Kwyg1P7Yv7uUiAV+6QJsTBvhqejgNeWQ2sjaOur2GtA9DzdqtK6hhfXwww4dZ3jSPmsoFKXbIEBByBSPjd/4/wwGmTjQF3Br2bxbRZ9bh7emOcSzsws3GamQWgd0Z/0ckruD30uTjMGSu4Eg6guHuCp5Otgu4dgWPU3YC313B+9gR/MwibuCrK/gkHcGQu4KFK/hqGz6lVZVG2+Maq/BetGNVKjOxtQsOsUV4UTsjzawxWmtw9GPrYqPJUliDV5sIeJdF2YLX7WaJ3mOJJfi0cjfWFndLcKCBM+wDtSVYtxI175EOcbMDpxoX6UsP0duBz1oY69OmdmDdJfY8hXxiZwfWt0ywHNLYgfXNXgw+2oFbLYz+nuzA+r1eetjQQ0D7O1bgA8MMM8wwwwwzzDDDDDPMMMMMM8wwwwy/YOwlI0rYQ17fn+/4I99vr3951EeOXA1w3kd7bUTlfI8yK03DetM/zCBHDv8Ah5wwoEME+zsAAAAASUVORK5CYII="
+            alt=""
+          />
+          <img
+            style="width: 35px; padding-left: 6%;margin-top: 55px;"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAMAAADxY+0hAAAAYFBMVEUAAAD///9QUFD7+/tMTEw+Pj7a2tqAgIB1dXXX19fu7u6ysrJaWlpFRUV4eHjKysovLy+mpqbj4+O+vr6cnJxfX1+QkJBpaWnR0dEmJiYXFxeKioo3NzcKCgofHx+WlpafPcGJAAACzUlEQVRoge3aa3OqMBAG4F0it6AiAcVLW///vzyRagUvPS7EvNOZ7PRTO/pQzSabZImxQcEPfvCDH/zgBz/4f8VXyv6c4z2+0lobY5K8rIui2WwOabaeR7NTLBaLeBj2N91fonm7TNPDpqmKusyTxBitf3vAe18pva2bNGvni3hHk2O/imfrNjtUdf7oQW788pjF082nEWdN/dwv2zfS12i3D/1t5EU/xdrc+4033cZnceunPnkbzdDPPPNEx75/8M4TFVd/C+CJzI8/g/jtxS8hPFFy9v1MO/eRffsaxBPpzkd9/ERl53ud+QbRdD7q6+8ygFj5W3duI1LWNyuYv9LWz2E8UW593PA/JQBxBfQr6/te+fuRWh83/G0CWB83/G0CMClxjb9aO/N3isxe+qKICwf7ki72mhLxiyK7ZLoq2BKSp390qlvM3IlfUj3Ot8v2hwO/pmKsz6r6muwXJJ/+Lr4dBsupfkXHCb6t3CeWzkeSj+S+z1yL87cfB5LvvIY+s/wTvMaS5JPZrc9m/O6xJXke3/l2GIzNxTnJB9ADn8dWERHJl7+H/shhEJN8DnnisxmxLu5Inj7PfDslL6Tv9UWfDn07JQvfa+/Wt08gKyfl+n985kSyn3uDzyxalRx//uL/H/39u8y/MeMfm/97kpfSbuc/+XG/2/lfvv1zu/6h1390/YOu/9D1L7r+R+9/0Ps/9P535P4/cbX/R59/YM9/DPz8C33+Bz//RJ//os+/0ef/6PsPDb7/Qd9/oe//4Pef6Ptf9P03oPnkO873/7AZoDz7oAyY8cU3ED//8VleBE+PDV993njnM+773iehpRr6nr+CS/tZr//PUUX/SsyuHYiI/seyZ970f9bv7f/8+LX/87ytvPS/riOX/a/NS/2vwycZ9P+m6aD/90kD8PT+31dD9WL0m/zd/u/gBz/4wQ9+8IMf/JHxD5dDMc8aVNaqAAAAAElFTkSuQmCC"
+            alt=""
+          />
+        </div>
+      </div>
+     </div>
+
+
+    <!--------------------------PAGE END---------------------------------->
+
+    <div id="footer_end">
+      <div style="margin-top: 5px; margin-right: 10px">
+        <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
+      </div>
+      Copyright © 2014 - 2022 Hotjar Ltd. All rights reserved.
+      <div style="margin-left: 10%; margin-top: 20px;display: flex">
+        <p>English (United States)</p>
+        &nbsp&nbsp&nbsp&nbsp<span style="margin-top: 3px">|</span>
+        &nbsp&nbsp&nbsp&nbsp
+        <p style="margin-top: 4px;">Cookie info</p>
+        &nbsp&nbsp&nbsp&nbsp
+        <p style="margin-top: 4px;">Cookie settings</p>
+        &nbsp&nbsp&nbsp&nbsp
+        <p style="margin-top: 4px;">Do not track</p>
+      </div>
+    </div>
+<!-- .......footer end.... -->
+=======
+
+>>>>>>> main
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- ...........swiper........... -->
    <!-------------------------Footer----------------------------->
@@ -492,7 +666,25 @@
    </div>
 </body>
 </html>
-<script src="./script/extrenaljq.js"></script>
+<script src="./script/./extrenaljq.js"></script>
+<script>
+  let count = 1;
+  function Mode() {
+    let element = document.body;
+    console.log(element);
+    element.classList.toggle("light-mode");
+    let image = document.querySelector("#mode");
+    if (count == 1) {
+      image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6Z5lcqZwAuyKWu7IGecyckeMiiaD3_A1WrVt0z007F5RJJeAbzU1b5GKPLoKfN9YeHw&usqp=CAU`;
+      count = 0;
+      document.getElementById("navbar").style.backgroundColor = "#202641";
+    } else {
+      image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU`;
+      document.getElementById("navbar").style.backgroundColor = "white";
+      count = 1;
+    }
+  }
+</script>
 <script>
     // .........company logo.........
     $(document).ready(function(){

@@ -15,9 +15,10 @@
     grid-area: photoone;
     height: 450px;
 }
-#gridArray > div:first-child img{
-    width: 400px;
+#gridArray > div:first-child .grid_auto_video{
+    width: 600px;
     height: 350px;
+    padding-bottom: 20px;
 }
 /* #photoArray h1{
     font-family:;
@@ -29,4 +30,13 @@
     text-align: center;
     font-size: 18px;
     color: grey;
+}
+.grid_auto_video{
+    text-align: center;
+    font-size: 30px;
+    padding: 0px 85px;
+}
+video{
+    width: 500px;
+    height: 350px;
 }
