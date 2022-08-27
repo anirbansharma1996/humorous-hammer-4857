@@ -1,5 +1,6 @@
 .header-bg-parent{
     width: 90%;
+    margin-top:150px;
 }
 .header-col2{
     float: right;
@@ -7,11 +8,11 @@
     background-position: center center;
     background-repeat: no-repeat;
     /* background-size: cover; */
-    margin-top: 6%;
     height: 400px;
     width: 48%;
     position: relative;
     left: 10%;
+    top: 30%;
     /* border: 1px solid red; */
 }
 /* #image{
@@ -54,6 +55,7 @@
     position: absolute;
     left: 5%;
     top: 20%;
+    margin-top: 30px;
     /* border: 1px solid red; */
 }
 .header-col1 p{
