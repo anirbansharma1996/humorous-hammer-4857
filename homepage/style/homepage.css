@@ -3,8 +3,9 @@
 }   */
 
 .light-mode {
-    background: rgb(35, 65, 130);
+    background-color: #202641;
     color: white;
+   
 }
 
 #mode {
@@ -20,7 +21,7 @@ body {
     background: white;
     font-family: Arial, Helvetica, sans-serif;
     color:black;
-    transition: 0.5s ease-in-out;
+
 } 
 .icon{
   display:flex ;
@@ -44,7 +45,8 @@ body {
     margin-top: -20vh;
     /* margin-left: 10px; */
     z-index:1;
-    background-color: white;
+  padding-bottom: 10px;
+  transition: 0.5s;
 }
 
 .navbar1 {

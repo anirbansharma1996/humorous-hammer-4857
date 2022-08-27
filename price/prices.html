@@ -9,10 +9,140 @@
     <link rel="stylesheet" href="./style1.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-    <style></style>
+    <style>
+
+ /***********************footer**************************/
+ #footer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        gap: 20px;
+      }
+      #footer > div {
+        padding-left: 10%;
+      }
+      /*****************footer_icon***************/
+      #footer_icon {
+        width: 85%;
+        margin: auto;
+        height: 30px;
+        display: flex;
+      }
+      #footer_icon > div {
+        width: 100%;
+        height: 30px;
+      }
+      #footer_icon > div:first-child {
+        width: 450%;
+      }
+      #footer_icon > div:last-child {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+      /*****************footer-end****************/
+      #footer_end {
+        width: 85%;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+/*********************************************************/
+.icon {
+        display: flex;
+        margin-top: -10px;
+        margin-left: 70px;
+      }
+      .icon > img {
+        width: 20%;
+      }
+      .ligth-mode {
+        background: white;
+        color: black;
+      }
+
+      #mode {
+        height: 30px;
+        border-radius: 5px;
+      }
+
+      #navbar {
+        margin: auto;
+        
+        margin-top: -15vh;
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+       background-color: rgb(255, 255, 255);
+        position: fixed;
+        z-index: 1;
+      }
+
+      .navbar1 {
+        width: 50%;
+        margin-left: 50px;
+        display: flex;
+        gap: 40px;
+      }
+
+      #button1 {
+        margin-top: 10px;
+        margin-right: 80px;
+      }
+      #button1 {
+        display: flex;
+        gap: 20px;
+        padding-left: 100px;
+      }
+      #button1 > button:nth-child(1) {
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid blue;
+      }
+      #button1 > button:nth-child(2) {
+        width: 150px;
+        height: 32px;
+        background-color: rgb(35, 35, 245);
+        color: white;
+        border-radius: 10px;
+        border: 0px;
+      }
+
+
+    </style>
 </head>
 <body>
-    <div id="nav-bar"></div>
+    <div id="navbar">
+        <div class="icon">
+          <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
+          <a href="../homepage/homepage.html"><h2 style="font-size:25px;">hotjar</h2></a>
+        </div>
+        <div class="navbar1">
+          <p id="mensbtn">Products</p>
+          <p id="hotjarbtn">Why Hotjar</p>
+          <p><a href="../price/prices.html">Pricing</a></p>
+          <p id="learnbtn">Learn</p>
+          <p>Company</p>
+        </div>
+        <div id="button1">
+          <button><a href="../homepage/signin.html" style="color:rgb(1, 1, 1);">Sign in</a></button>
+          <button ><a href="../homepage/signup.html" style="color:white;">Get Started Free</a></button>
+          <span onclick="Mode()"
+            ><img
+              id="mode"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"
+          /></span>
+        </div>
+      </div>
     <div id="head"></div>
     
     <div id="feedback">
@@ -538,69 +668,115 @@
         <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F2wdWozE9QnLjqjRIPN7uT2%2F6198776d0600926bf0ac1b33260cb340%2FYour_introduction_to_Hotjar__what_it_is__what_it_can_do_for_you__and_how_it_works.jpg&w=1920&q=75" alt="">
     </div>
    </div>
-   <div style="background-color: rgb(22, 22, 120);">
-    <div id="final1">
-        <div>
-           <h2>Product</h2> 
-           <p>Product tour</p>
-           <p>Heatmaps</p>
-           <p>Session recordings</p>
-           <p>Feedback</p>
-           <p>Surveys</p>
-            <hr>
-           <p>Integrations</p>
-           <p>Survey templates</p>
-           <p>Highlights</p>
-           <p>Workspaces</p>
-           <p>Dashboard</p>
-           <p>Trends</p>
-        </div>
-        <div>
-            <h2>Why Hotjar</h2>
-            <p>For product teams</p>
-           <p>For product managers</p>
-           <p>For product designers</p>
-           <p>For researchers</p>
-           <p>Case studies</p>  
-        </div>
-        <div>
-            <h2>Learn</h2> 
-            <p>Guides</p>
-            <p>Blog</p>
-            <p>Product forge</p>
-            <p>Product updates</p>
-            <p>Support</p>
-            <p>Product management 101</p>
-            <p>Product management glossary</p>
-            <p>UX design</p>
-            <p>Product experience insights</p>
-            <p>Website tracking</p>
-        </div>
-        <div>
-            <h2>Company</h2>
-            <p>About us</p>
-            <p>Careers</p>
-            <p>Privacy</p>
-            <p>Press</p>
-        </div>
-        <div>
-            <h2>Compliance</h2>
-            <p>Legal overview</p>
-            <p>Compliance & security</p>
-            <p>Terms of Service</p>
-            <p>Privacy Policy</p>
-            <p>Acceptable Use Policy</p>
-        </div>
-       </div>
-       <hr>
-        <div id="end">
-            <img  style="width: 10%; " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAACZCAMAAABUvyWEAAAAclBMVEX///8Yd/IAaPHQ3fsAbfEAcPLr8f6lvvgjdfIAa/H7/P8Ic/IQdfLE1fvy9v73+v5fkvQmfPIAZfGcu/jf6Pybt/hsnPWTsve4zfpimfWCq/eIsPc9f/O/0fo1gfOrxPlEh/NzofZNjfR/pvYAXPAAYfF6iSguAAAEf0lEQVR4nO2c6XKjMAyAAWNYY+eAQkpzkGvz/q+4JLtpA1jIdKeRM6PvZ9rM6As+JB8EAcMwDMMwDMMwDMMwDMMwDMMwDMN4SpbNS7FrEeU8y6ij+T6tRXpsoktRRC1FcSmaY9o6Ucc1nYWojnmkpAm/MEaqKF9VYkEd3STm1SmPOyJfRjLOT1VCHaErWXlWUttE7mgZrcqX6EDirOIxk7/E6iyoI0VJ3kMHlZtO+O55Y6sbe0+xYeS2po53hPnq4qxy0yk+vB2oZwfHFvbQ1g4z6qjtpLmc6hKGMk+p47ZRjQ/HEFpW1JEPyNbqOypX1Nq3KWcTT+r6j5h4TR19l/9waW3Uhjr+R96cXez5WvxGbfBF/cvBxWip2uRTy1jFsdTdb2hvps9y6zCOKXVap/u6rvf7tNocT3lXZltSW/zjhM8vKkrL5KuMWcyT8tT5BeSBLv5H3tFBWZtqMPpmy+7jVO8UsfcRaBtTS0u2v+jJhNKDkmD+gcmopS3VH8hoD5LOHTYqy4O1bw9kQrl7dux9kgPyYExjbz5DGd1QF2v7AmlkGsgjhzJhsX9u7AOwwtJooCdYZIx8bux9dhHyYMAk0iITRrS95oQNZRdoZu/PM1f04Zmx9xG5Jf5OywkHs2UiZjdsI0dOOddUWCIjj71viNWpyW9Y/52w6kzwCbNX4e+VNiNDhrbOr89BICptl+4uvswweUPXzmpsLAujTnCLM9YsI7K6JlujuX9XpmywIk6SLW4s0Nh6MgJdJDQ5VbaZYKnMQAZtluGFagQQPyBTUI0Ae3zdb7KMoko21/g6+WQZsgXBD3whY7KM/CCSQbPMb8johkgGyzK/I2NCIhkwy5Lxnd9dmd/q8y9AEzWaSEYDMnKd3ulu+CfV5x/Slb2NkslATyZymStSYCikkoH6TOSwT5lt7O2MrM9Ao5mLzHxllyGrnKF5xkUGWm+Ty5+P2wqUAbjIlPavhvH55+O2AuVmLjJQkkqWm0EBuchARSpZ1gzVMy4yFfBUyeoZqNJ0kQEGM7pKMwPWJ1xkcvvvIM9kBxyAhu8ic7G3MrrVmUDYf15VJ590zpYuPj8uoYqbbt0MWNE05tedXgmg7p8DKpQrmvha86Ce+fcsoXyb8oQTugswsTgj3QUIsB3NaTK0+zPoztk0GcKx7AaypzlJhnpPE9ttniRDvtucNKO9ZooM/TmAYDc6Ok+RoT+hgZydmSDjw9mZQIw9mgkyPpxqGj9v5i7jy6HTA/xsnGV8OQk4dkbTVcafM5pBDa46O8t4c3p25Fyzm4xX55qDYKOA5QAXGc9OnF8XBK02TjLKs7sA0C0NFxn/bmkA92dwGR/vzwT2m02ojKc3m6x3zjAZb++cXZPOwkyR8fk2YEu97ZaeYzJGbqmrMYTeDdoRGf9v0LaIYxTjMnF09CLlx8jKVXQfpu0yr3Pr/Epyfx/AUOb2PoAXaGCPLGbVKo/UpStzub2pYfZab2q4MS/FW/cakFi+veQ7NBiGYRiGYRiGYRiGYRiGYRiGYRjmtfgDnRo7fBTw0Y4AAAAASUVORK5CYII=" alt="">
-            <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAAS1BMVEX///9VrO9Qqu9Hp+7R5/ro8/v4+/7l8fxjsvDb6/vq8/2s0/VesO/0+f5vt/Dd7fqVyPSLxPSy1/Z5vPKBv/K/3fjJ4vigzvU/pO7Fc6lFAAAEWUlEQVRoge1b2aKjIAyt4Noq4u7/f+mg3WxNQlB7mQfP40zhmBCykXu5nDhx4sSJEw/EUVJmBmUSxX9Jew1vlUrzQMwI8lRVt/D6B59Q9FoJKQ3nAmL6F6X74qfUXSvGT97lF4yi7X7FXFZGPpj49QFy1OUPqENlY37yq/Bo6gbTNqT/5kj6qOVJ/Za+vR7FXfOlfkt/O4Q6UtKVeoJU0X7u2k3jC+FlvZM61pvEfgivd3m9qNnBbdibHaqP0o0qf0Kkm9mjYCe3YQ82skdbTe2DXW5iP0DumX2L7LvP+8Xufu5xcxC3YW9cb9ye+/0Nqd246wO5DbtTjhEdym3YXY5dHXbgdwjlS+kT+EHmerDcEwRX8dUvyFsed7hB6XPmTv5C8vI6Z/ciZN7qYaiW+e1qD9GwBHflls2jVCmy6pHtmQxy/Ykc0aFrJnL0i4ToF4szs1pI0ZZrETjXrQROXKgCLZKCrwKtHZva5M1AWJL2WkYDLMY9JjD7ivuBGySC3cWPAIU0DCUY3kUGbpKNxghXPx5t3B10z/LpfyLg3BFhOplW4frSWONLC5nb3UEU61RWgMdY1lkBKd7maApQt89Fw5cjIe4uqEFBdw966MjfHNln6STRgqyD9gnGHvv9DMjWDRa75gvpJbZZDXJb7D2GA7lYFLxx/faiI2zr5nhAbuMvqGwOCaaf0TgOq/weRhDyYn3LAClWQAPa9/b9oIQQI3x3cHIytEGOaS36A0nYuUqOW+gFTSNMtHbpMV0x7kBUxDLE3tpWwu4ERoKHQCKyxSm8ZLgkN52wyYlUKMXNPYIPi5eEvEEkvzmeRyaYttzIEU81A9dfiaxiJn9PECUHYToZlq446R3T37wT4hMJ8kDia9YAA9oO8iB1aKVTqfcmcocCP6JS703kgWQ3N8gqkzA40lTkwFM96thn4FcNcTIzUhWkHPqerPQIJ4O411nwJi4KzrnTTSzCvZLugXfb4OTttQlVMhGVOa+zEdMnToZULJmYIAcGeUXX9mQyQfYFGH0VyrnNW1BBgu7GWC8bdVVnkAkkkjq/2FVHGbxltS11JkPxtFoGukbLDms/xVIkg+XSx/oxxZxUa20kWcolsFBcSp5jZS5Qw66XW2wGKpFfzFLV2KEljI6ptRcHXRbDasqjXA0lai8951nC3nxek6u6q7s+I0JqrG2mcie3cQMeVqSWL+4CVs+S9K13QK0wY2aowuOaR81qhcFNQJkPGcAfZ5pLzYtMSPtTilT3yTukx0XSVankN4lZ7U/cUQnzAU2lBwPdqtw6QfG5mJf7k6FNiPvFc37P51Y9Ppv9dOa9lZz9vuTzgcfv05bfR72jnzMdRzd8PuT6fcL2+njvd2zB78CG31EVv0M6fseT/A5mXaZc2ttI2sXvMN7F6xiiQVS5DmBWx4h9h8fR05ne39DtBNa4sax+MW48w9+g9QyPI+Yz/A3Xvz/Bz58VnDhx4sSJ/xz/ADl0NfPOJgO1AAAAAElFTkSuQmCC" alt="">
-            <img style="width:10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="">
-            <img style="width:10%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" alt="">
-        </div>
-   </div>
+   <hr>
+   <!-------------------start-------------------------->
+   <div id="footer">
+    <div>
+      <h2>Product</h2>
+      <p>Product tour</p>
+      <p>Heatmaps</p>
+      <p>session recordings</p>
+      <p>Feedback</p>
+      <p>surveys</p>
+      <hr style="margin: 10px 0" />
+      <p>Integrations</p>
+      <p>Survey templates</p>
+      <p>Highlights</p>
+      <p>Workspaces</p>
+      <p>Dashboard</p>
+      <p>Trends</p>
+    </div>
+    <div>
+      <h2>Why Hotjar</h2>
+      <p>For product teams</p>
+      <p>For product managers</p>
+      <p>For product designers</p>
+      <p>For researchers</p>
+      <p>Case studies</p>
+    </div>
+    <div>
+      <h2>Learn</h2>
+      <p>Guides</p>
+      <p>Blog</p>
+      <p>Product forge</p>
+      <p>Product updates</p>
+      <p>support</p>
+      <p>
+        Product management <br />
+        101
+      </p>
+      <p>product management <br />glossary</p>
+      <p>UX design</p>
+      <p>Product experience insights</p>
+      <p>Website tracking</p>
+    </div>
+    <div>
+      <h2>Company</h2>
+      <p>About us</p>
+      <p>Careers</p>
+      <p>Privacy</p>
+      <p>Press</p>
+    </div>
+    <div></div>
+    <div>
+      <h2>Compliance</h2>
+      <p>Legal overview</p>
+      <p>Compliance & security</p>
+      <p>Terms of Service</p>
+      <p>Privacy Policy</p>
+      <p>Acceptable Use Policy</p>
+    </div>
+  </div>
+
+  <!--------------------Footer Icon-------------------------->
+
+  <hr style="width: 85%; margin: auto; margin-top: 50px" />
+  <div id="footer_icon">
+    <div></div>
+    <div>
+      <img
+        style="width: 10%"
+        src="https://images.ctfassets.net/lh3zuq09vnm2/2xYBSWqzEcgQBCSZvzi2Ba/4900f94996692c866f7bc6e8d270156d/Facebook.svg"
+        alt=""
+      />
+      <img
+        style="width: 10%; padding-left: 4%"
+        src="https://images.ctfassets.net/lh3zuq09vnm2/2gmz7xiNP3FbVtmkrX0yOk/22c37a7312bb87516b445506a15bd4ab/Twitter.svg"
+        alt=""
+      />
+      <img
+        style="width: 10%; padding-left: 4%"
+        src="https://images.ctfassets.net/lh3zuq09vnm2/1aJwui56wNjZwTTH9ZTGkk/4a8f3d1a644fb2614a86fce9582e8e09/LinkedIn.svg"
+        alt=""
+      />
+      <img
+        style="width: 10%; padding-left: 4%"
+        src="https://images.ctfassets.net/lh3zuq09vnm2/2nncGYpZv80x0X0bG857Cz/8d256f52107275c5437b8b826345fc9c/Youtube.svg"
+        alt=""
+      />
+    </div>
+  </div>
+
+  <!--------------------------PAGE END---------------------------------->
+
+  <div id="footer_end">
+    <div style="margin-top: 10px; margin-right: 10px">
+      <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
+    </div>
+    Copyright © 2014 - 2022 Hotjar Ltd. All rights reserved.
+    <div style="margin-left: 10%; display: flex">
+      <p>English (United States)</p>
+      &nbsp&nbsp&nbsp&nbsp<span style="margin-top: 10px">|</span>
+      &nbsp&nbsp&nbsp&nbsp
+      <p>Cookie info</p>
+      &nbsp&nbsp&nbsp&nbsp
+      <p>Cookie settings</p>
+      &nbsp&nbsp&nbsp&nbsp
+      <p>Do not track</p>
+    </div>
+  </div>
    
+   <!------------------------------------------------------>
 </body>
 </html>
 <script src="price.js"></script>

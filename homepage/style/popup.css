@@ -57,9 +57,6 @@
     margin-top: 20px;
 }
 
-
-
-
 .box5 {
     cursor: pointer;
     transition: 0.4s;
@@ -68,10 +65,13 @@
 }
 
 .box5:hover {
-    background: rgb(228, 141, 12);
+    background-color: rgb(230, 247, 253);
     color: black;
     border-radius: 8px;
 }
+
+/*************************************************/
+
 
 #popdown {
     background-color: white;
