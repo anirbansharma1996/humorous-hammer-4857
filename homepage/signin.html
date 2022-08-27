@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sign In</title>
+<<<<<<< HEAD
     <link
       rel="icon"
       href="https://theme.zdassets.com/theme_assets/1911667/21756e0851bed01eab3adfe2a6bc1c20248afeb9.ico"
       type="image/x-icon"
     />
+=======
+    <link rel="icon" href="https://theme.zdassets.com/theme_assets/1911667/21756e0851bed01eab3adfe2a6bc1c20248afeb9.ico"
+        type="image/x-icon">
+>>>>>>> 6385a6a8fd6abde1b60685694acf227ebdc16876
     <style>
       body {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -22,9 +27,15 @@
         font-size: 20px;
       }
 
+<<<<<<< HEAD
       body {
         height: 900px;
       }
+=======
+        /* body {
+            height: 900px;
+        } */
+>>>>>>> 6385a6a8fd6abde1b60685694acf227ebdc16876
 
       #parent {
         width: 40%;
@@ -33,12 +44,22 @@
         grid-template-columns: repeat(1, 1fr);
       }
 
+<<<<<<< HEAD
       #parent > div + div {
         display: flex;
         flex-direction: column;
         width: 80%;
         gap: 10px;
       }
+=======
+        #parent>div+div {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            gap: 10px;
+            margin-top: -40px;
+        }
+>>>>>>> 6385a6a8fd6abde1b60685694acf227ebdc16876
 
       #parent > div button:nth-child(1) {
         height: 50px;
@@ -95,6 +116,7 @@
         margin-left: 80px;
       }
 
+<<<<<<< HEAD
       #image > div {
         margin-left: 80px;
       }
@@ -103,6 +125,32 @@
         font-size: 18px;
         width: 60%;
       }
+=======
+        #image {
+            width: 70%;
+            /* height:700px; */
+            background-color: aliceblue;
+
+        }
+
+        #image img {
+            width: 80%;
+            margin-top: 100px;
+            margin-left: 80px;
+        }
+
+        #image>div>div {
+            margin-left: 80px;
+        }
+
+        #image>div p {
+            font-size: 18px;
+            width: 70%;
+        }
+        label{
+            font-weight: bold;
+        }
+>>>>>>> 6385a6a8fd6abde1b60685694acf227ebdc16876
     </style>
   </head>
 
@@ -113,6 +161,7 @@
     </div>
 
     <div id="flex">
+<<<<<<< HEAD
       <div id="parent">
         <div>
           <h2>Sign In</h2>
@@ -122,6 +171,44 @@
         <div>
           <button>Sign in with Google</button>
           <button>Sign in SAML SSO</button>
+=======
+        <div id="parent">
+            <div>
+                <h2>Sign In</h2>
+                <p>Need a Hotjar account?<a href="./signup.html">Sign Up</a></p>
+            </div>
+
+            <div>
+                <button>Sign in with Google</button>
+                <button>Sign in SAML SSO</button>
+            </div>
+
+            <div>
+                <p style="margin-left:100px;  margin-top: -10px;">or signin with email</p>
+            </div>
+
+            <form action="">
+                <label for="">Email Address</label>
+                <input type="text" id="email" placeholder="Email Address">
+                <label for="">Password</label>
+                <input type="text" id="password" placeholder="password">
+                <a href="">forgot password</a>
+                <button>Sign in</button>
+            </form>
+
+        </div>
+
+        <div id="image">
+            <div>
+                <img src="https://insights.hotjar.com/static/37d85d9a61db85c93d7f.png" alt="">
+
+                <div>
+                    <h2>Guides to learn more about Hotjar</h2>
+                    <p>Check out our guides to better understand user behavior, make the right changes, improve UX, and increase conversions on your website and product.</p>
+                    <button>Explore guide</button>
+                </div>
+            </div>
+>>>>>>> 6385a6a8fd6abde1b60685694acf227ebdc16876
         </div>
 
         <div>
