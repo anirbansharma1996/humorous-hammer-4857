@@ -40,3 +40,46 @@
     margin-top: 100px;
     
 }
+ /***********************footer**************************/
+ #footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  #footer > div {
+    padding-left: 10%;
+  }
+  /*****************footer_icon***************/
+  #footer_icon {
+    width: 85%;
+    margin: auto;
+    height: 30px;
+    display: flex;
+  }
+  #footer_icon > div {
+    width: 100%;
+    height: 30px;
+  }
+  #footer_icon > div:first-child {
+    width: 450%;
+  }
+  #footer_icon > div:last-child {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+ /*************************Footer-end********************/
+ #footer_end {
+    width: 85%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

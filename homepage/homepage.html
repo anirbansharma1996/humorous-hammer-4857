@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotjar</title>
-<<<<<<< HEAD
     <link
       rel="icon"
       href="https://theme.zdassets.com/theme_assets/1911667/21756e0851bed01eab3adfe2a6bc1c20248afeb9.ico"
@@ -18,17 +17,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
      -->
-=======
-    <link rel="icon" href="https://theme.zdassets.com/theme_assets/1911667/21756e0851bed01eab3adfe2a6bc1c20248afeb9.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./style/homepage.css">
-    <link rel="stylesheet" href="./style/popup.css"> 
-    <link rel="stylesheet" href="./style/slide.css">
-     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"> -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script> 
-   
-     
->>>>>>> 6385a6a8fd6abde1b60685694acf227ebdc16876
     <style>
       /* h3{
             font-size: 15px;
@@ -68,23 +56,26 @@
       }
     </style>
   </head>
-
+  <!---------------------------------------NAVBAR--------------------------------------------------->
   <body>
     <div id="navbar">
       <div class="icon">
         <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
-        <h2 onclick="open()">hotjar</h2>
+        <h2>hotjar</h2>
       </div>
       <div class="navbar1">
         <p id="mensbtn">Products</p>
         <p id="hotjarbtn">Why Hotjar</p>
-        <p><a href="../price/prices.html">Pricing</a></p>
+        <!-- <p id="p_tag"> <a href="../price/prices.html"> Pricing</a></p> -->
+        <p id="p_tag">price</p>
         <p id="learnbtn">Learn</p>
         <p>Company</p>
       </div>
       <div id="button1">
         <button><a href="./signin.html">Sign in</a></button>
-        <button><a href="./signup.html">Get Started Free</a></button>
+        <button>
+          <a href="./signup.html" style="color: white">Get Started Free</a>
+        </button>
         <span onclick="Mode()"
           ><img
             id="mode"
@@ -101,12 +92,14 @@
       <div id="parent">
         <div id="box1">
           <div class="box5" id="next-page">
-            <img
-              class="image"
-              src="https://images.ctfassets.net/lh3zuq09vnm2/1mcY2mB8771rpkc01WpaAC/c0803cf3d2f110c3251d6095400b2f7d/Rocket-ember.svg"
-            />
-            <p>Product tour</p>
-            <p>See all Hotjar has to offer</p>
+            <a href="../product-page/product_page_1.html">
+              <img
+                class="image"
+                src="https://images.ctfassets.net/lh3zuq09vnm2/1mcY2mB8771rpkc01WpaAC/c0803cf3d2f110c3251d6095400b2f7d/Rocket-ember.svg"
+              />
+              <p>Product tour</p>
+              <p>See all Hotjar has to offer</p>
+            </a>
           </div>
         </div>
         <div id="box2">
@@ -335,11 +328,9 @@
 
         <div class="video_button">
           <button>Sign up with email</button>
-        
-            <!-- <img style=" width:10%;"  src="https://assets.stickpng.com/images/5847f9cbcef1014c0b5e48c8.png" alt=""> -->
-            <button  > Sign up with Google</button>
-      
-        
+
+          <!-- <img style=" width:10%;"  src="https://assets.stickpng.com/images/5847f9cbcef1014c0b5e48c8.png" alt=""> -->
+          <button>Sign up with Google</button>
         </div>
         <p>Hotjar is free forever - upgrade anytime</p>
       </div>
@@ -567,7 +558,6 @@
     <!-- image_text section -->
 
     <div id="image_text">
-<<<<<<< HEAD
       <div class="I">
         <div>
           <h2>Get started with Hotjar</h2>
@@ -576,21 +566,6 @@
             your<br />
             users—start free, today.
           </p>
-=======
-        <div class="I">
-            <div id="dss">
-                <h2>Get started with Hotjar</h2>
-                <p>It only takes a few minutes to get started with Hotjar.Understand your<br> users—start free, today.
-                </p>
-            </div>
-
-
-            <div class="T">
-                <button>Tour the Product</button>
-                <button>Get Started Free</button>
-                <p>No credit card required</p>
-            </div>
->>>>>>> 6385a6a8fd6abde1b60685694acf227ebdc16876
         </div>
 
         <div class="T">
@@ -957,7 +932,6 @@
 <script src="./scripts/homepage.js"></script>
 
 <script>
-<<<<<<< HEAD
   let count = 1;
   function Mode() {
     let element = document.body;
@@ -967,32 +941,11 @@
     if (count == 1) {
       image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6Z5lcqZwAuyKWu7IGecyckeMiiaD3_A1WrVt0z007F5RJJeAbzU1b5GKPLoKfN9YeHw&usqp=CAU`;
       count = 0;
-      document.getElementById("navbar").style.backgroundColor = "black";
+      document.getElementById("navbar").style.backgroundColor = "#202641";
     } else {
       image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU`;
       document.getElementById("navbar").style.backgroundColor = "white";
       count = 1;
-=======
-    let count = 1;
-    function Mode() {
-        let element = document.body;
-        console.log(element)
-        element.classList.toggle('light-mode')
-        let image = document.querySelector("#mode");
-        if (count == 1) {
-            image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6Z5lcqZwAuyKWu7IGecyckeMiiaD3_A1WrVt0z007F5RJJeAbzU1b5GKPLoKfN9YeHw&usqp=CAU`
-            count = 0;
-            document.getElementById('navbar').style.backgroundColor="black"
-            // document.getElementsByClassName('R').style.backgroundColor="black"
-
-        }
-        else {
-            image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU`
-            document.getElementById('navbar').style.backgroundColor="white"
-            // document.getElementsByClassName('R').style.backgroundColor="white"
-            count = 1;
-        }
->>>>>>> 6385a6a8fd6abde1b60685694acf227ebdc16876
     }
   }
 </script>
@@ -1033,3 +986,10 @@
 <script src="./scripts/homepage2.js"></script>
 
 <script src="./scripts/homepage3.js"></script>
+
+<script>
+  document.getElementById("p_tag").addEventListener("click", myfunc);
+  function myfunc(){
+    window.location.href = "../price/prices.html";
+  };
+</script>

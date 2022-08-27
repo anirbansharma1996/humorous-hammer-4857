@@ -1,603 +1,1163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Tour Page Part-1</title>
+    <link rel="stylesheet" href="./product.css" />
     <style>
-         body{
-         background: rgb(31, 47, 82);
-         font-family: Arial, Helvetica, sans-serif;
-         color: rgb(233, 227, 227);
-         transition: 0.5s ease-in-out;
+      body {
+        background-color: #202641;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(233, 227, 227);
+        transition: 0.5s ease-in-out;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .ligth-mode {
+        background: white;
+        color: black;
+      }
+      #mode {
+        height: 40px;
+        border-radius: 5px;
+      }
+      .box5 {
+        cursor: pointer;
+        transition: 0.4s;
+        padding-left: 15px;
+        padding-top: 8px;
+      }
+      .box5:hover {
+        background: rgb(228, 141, 12);
+        color: black;
+        border-radius: 8px;
+      }
+      #box1 {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-left: 40px;
+        width: 55%;
+        margin-top: 90px;
+      }
+      #box1 > h1 {
+        font-size: 50px;
+        color: rgb(182, 153, 24);
+      }
+      .btn_style {
+        border: 0px;
+        background: rgb(167, 238, 238);
+        padding: 9px 9px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(20, 20, 85);
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn_style:hover {
+        background: rgb(102, 172, 172);
+      }
+      #box2 {
+        width: 90%;
+        margin: auto;
+        margin-top: 80px;
+        height: auto;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      #box2:hover {
+        border: 3px rgb(196, 192, 8) solid;
+        border-radius: 5px;
+      }
+      #box2_child1 {
+        width: 64%;
+        margin-top: 70px;
+        height: 75%;
+      }
+      #box2_child1 > video {
+        width: 100%;
+        height: 100%;
+      }
+      #box2_child2 {
+        width: 33%;
+        height: auto;
+        padding-bottom: 40px;
+      }
+      .tag {
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 8px 10px;
+        border-radius: 5px;
+      }
+      #box2_child2 > div {
+        width: 100%;
+        height: 12%;
+        border: 1px solid;
+        margin-top: 14px;
+        margin-bottom: 13px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #box2_child2 > div:hover {
+        border: 2px rgb(214, 203, 203) solid;
+      }
+      .img1 {
+        height: 30px;
+        margin: 5px 12px;
+      }
+      .img1 + span {
+        font-size: 20px;
+      }
+      #box3 {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+        cursor: pointer;
+      }
+      #box3:hover {
+        border: 3px rgb(175, 170, 170) solid;
+        border-radius: 5px;
+      }
+      #box4,
+      #box5,
+      #box6,
+      #box7 {
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        height: auto;
+        padding: 40px 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #box4_child1,
+      #box5_child1,
+      #box6_child1,
+      #box7_child1 {
+        width: 53%;
+      }
+      .div-style {
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      .div-style:hover {
+        transform: scale(1.1);
+        border: 3px rgb(192, 181, 164) solid;
+        border-radius: 5px;
+      }
+      #box4_child1 > img,
+      #box5_child1 > img,
+      #box6_child1 > img,
+      #box7_child1 > img {
+        width: 100%;
+        height: 100%;
+      }
+      #box4_child2,
+      #box5_child2,
+      #box6_child2,
+      #box7_child2 {
+        width: 40%;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 70px;
+        height: 65%;
+        padding: 5px 10px;
+      }
+      #box8 {
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        height: auto;
+        padding: 40px 10px;
+        display: flex;
+        justify-content: space-around;
+        background: rgb(2, 2, 97);
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 5px;
+      }
+      #box8:hover {
+        background-color: rgb(6, 6, 156);
+        transform: scale(0.9);
+        border: 3px rgb(228, 228, 6) solid;
+        border-radius: 5px;
+      }
+      #box8_child1 {
+        width: 40%;
+        height: 100%;
+        padding-left: 20px;
+      }
+      #box8_child2 {
+        width: 40%;
+        height: 76%;
+        padding-left: 20px;
+        padding-top: 30px;
+      }
+      #box9 {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        margin-top: 90px;
+      }
+      #box10 {
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+      #box10 > div {
+        text-align: center;
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 5px;
+      }
+      #box10 > div:hover {
+        background-color: rgb(9, 136, 136);
+        color: black;
+        transform: scale(1.1);
+        border-radius: 5px;
+      }
+      #box10 > div > img {
+        padding-top: 5px;
+        height: 30px;
+      }
+      #box11 {
+        width: 90%;
+        margin: auto;
+        margin-top: 60px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+        cursor: pointer;
+        transition: 0.5s;
+        background: rgb(2, 2, 97);
+      }
+      #box11:hover {
+        background: rgb(10, 10, 139);
+        border-radius: 6px;
+        border: 3px solid rgb(218, 169, 8);
+      }
+      #box11 > div {
+        margin: 40px 80px;
+        cursor: pointer;
+        transform: 1s;
+      }
+      #box11 > div:hover {
+        background: rgb(240, 208, 30);
+        color: rgb(54, 56, 58);
+        border-radius: 5px;
+        transform: scale(0.9);
+      }
+      #box11 > div > img {
+        width: 100%;
+        height: 100%;
+      }
+      #box11 > div:first-child {
+        height: 70%;
+        margin-top: 70px;
+        padding: 0px 10px;
+      }
+      #box11 > div:first-child > h1 {
+        margin-top: 90px;
+      }
+      @media all and (min-width: 500px) and (max-width: 900px) {
+        #box2 {
+          display: block;
+          width: 90%;
+          margin: auto;
+          margin-top: 50px;
+          padding-top: -20px;
         }
-        .ligth-mode{
-            background:white;
-            color: black;
+        #box2_child1 {
+          width: 100%;
+          height: 50%;
         }
-        #mode{
-            height: 40px;
-            border-radius: 5px;
+        #box2_child2 {
+          width: 100%;
+          height: 50%;
+          font-size: auto;
         }
-        .box5{
-            cursor: pointer;
-            transition: 0.4s;
-            padding-left: 15px;
-            padding-top: 8px;
+        #box1 {
+          width: 80%;
+          font-size: 16px;
         }
-        .box5:hover{
-            background: rgb(228, 141, 12);
-            color: black;
-            border-radius: 8px;
+        #box1 > h3 {
+          text-align: justify;
         }
-        #box1{
-          font-size: 20px;
-          font-family: Arial, Helvetica, sans-serif;
-          font-weight: bold;
-          margin-left: 40px;
-          width: 55%;
-          margin-top: 90px;
+        #box3 {
+          width: 80%;
+          margin: auto;
+          font-size: 13px;
         }
-        #box1>h1{
-            font-size: 50px;
-            color: rgb(182, 153, 24);
+        #box4,
+        #box5,
+        #box6,
+        #box7 {
+          display: block;
+          text-align: justify;
+          margin-bottom: -100px;
+          font-size: 19px;
         }
-        .btn_style{
-            border: 0px;
-            background: rgb(167, 238, 238);
-            padding: 9px 9px;
-            font-size: 15px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: rgb(20, 20, 85);
-            border-radius: 5px;
-            cursor: pointer;
+        #box4_child1,
+        #box5_child1,
+        #box6_child1,
+        #box7_child1 {
+          width: 100%;
+          height: 40%;
         }
-        .btn_style:hover{
-            background: rgb(102, 172, 172);
+        #box4_child2,
+        #box5_child2,
+        #box6_child2,
+        #box7_child2 {
+          width: 100%;
+          height: 40%;
+          margin-bottom: 40px;
         }
-        #box2{
-            width: 90%;
-            margin: auto;
-            margin-top: 80px;
-            height: auto;
-            padding: 10px 10px;
-            display: flex;
-            justify-content: space-between;
-            cursor: pointer;
-            transition: 0.5s;
+        #box8 {
+          margin-top: 80px;
+          padding: 20px 10px;
         }
-        #box2:hover{
-            border: 3px rgb(196, 192, 8) solid;
-            border-radius: 5px;
+        #box8_child1,
+        #box8_child1 > button {
+          font-size: 12px;
         }
-        #box2_child1{
-            width: 64%;
-            margin-top: 70px;
-            height: 75%;
+        #box8_child2 > span {
+          font-size: 12px;
         }
-        #box2_child1>video{
-            width: 100%;
-            height: 100%;
+        #box9 {
+          width: 80%;
+          margin-top: 70px;
+          font-size: 11px;
         }
-        #box2_child2{
-            width: 33%;
-            height: auto;
-            padding-bottom: 40px;
+        #box10 {
+          gap: 15px;
         }
-        .tag{
-            color: black;
-            font-weight: bold;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 8px 10px;
-            border-radius: 5px;
+        #box10 > div {
+          font-size: 12px;
         }
-        #box2_child2>div{
-            width: 100%;
-            height: 12%;
-            border: 1px solid;
-            margin-top: 14px;
-            margin-bottom: 13px;
-            border-radius:5px ;
-            cursor: pointer;
+        #box11 {
+          display: block;
+          padding: 5px 0px;
         }
-        #box2_child2>div:hover{
-            border: 2px rgb(214, 203, 203) solid;
+        #box11 > div {
+          width: 90%;
+          height: 50%;
+          margin: auto;
+          font-size: 16px;
         }
-        .img1{
-            height: 30px;
-            margin: 5px 12px;
+      }
+      @media all and (min-width: 290px) and (max-width: 499px) {
+        #box2 {
+          display: block;
+          width: 90%;
+          margin: auto;
+          margin-top: 30px;
+          padding-top: -20px;
         }
-        .img1+span{
-            font-size: 20px;
+        #box2_child1 {
+          width: 100%;
+          height: 50%;
         }
-        #box3{
-            width: 60%;
-            margin: auto;
-            text-align: center;
-            margin-top: 50px;
-            cursor: pointer;
+        #box2_child2 {
+          width: 100%;
+          height: 50%;
+          font-size: auto;
         }
-        #box3:hover{
-            border: 3px rgb(175, 170, 170) solid;
-            border-radius: 5px ;
+        #box1 {
+          width: 90%;
+          font-size: 14px;
         }
-        #box4,#box5,#box6,#box7{
-            width: 90%;
-            margin: auto;
-            margin-top: 40px;
-            height: auto;
-            padding: 40px 10px;
-            display: flex;
-            justify-content: space-between;
+        #box1 > h3 {
+          text-align: justify;
         }
-        #box4_child1,#box5_child1,#box6_child1,#box7_child1{
-            width: 53%;
+        #box1 > h1 {
+          font-size: 25px;
         }
-        .div-style{
-            cursor: pointer;
-            transition: 0.4s;
+        #box3 {
+          width: 90%;
+          margin: auto;
+          font-size: 11px;
         }
-        .div-style:hover{
-         transform: scale(1.1);
-         border: 3px rgb(192, 181, 164) solid;
-         border-radius: 5px;
+        #box4,
+        #box5,
+        #box6,
+        #box7 {
+          display: block;
+          text-align: justify;
+          margin-bottom: -80px;
+          font-size: 8px;
         }
-        #box4_child1>img,#box5_child1>img,#box6_child1>img,#box7_child1>img{
-            width: 100%;
-            height: 100%;
+        #box4_child1,
+        #box5_child1,
+        #box6_child1,
+        #box7_child1 {
+          width: 100%;
+          height: 40%;
         }
-        #box4_child2,#box5_child2,#box6_child2,#box7_child2{
-            width: 40%;
-            font-size: 20px;
-            line-height: 30px;
-            margin-top: 70px;
-            height: 65%;
-            padding: 5px 10px;
+        #box4_child2,
+        #box5_child2,
+        #box6_child2,
+        #box7_child2 {
+          width: 100%;
+          height: 40%;
+          margin-bottom: 40px;
         }
-        #box8{
-            width: 90%;
-            margin: auto;
-            margin-top: 40px;
-            height: auto;
-            padding: 40px 10px;
-            display: flex;
-            justify-content: space-around;
-            background: rgb(2, 2, 97) ;
-            cursor: pointer;
-            transition: 0.5s;
-            border-radius: 5px;
+        .div-style:hover {
+          transform: scale(0.9);
+          border: 2px rgb(192, 181, 164) solid;
+          border-radius: 5px;
         }
-        #box8:hover{
-            background-color: rgb(6, 6, 156);
-            transform: scale(0.9);
-            border: 3px rgb(228, 228, 6) solid;
-            border-radius: 5px;
+        #box8 {
+          margin-top: 80px;
+          padding: 10px 5px;
         }
-        #box8_child1{
-            width:40%;
-            height: 100%;
-            padding-left: 20px;
+        #box8_child1,
+        #box8_child1 > button {
+          font-size: 8px;
         }
-        #box8_child2{
-            width:40%;
-            height: 76%;
-            padding-left: 20px;
-            padding-top: 30px;
+        #box8_child2 > span {
+          font-size: 8px;
         }
-        #box9{
-            width:60%;
-            margin: auto;
-            text-align: center;
-            margin-top: 90px;
+        #box9 {
+          width: 85%;
+          margin-top: 60px;
+          font-size: 9px;
         }
-        #box10{
-            width: 90%;
-            margin: auto;
-            margin-top: 40px;
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(2,1fr);
-            gap:20px;
-            margin-bottom: 40px;
+        #box10 {
+          gap: 14px;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
         }
-        #box10>div{
-            text-align: center;
-            cursor: pointer;
-            transition: 0.5s;
-            border-radius: 5px;
+        #box10 > div {
+          font-size: 9px;
         }
-        #box10>div:hover{
-            background-color: rgb(9, 136, 136);
-            color: black;
-            transform: scale(1.1);
-            border-radius: 5px;
+        #box11 {
+          display: block;
+          padding: 2px 0px;
         }
-        #box10>div>img{
-            padding-top: 5px;
-            height: 30px;
+        #box11 > div {
+          width: 90%;
+          height: 50%;
+          margin: auto;
+          font-size: 13px;
         }
-        #box11{
-            width: 90%;
-            margin: auto;
-            margin-top: 60px;
-            height: auto;
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(1,1fr);
-            gap: 40px;
-            margin-bottom: 40px;
-            cursor: pointer;
-            transition: 0.5s;
-            background:rgb(2, 2, 97) ; ;
-        }
-        #box11:hover{
-            background: rgb(10, 10, 139) ;
-            border-radius: 6px;
-            border: 3px solid rgb(218, 169, 8);
-        }
-        #box11>div{
-            margin: 40px 80px;
-            cursor: pointer;
-            transform: 1s;
-        }
-        #box11>div:hover{
-            background: rgb(240, 208, 30);
-            color: rgb(54, 56, 58);
-            border-radius: 5px;
-            transform: scale(0.9);
-        }
-        #box11>div>img{
-            width: 100%;
-            height: 100%;
-        }
-        #box11>div:first-child{
-            height: 70%;
-            margin-top: 70px;
-            padding: 0px 10px;
-        }
-        #box11>div:first-child>h1{
-            margin-top: 90px;
-        }
-        @media all and (min-width:500px) and (max-width:900px){
-            #box2{
-                display: block;
-                width:90%;
-                margin: auto;
-                margin-top: 50px;
-                padding-top: -20px;
-            }
-            #box2_child1{
-                width:100%;
-                height: 50%;
-            }
-            #box2_child2{
-                width: 100%;
-                height: 50%;
-                font-size: auto;
-            }
-            #box1{
-                width:80%;
-                font-size: 16px;
-            }
-            #box1>h3{
-                text-align: justify;
-            }
-            #box3{
-                width: 80%;
-                margin: auto;
-                font-size: 13px;
-            }
-            #box4,#box5,#box6,#box7{
-                display: block;
-                text-align: justify;
-                margin-bottom: -100px;
-                font-size: 19px;
-            }
-            #box4_child1,#box5_child1,#box6_child1,#box7_child1{
-                width: 100%;
-                height: 40%;
-            }
-            #box4_child2,#box5_child2,#box6_child2,#box7_child2{
-                width: 100%;
-                height: 40%;
-                margin-bottom: 40px;
-            }
-            #box8{
-                margin-top: 80px;
-                padding: 20px 10px
-            }
-            #box8_child1,#box8_child1>button{
-                font-size: 12px;
-            }
-            #box8_child2>span{
-                font-size: 12px;
-            }
-            #box9{
-                width: 80%;
-                margin-top: 70px;
-                font-size: 11px;
-            }
-            #box10{
-                gap:15px;
-            }
-            #box10>div{
-                font-size: 12px;
-            }
-            #box11{
-              display: block;
-              padding: 5px 0px;
-            }
-            #box11>div{
-                width: 90%;
-                height: 50%;
-                margin: auto;
-                font-size: 16px;
-            }
-        }
-        @media all and (min-width:290px) and (max-width:499px){
-            #box2{
-                display: block;
-                width:90%;
-                margin: auto;
-                margin-top: 30px;
-                padding-top: -20px;
-            }
-            #box2_child1{
-                width:100%;
-                height: 50%;
-            }
-            #box2_child2{
-                width: 100%;
-                height: 50%;
-                font-size: auto;
-            }
-            #box1{
-                width:90%;
-                font-size: 14px;
-            }
-            #box1>h3{
-                text-align: justify;
-            }
-            #box1>h1{
-                font-size: 25px;
-            }
-            #box3{
-                width: 90%;
-                margin: auto;
-                font-size: 11px;
-            }
-            #box4,#box5,#box6,#box7{
-                display: block;
-                text-align: justify;
-                margin-bottom: -80px;
-                font-size: 8px;
-            }
-            #box4_child1,#box5_child1,#box6_child1,#box7_child1{
-                width: 100%;
-                height: 40%;
-            }
-            #box4_child2,#box5_child2,#box6_child2,#box7_child2{
-                width: 100%;
-                height: 40%;
-                margin-bottom: 40px;
-            }
-            .div-style:hover{
-            transform: scale(0.9);
-            border: 2px rgb(192, 181, 164) solid;
-            border-radius: 5px;
-            }
-            #box8{
-                margin-top: 80px;
-                padding: 10px 5px
-            }
-            #box8_child1,#box8_child1>button{
-                font-size: 8px;
-            }
-            #box8_child2>span{
-                font-size: 8px;
-            }
-            #box9{
-                width: 85%;
-                margin-top: 60px;
-                font-size: 9px;
-            }
-            #box10{
-                gap:14px;
-                grid-template-columns: repeat(2,1fr);
-                grid-template-rows: repeat(3,1fr);
-            }
-            #box10>div{
-                font-size: 9px;
-            }
-            #box11{
-              display: block;
-              padding: 2px 0px;
-            }
-            #box11>div{
-                width: 90%;
-                height: 50%;
-                margin: auto;
-                font-size: 13px;
-            }
-        }
-    </style>
+      }
+      /***********************footer**************************/
+      #footer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        gap: 20px;
+      }
+      #footer > div {
+        padding-left: 10%;
+      }
+      /*****************footer_icon***************/
+      #footer_icon {
+        width: 85%;
+        margin: auto;
+        height: 30px;
+        display: flex;
+      }
+      #footer_icon > div {
+        width: 100%;
+        height: 30px;
+      }
+      #footer_icon > div:first-child {
+        width: 450%;
+      }
+      #footer_icon > div:last-child {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+      /*****************footer-end****************/
+      #footer_end {
+        width: 85%;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-</head>
-<body>
-    <span onclick="Mode()"><img id="mode" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"></span>
-    
+      /*******************************navbar***********************/
+      #navbar {
+        width: 100%;
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+        /* font-size: 20px; */
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        /* border: 1px solid red; */
+        position: fixed;
+        margin: auto;
+        margin-top: -15vh;
+        /* margin-left: 10px; */
+        z-index: 1;
+        background-color: #202641;
+        align-items: center;
+      }
+
+      .navbar1 {
+        width: 50%;
+
+        display: flex;
+        gap: 40px;
+      }
+
+      #button1 {
+        margin-top: 20px;
+        margin-right: 50px;
+      }
+      #button1 {
+        display: flex;
+        gap: 20px;
+        padding-left: 100px;
+      }
+      #button1 > button:nth-child(1) {
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid blue;
+      }
+      #button1 > button:nth-child(2) {
+        width: 150px;
+        height: 32px;
+        background-color: rgb(35, 35, 245);
+        color: white;
+        border-radius: 10px;
+        border: 0px;
+      }
+      .icon {
+        display: flex;
+        margin-top: -8px;
+        margin-left: -10px;
+      }
+      .icon img {
+        width: 10%;
+        margin-left: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <span onclick="Mode()"><img id="mode" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"></span>
+     -->
+    <div id="navbar">
+      <div class="icon">
+        <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
+        <a href="../homepage/homepage.html"
+          ><h2 style="color: white; text-decoration: none; padding-right: 14px">
+            hotjar
+          </h2></a
+        >
+      </div>
+      <div class="navbar1">
+        <p id="mensbtn">Products</p>
+        <p id="hotjarbtn">Why Hotjar</p>
+        <p>
+          <a
+            href="../price/prices.html"
+            style="color: white; text-decoration: none"
+            >Pricing</a
+          >
+        </p>
+        <p id="learnbtn">Learn</p>
+        <p>Company</p>
+      </div>
+      <div id="button1">
+        <button>
+          <a href="../homepage/signin.html" style="color: blue">Sign in</a>
+        </button>
+        <button>
+          <a href="../homepage/signup.html" style="color: white"
+            >Get Started Free</a
+          >
+        </button>
+        <span onclick="Mode()"
+          ><img
+            id="mode"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"
+        /></span>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------->
+    <div id="popdown">
+      <!-- <span onclick="Mode()"><img id="mode"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"></span> -->
+      <div id="parent">
+        <div id="box1">
+          <div class="box5" id="next-page">
+            <a href="../product-page/product_page_1.html">
+              <img
+                class="image"
+                src="https://images.ctfassets.net/lh3zuq09vnm2/1mcY2mB8771rpkc01WpaAC/c0803cf3d2f110c3251d6095400b2f7d/Rocket-ember.svg"
+              />
+              <p style="color: white">Product tour</p>
+              <p style="color: white">See all Hotjar has to offer</p>
+            </a>
+          </div>
+        </div>
+        <div id="box2">
+          <div class="box3">
+            <div class="box4">
+              <div>Observe</div>
+            </div>
+            <div class="box5">
+              <img
+                class="image"
+                src="https://images.ctfassets.net/lh3zuq09vnm2/3fvft31gR35Q9BjAxVk4Zw/9f93e529be4989f97d5743844699cf2a/icon-heatmaps.svg"
+              />
+              <p>Heatmaps</p>
+              <p>Visualize user behaviour</p>
+            </div>
+            <div class="box5">
+              <img
+                class="image"
+                src="https://images.ctfassets.net/lh3zuq09vnm2/76fQfkmWFtHn8xYHEbbzA0/f17539a8253616c98a87062824619972/icon-recordings.svg"
+              />
+              <p>Recordings</p>
+              <p>See what your users see</p>
+            </div>
+          </div>
+          <div class="box3">
+            <div class="box4">
+              <div>Ask?</div>
+            </div>
+            <div class="box5">
+              <img
+                class="image"
+                src="https://images.ctfassets.net/lh3zuq09vnm2/6hX51iaEPtQHWldsN5Fy3Y/3a66ea3c6ba95bad60f90d9c31113980/icon-incoming-feedback.svg"
+              />
+              <p>Feedback</p>
+              <p>Discover how your users feel</p>
+            </div>
+            <div class="box5">
+              <img
+                class="image"
+                src="https://images.ctfassets.net/lh3zuq09vnm2/5sO4egYUhUh5eBDtoPB4RS/3102e823999e1e700e876eef2fcb83af/icon-surveys.svg"
+              />
+              <p>Surveys</p>
+              <p>Hear from your users</p>
+            </div>
+          </div>
+          <div class="box3">
+            <div class="box4"></div>
+            <div class="box5">
+              <img
+                class="image"
+                src="https://images.ctfassets.net/lh3zuq09vnm2/2OXb4DK3kqPZI9XZwKDmBR/aa08742d712d15824a5605c8fa8a86b2/icon-integrations.svg"
+              />
+              <p>Integrations</p>
+              <p>Discover dozens of integrations</p>
+            </div>
+            <div class="box5">
+              <img
+                class="image"
+                src="https://images.ctfassets.net/lh3zuq09vnm2/5kcQPD6YgY51U3d4ifrkii/5e412e881ace5932492c58c86030d41d/icon-survey-templates.svg"
+              />
+              <p>Survey templates</p>
+              <p>Launch successful surveys faster</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pop funcationality -->
+
+    <!-- second popup funcationality -->
+
+    <div id="popup1">
+      <div id="parenttt11">
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/2tNvAdB4QZnKkk8er4q3SY/00972c63148acdd80bba5deb1e3ca20d/Product_teams_.svg"
+            alt=""
+          />
+          <h4>For product team</h4>
+          <p>Collaborate on user insights</p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/rei0bZGIntzeRG0WxjqMU/458bf0957e41b9a5fb0322613df89ebf/icon-product-management.svg"
+            alt=""
+          />
+          <h4>For product managers</h4>
+          <p>Build products users love</p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/2zSp0IQk0E9iOi36cn8n4n/eb85b848d9853ec849a934feeca55f4e/icon-product-design.svg"
+            alt=""
+          />
+          <h4>For product designers</h4>
+          <p>Create designs that resonate</p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/7cgrCG4MpaK39UueExbDYI/71315bdec4d36e36cf57a23195cc92a4/icon-research.svg"
+            alt=""
+          />
+          <h4>For researchers</h4>
+          <p>Discover insights others miss</p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/7bu3ttUQaMiusVYgmA5W0E/cb5706443bda65ea5dd0dd4c4ee73ca3/icon-case-studies.svg"
+            alt=""
+          />
+          <h4>Case studies</h4>
+
+          <p>Learn how others use Hotjar</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- third pop funcationality -->
+
+    <div id="popup2">
+      <div id="parenttt1">
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/29cHXX50MaQFbFbNuuEobF/ef757d222544a89e87e2c23642a499eb/icon-guides.svg"
+            alt=""
+          />
+          <h4><a href="../learnPage/index.html"> Guides</a></h4>
+          <p>Get the most out of Hotjar</p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/6E1bW5je6USepU41R2psoP/025fc489632d42f5455f7253653477a9/Blog.svg"
+            alt=""
+          />
+          <h4>Blog</h4>
+          <p>News, analysis, tips, and tutorials</p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/69OiEBqKuuE9y84cHDYFYD/8fb8702f45048de7342abacc186e7f78/Product-forge.svg"
+            alt=""
+          />
+          <h4>Product forge</h4>
+          <p>Cutting-edge product insights</p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/6WkKq86kztFCChLxHqxJ53/63ffc9f2001da8b5ad7292d53808278c/updates.svg"
+            alt=""
+          />
+          <h4>Product updates</h4>
+          <p>What’s new</p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/77BtJYrFoyCLErPB8o2dnA/4621264b773c3f9625ce987ece5bb4b6/Support.svg"
+            alt=""
+          />
+          <h4>Support</h4>
+
+          <p>Learn how to set up and use Hotjar</p>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/lh3zuq09vnm2/01sD7ikwsm8A9PzqXxeovt/d718ae8df27d248c66166bddf71aac42/Vector.svg"
+            alt=""
+          />
+          <h4>Hotjar learning</h4>
+          <p>Courses to help you flourish</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------->
+
     <div id="box1">
-        <p>PRODUCT/TOUR</p>
-        <h1>See Hotjar in action</h1>
-        <h3>Experience Hotjar for yourself with our interactive live demo, click around, and try all key features first-hand.</h3>
-        <button class="btn_style">Explore a live demo</button>
+      <p>PRODUCT/TOUR</p>
+      <h1>See Hotjar in action</h1>
+      <h3>
+        Experience Hotjar for yourself with our interactive live demo, click
+        around, and try all key features first-hand.
+      </h3>
+      <button class="btn_style">Explore a live demo</button>
     </div>
 
     <div id="box2">
-         <div id="box2_child1">
-            <video src="https://videos.ctfassets.net/lh3zuq09vnm2/2q1Ma50UnBKlnPbbRReO2j/f50946203d4a6bb26285a80a7275e571/heatmap-scrolling.mp4" autoplay loop playsinline muted></video>
-         </div>
-         <div id="box2_child2">
-            <h1>Here's how it works</h1>
-            <p style="line-height:25px;">Hotjar is an intuitive, visual way to discover, consolidate, and communicate user needs.</p>
-            <span class="tag" style="background:rgb(252, 243, 117) ;">Observe</span>
-            <div>
-                <img class="img1" src="https://images.ctfassets.net/lh3zuq09vnm2/3fvft31gR35Q9BjAxVk4Zw/9f93e529be4989f97d5743844699cf2a/icon-heatmaps.svg">
-                <span>Visualize user behavior   ^ </span>
-            </div>
-            <div>
-                <img class="img1" src="https://images.ctfassets.net/lh3zuq09vnm2/76fQfkmWFtHn8xYHEbbzA0/f17539a8253616c98a87062824619972/icon-recordings.svg">
-                <span>See what users see   ^</span>
-            </div>
-            <span class="tag" style="background:rgb(200, 134, 226) ;">Ask?</span>
-            <div>
-                <img class="img1" src="https://images.ctfassets.net/lh3zuq09vnm2/6hX51iaEPtQHWldsN5Fy3Y/3a66ea3c6ba95bad60f90d9c31113980/icon-incoming-feedback.svg">
-                <span>Get feedback with context   ^</span>
-            </div>
-            <div>
-                <img class="img1" src="https://images.ctfassets.net/lh3zuq09vnm2/5sO4egYUhUh5eBDtoPB4RS/3102e823999e1e700e876eef2fcb83af/icon-surveys.svg">
-                <span>Hear from your users   ^</span>
-            </div>
-         </div>
+      <div id="box2_child1">
+        <video
+          src="https://videos.ctfassets.net/lh3zuq09vnm2/2q1Ma50UnBKlnPbbRReO2j/f50946203d4a6bb26285a80a7275e571/heatmap-scrolling.mp4"
+          autoplay
+          loop
+          playsinline
+          muted
+        ></video>
+      </div>
+      <div id="box2_child2">
+        <h1>Here's how it works</h1>
+        <p style="line-height: 25px">
+          Hotjar is an intuitive, visual way to discover, consolidate, and
+          communicate user needs.
+        </p>
+        <span class="tag" style="background: rgb(252, 243, 117)">Observe</span>
+        <div>
+          <img
+            class="img1"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/3fvft31gR35Q9BjAxVk4Zw/9f93e529be4989f97d5743844699cf2a/icon-heatmaps.svg"
+          />
+          <span>Visualize user behavior ^ </span>
+        </div>
+        <div>
+          <img
+            class="img1"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/76fQfkmWFtHn8xYHEbbzA0/f17539a8253616c98a87062824619972/icon-recordings.svg"
+          />
+          <span>See what users see ^</span>
+        </div>
+        <span class="tag" style="background: rgb(200, 134, 226)">Ask?</span>
+        <div>
+          <img
+            class="img1"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/6hX51iaEPtQHWldsN5Fy3Y/3a66ea3c6ba95bad60f90d9c31113980/icon-incoming-feedback.svg"
+          />
+          <span>Get feedback with context ^</span>
+        </div>
+        <div>
+          <img
+            class="img1"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/5sO4egYUhUh5eBDtoPB4RS/3102e823999e1e700e876eef2fcb83af/icon-surveys.svg"
+          />
+          <span>Hear from your users ^</span>
+        </div>
+      </div>
     </div>
 
     <div id="box3">
-        <h1>You know what users do on your site. But do you know why?</h1>
-        <p>With the combined power of Hotjar's intuitive tools and features you can find out</p>
+      <h1>You know what users do on your site. But do you know why?</h1>
+      <p>
+        With the combined power of Hotjar's intuitive tools and features you can
+        find out
+      </p>
     </div>
-    
+
     <div id="box4">
-        <div id="box4_child1" class="div-style">
-            <img src="https://images.ctfassets.net/lh3zuq09vnm2/5vLZfGCny6darJ0oStPSC1/81057e5dc7a56060e3f904c3f98e3605/Highlights.svg">
-        </div>
-        <div id="box4_child2" class="div-style"> 
-            <h2>Extract and share the most meaningful parts of your insights</h2>
-            <p>Cut out snippets of your recordings and heatmaps and save them into special collections that you can easily share and analyze with your team. </p>
-             <button class="btn_style">Explore Highlights</button>
-        </div>
+      <div id="box4_child1" class="div-style">
+        <img
+          src="https://images.ctfassets.net/lh3zuq09vnm2/5vLZfGCny6darJ0oStPSC1/81057e5dc7a56060e3f904c3f98e3605/Highlights.svg"
+        />
+      </div>
+      <div id="box4_child2" class="div-style">
+        <h2>Extract and share the most meaningful parts of your insights</h2>
+        <p>
+          Cut out snippets of your recordings and heatmaps and save them into
+          special collections that you can easily share and analyze with your
+          team.
+        </p>
+        <button class="btn_style">Explore Highlights</button>
+      </div>
     </div>
 
     <div id="box5">
-        <div id="box5_child2" class="div-style"> 
-            <h2>Focus on the insights that matter to you and your team</h2>
-            <p>Trim down the hours you spend digging around for insights and focus on what matters the most. Create a dedicated workspace for your team, a specific project, or a particular part of the user journey.  </p>
-             <button class="btn_style">Explore Workspaces</button>
-        </div>
-        <div id="box5_child1" class="div-style">
-            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4zl7pDAzlSNS45JESh0dXd/ebf4954db7e3e6e826379eb28672c1e7/Workspaces.svg">
-        </div>
+      <div id="box5_child2" class="div-style">
+        <h2>Focus on the insights that matter to you and your team</h2>
+        <p>
+          Trim down the hours you spend digging around for insights and focus on
+          what matters the most. Create a dedicated workspace for your team, a
+          specific project, or a particular part of the user journey.
+        </p>
+        <button class="btn_style">Explore Workspaces</button>
+      </div>
+      <div id="box5_child1" class="div-style">
+        <img
+          src="https://images.ctfassets.net/lh3zuq09vnm2/4zl7pDAzlSNS45JESh0dXd/ebf4954db7e3e6e826379eb28672c1e7/Workspaces.svg"
+        />
+      </div>
     </div>
 
     <div id="box6">
-        <div id="box6_child1" class="div-style">
-            <img src="https://images.ctfassets.net/lh3zuq09vnm2/160DEhN9Y7lSNIufUDDLBo/1914b38ae6395d3525f7a5cfd1e5827d/Dashboards.svg">
-        </div>
-        <div id="box6_child2" class="div-style"> 
-            <h2>Stay on top of your user metrics</h2>
-            <p>Get a high-level view of user data and spot issues before they become serious, identify trends, and find deeper insights with your Dashboard.</p>
-             <button class="btn_style">Explore Dashboard</button>
-        </div>
+      <div id="box6_child1" class="div-style">
+        <img
+          src="https://images.ctfassets.net/lh3zuq09vnm2/160DEhN9Y7lSNIufUDDLBo/1914b38ae6395d3525f7a5cfd1e5827d/Dashboards.svg"
+        />
+      </div>
+      <div id="box6_child2" class="div-style">
+        <h2>Stay on top of your user metrics</h2>
+        <p>
+          Get a high-level view of user data and spot issues before they become
+          serious, identify trends, and find deeper insights with your
+          Dashboard.
+        </p>
+        <button class="btn_style">Explore Dashboard</button>
+      </div>
     </div>
 
     <div id="box7">
-        <div id="box7_child2" class="div-style"> 
-            <h2>Save time and effort. Integrate Hotjar with dozens of tools</h2>
-            <p>Connect Hotjar with thousands of popular apps, so you can automate your work and have more time for what matters most—no code required</p>
-             <button class="btn_style">Explore Integrations</button>
-        </div>
-        <div id="box7_child1" class="div-style">
-            <img src="https://images.ctfassets.net/lh3zuq09vnm2/3EfpQ2s8SAHkzd6hyKTdVq/fb35a52c2035d6a14312cbe6a4e54a00/Integrations.svg">
-        </div>
+      <div id="box7_child2" class="div-style">
+        <h2>Save time and effort. Integrate Hotjar with dozens of tools</h2>
+        <p>
+          Connect Hotjar with thousands of popular apps, so you can automate
+          your work and have more time for what matters most—no code required
+        </p>
+        <button class="btn_style">Explore Integrations</button>
+      </div>
+      <div id="box7_child1" class="div-style">
+        <img
+          src="https://images.ctfassets.net/lh3zuq09vnm2/3EfpQ2s8SAHkzd6hyKTdVq/fb35a52c2035d6a14312cbe6a4e54a00/Integrations.svg"
+        />
+      </div>
     </div>
 
     <div id="box8">
-        <div id="box8_child1" class="div-style"> 
-            <h1>Get started with Hotjar</h1>
-            <p>It only takes a few minutes to get started with Hotjar. Understand your users—start free, today.</p>
-            <button class="btn_style">Tour the product</button>
-            <button class="btn_style">Get started free</button>
-            <p>No credit card required</p>
-        </div>
-        <div id="box8_child2" class="div-style">
-            <img class="img1" src="https://images.ctfassets.net/lh3zuq09vnm2/2Jvezo8t3f3aglgWBs4W0N/de506a90083b50dab691b4d17319b7e8/icon-no-card-white.svg">
-            <span>No credit card required</span><br>
+      <div id="box8_child1" class="div-style">
+        <h1>Get started with Hotjar</h1>
+        <p>
+          It only takes a few minutes to get started with Hotjar. Understand
+          your users—start free, today.
+        </p>
+        <button class="btn_style">Tour the product</button>
+        <button class="btn_style">Get started free</button>
+        <p>No credit card required</p>
+      </div>
+      <div id="box8_child2" class="div-style">
+        <img
+          class="img1"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/2Jvezo8t3f3aglgWBs4W0N/de506a90083b50dab691b4d17319b7e8/icon-no-card-white.svg"
+        />
+        <span>No credit card required</span><br />
 
-            <img class="img1"  src="https://images.ctfassets.net/lh3zuq09vnm2/2Uvt6EPespfOYgTwzmeLBy/d42bddd0d5db00ccf7a902f0868cb96b/icon-sign-white.svg">
-            <span>56,549 users signed up last month</span><br>
+        <img
+          class="img1"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/2Uvt6EPespfOYgTwzmeLBy/d42bddd0d5db00ccf7a902f0868cb96b/icon-sign-white.svg"
+        />
+        <span>56,549 users signed up last month</span><br />
 
-            <img class="img1" src="https://images.ctfassets.net/lh3zuq09vnm2/3y4m5q3eKqJf13wWJitqQX/98a5f4011ea4e3b0a254bccf808772c0/icon-privacy-white.svg">
-            <span>GDPR- & CCPA-ready</span><br>
-        </div>
+        <img
+          class="img1"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/3y4m5q3eKqJf13wWJitqQX/98a5f4011ea4e3b0a254bccf808772c0/icon-privacy-white.svg"
+        />
+        <span>GDPR- & CCPA-ready</span><br />
+      </div>
     </div>
     <div id="box9">
-        <h1>Here are six reasons why 900,000 sites use Hotjar</h1>
+      <h1>Here are six reasons why 900,000 sites use Hotjar</h1>
     </div>
     <div id="box10">
-        <div>
-            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg">
-            <h3>Unlimited team members</h3>
-            <p>We have no user limits on any plan. Invite all your team and clients at no added cost!</p>
-        </div>
-        <div>
-            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg">
-            <h3>Multi-device support</h3>
-            <p>All our features support desktop, mobile, and tablet versions of your website.</p>
-        </div>
-        <div>
-            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg">
-            <h3>Easy installation</h3>
-            <p>Plug-ins to get you set up in seconds, or dig deeper with the aid of a developer.</p>
-        </div>
-        <div>
-            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg">
-            <h3>Smarter visitor targeting</h3>
-            <p>Target visitors by URL, device, and User Attributes.</p>
-        </div>
-        <div>
-            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg">
-            <h3>Export and share</h3>
-            <p>Share your Hotjar insights with a simple link.</p>
-        </div>
-        <div>
-            <img src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg">
-            <h3>Reliable customer support</h3>
-            <p>Got a question? We'll get back to you within two working days.</p>
-        </div>
-
+      <div>
+        <img
+          src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg"
+        />
+        <h3>Unlimited team members</h3>
+        <p>
+          We have no user limits on any plan. Invite all your team and clients
+          at no added cost!
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg"
+        />
+        <h3>Multi-device support</h3>
+        <p>
+          All our features support desktop, mobile, and tablet versions of your
+          website.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg"
+        />
+        <h3>Easy installation</h3>
+        <p>
+          Plug-ins to get you set up in seconds, or dig deeper with the aid of a
+          developer.
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg"
+        />
+        <h3>Smarter visitor targeting</h3>
+        <p>Target visitors by URL, device, and User Attributes.</p>
+      </div>
+      <div>
+        <img
+          src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg"
+        />
+        <h3>Export and share</h3>
+        <p>Share your Hotjar insights with a simple link.</p>
+      </div>
+      <div>
+        <img
+          src="https://images.ctfassets.net/lh3zuq09vnm2/4VTnrBBlDTLfnlzUNgyoIW/a41f6ffeb8cf966488c9936e814e98a9/check-icon.svg"
+        />
+        <h3>Reliable customer support</h3>
+        <p>Got a question? We'll get back to you within two working days.</p>
+      </div>
     </div>
 
     <div id="box11">
-        <div>
-            <h1>Get started with Hotjar</h1>
-            <p>It only takes a few minutes to get started with Hotjar. Understand your users, start free, today.</p>
-            <button class="btn_style">Tour the product</button>
-            <button class="btn_style">Get started free</button>
-            <p>No credit card required</p>
-        </div>
-        <div>
-            <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2Fj59ad49ppbPT1SHWve9NY%2Fe5db6ad129b489101ace1d77f622b3a0%2Fuser-red.jpg&w=1920&q=75">
-        </div>
+      <div>
+        <h1>Get started with Hotjar</h1>
+        <p>
+          It only takes a few minutes to get started with Hotjar. Understand
+          your users, start free, today.
+        </p>
+        <button class="btn_style">Tour the product</button>
+        <button class="btn_style">Get started free</button>
+        <p>No credit card required</p>
+      </div>
+      <div>
+        <img
+          src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2Fj59ad49ppbPT1SHWve9NY%2Fe5db6ad129b489101ace1d77f622b3a0%2Fuser-red.jpg&w=1920&q=75"
+        />
+      </div>
     </div>
-    <hr>
-</body>
+    <hr style="width: 100%" />
+    <div id="footer">
+      <div>
+        <h2>Product</h2>
+        <p>Product tour</p>
+        <p>Heatmaps</p>
+        <p>session recordings</p>
+        <p>Feedback</p>
+        <p>surveys</p>
+        <hr style="margin: 10px 0" />
+        <p>Integrations</p>
+        <p>Survey templates</p>
+        <p>Highlights</p>
+        <p>Workspaces</p>
+        <p>Dashboard</p>
+        <p>Trends</p>
+      </div>
+      <div>
+        <h2>Why Hotjar</h2>
+        <p>For product teams</p>
+        <p>For product managers</p>
+        <p>For product designers</p>
+        <p>For researchers</p>
+        <p>Case studies</p>
+      </div>
+      <div>
+        <h2>Learn</h2>
+        <p>Guides</p>
+        <p>Blog</p>
+        <p>Product forge</p>
+        <p>Product updates</p>
+        <p>support</p>
+        <p>
+          Product management <br />
+          101
+        </p>
+        <p>product management <br />glossary</p>
+        <p>UX design</p>
+        <p>Product experience insights</p>
+        <p>Website tracking</p>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <p>About us</p>
+        <p>Careers</p>
+        <p>Privacy</p>
+        <p>Press</p>
+      </div>
+      <div></div>
+      <div>
+        <h2>Compliance</h2>
+        <p>Legal overview</p>
+        <p>Compliance & security</p>
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+        <p>Acceptable Use Policy</p>
+      </div>
+    </div>
+
+    <!--------------------Footer Icon-------------------------->
+
+    <hr style="width: 85%; margin: auto; margin-top: 50px" />
+    <div id="footer_icon">
+      <div></div>
+      <div>
+        <img
+          style="width: 10%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/2xYBSWqzEcgQBCSZvzi2Ba/4900f94996692c866f7bc6e8d270156d/Facebook.svg"
+          alt=""
+        />
+        <img
+          style="width: 10%; padding-left: 4%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/2gmz7xiNP3FbVtmkrX0yOk/22c37a7312bb87516b445506a15bd4ab/Twitter.svg"
+          alt=""
+        />
+        <img
+          style="width: 10%; padding-left: 4%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/1aJwui56wNjZwTTH9ZTGkk/4a8f3d1a644fb2614a86fce9582e8e09/LinkedIn.svg"
+          alt=""
+        />
+        <img
+          style="width: 10%; padding-left: 4%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/2nncGYpZv80x0X0bG857Cz/8d256f52107275c5437b8b826345fc9c/Youtube.svg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!--------------------------PAGE END---------------------------------->
+
+    <div id="footer_end">
+      <div style="margin-top: 10px; margin-right: 10px">
+        <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
+      </div>
+      Copyright © 2014 - 2022 Hotjar Ltd. All rights reserved.
+      <div style="margin-left: 10%; display: flex">
+        <p>English (United States)</p>
+        &nbsp&nbsp&nbsp&nbsp<span style="margin-top: 10px">|</span>
+        &nbsp&nbsp&nbsp&nbsp
+        <p>Cookie info</p>
+        &nbsp&nbsp&nbsp&nbsp
+        <p>Cookie settings</p>
+        &nbsp&nbsp&nbsp&nbsp
+        <p>Do not track</p>
+      </div>
+    </div>
+  </body>
 </html>
 <script>
-     let count=0;
-    function Mode(){
-        let element = document.body;
-        console.log(element)
-        element.classList.toggle('ligth-mode')
-        let image = document.querySelector("#mode");
-       if(count==0){
-           image.src=`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6Z5lcqZwAuyKWu7IGecyckeMiiaD3_A1WrVt0z007F5RJJeAbzU1b5GKPLoKfN9YeHw&usqp=CAU`
-           count=1;
-        }
-        else{
-            image.src=`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU`
-            count=0;
-        }
+  let count = 0;
+  function Mode() {
+    let element = document.body;
+    console.log(element);
+    element.classList.toggle("ligth-mode");
+    let image = document.querySelector("#mode");
+    if (count == 0) {
+      image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6Z5lcqZwAuyKWu7IGecyckeMiiaD3_A1WrVt0z007F5RJJeAbzU1b5GKPLoKfN9YeHw&usqp=CAU`;
+      //   document.getElementById('navbar').style.backgroundColor='white'
+      count = 1;
+    } else {
+      image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU`;
+      count = 0;
     }
+  }
 </script>
+
+<script src="../homepage/scripts/homepage.js"></script>
+<script src="../homepage/scripts/homepage2.js"></script>
+<script src="../homepage/scripts/homepage3.js"></script>
