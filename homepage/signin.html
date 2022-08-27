@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sign In</title>
+    <link
+      rel="icon"
+      href="https://theme.zdassets.com/theme_assets/1911667/21756e0851bed01eab3adfe2a6bc1c20248afeb9.ico"
+      type="image/x-icon"
+    />
     <link rel="icon" href="https://theme.zdassets.com/theme_assets/1911667/21756e0851bed01eab3adfe2a6bc1c20248afeb9.ico"
         type="image/x-icon">
     <style>
-        .icon {
-            display: flex;
-            margin-left: 550px;
-            font-size: 20px;
-        }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .icon {
+        display: flex;
+        margin-left: 550px;
+        font-size: 20px;
+      }
+      body {
+        height: 900px;
+      }
+    
 
-        /* body {
-            height: 900px;
-        } */
-
-        #parent {
-            width: 40%;
-            margin-left: 60px;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            
-        }
-
+      #parent {
+       
+       
+        width: 40%;
+        margin-left: 60px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      #parent > div + div {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 10px;
+      }
         #parent>div+div {
             display: flex;
             flex-direction: column;
@@ -35,55 +50,74 @@
             margin-top: -40px;
         }
 
-        #parent>div button:nth-child(1) {
 
-            height: 50px;
-            background-color: rgb(56, 106, 255);
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
+      #parent > div button:nth-child(1) {
+        height: 50px;
+        background-color: rgb(56, 106, 255);
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
 
-        #parent>div button:nth-child(2) {
-            height: 50px;
-            background-color: grey;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
+      #parent > div button:nth-child(2) {
+        height: 50px;
+        background-color: grey;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
 
-        form {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 10px;
-            margin-top: -60px;
-        }
+      form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-top: -60px;
+      }
 
-        form input {
-            width: 80%;
-            height: 40px;
+      form input {
+        width: 80%;
+        height: 40px;
+      }
 
-        }
+      form button {
+        width: 80%;
+        height: 40px;
+        margin-top: 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(56, 106, 255);
+        color: white;
+      }
 
-        form button {
-            width: 80%;
-            height: 40px;
-            margin-top: 30px;
-            border-radius: 5px;
-            border: none;
-            background-color: rgb(56, 106, 255);
-            color: white;
-        }
+      #flex {
+        display: flex;
+      }
 
-        #flex {
-            display: flex;
+      #image {
+        width: 70%;
+        /* height:1000px; */
+        background-color: aliceblue;
+      }
 
-        }
+      #image img {
+        width: 80%;
 
+        margin-top: 150px;
+        margin-left: 80px;
+      }
+      #image > div {
+        margin-left: 80px;
+      }
+
+      #image > div p {
+        font-size: 18px;
+        width: 60%;
+      }
         #image {
             width: 70%;
             /* height:700px; */
             background-color: aliceblue;
+            padding-bottom:100px ;
 
         }
 
@@ -105,14 +139,13 @@
             font-weight: bold;
         }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="icon">
-        <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="">
-        <h2>hotjar</h2>
+      <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
+      <h2>hotjar</h2>
     </div>
-
 
     <div id="flex">
         <div id="parent">
@@ -138,9 +171,7 @@
                 <a href="">forgot password</a>
                 <button>Sign in</button>
             </form>
-
         </div>
-
         <div id="image">
             <div>
                 <img src="https://insights.hotjar.com/static/37d85d9a61db85c93d7f.png" alt="">
@@ -148,17 +179,11 @@
                 <div>
                     <h2>Guides to learn more about Hotjar</h2>
                     <p>Check out our guides to better understand user behavior, make the right changes, improve UX, and increase conversions on your website and product.</p>
-                    <button>Explore guide</button>
+                    <button style="padding:8px">Explore guide</button>
                 </div>
             </div>
         </div>
-
-
-
-
-    </div>
-</body>
-
+  </body>
 </html>
 
 <script src="./scripts/signin.js"></script>

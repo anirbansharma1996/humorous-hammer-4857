@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>after login</title>
+    <style>
+      body {
+        margin: auto;
+        margin-top: -10px;
+        width: 95%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      #navbar {
+        background-color: rgb(255, 255, 255);
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        margin: auto;
+        padding-top: 10px;
+      }
+      #navbar > div:nth-child(2) {
+        text-align: right;
+        padding-right: 15px;
+      }
+      #logout {
+        border: 1px solid;
+        border-radius: 20px;
+        margin-right: 10px;
+        height: 25px;
+        padding: 5px;
+        padding-top: 10px;
+      }
+      #navbar2 {
+        background-color: rgb(255, 255, 255);
+        /* border: 1px solid; */
+        display: flex;
+        align-items: center;
+        height: 40px;
+        margin: auto;
+        padding: 0 20px;
+      }
+      /******************************mainbody****************/
+      #main_body {
+        padding: 20px;
+        width: 95%;
+        display: flex;
+        margin: auto;
+        margin-top: 100px;
+      }
+      #main_body > div:last-child {
+        width: 20%;
+      }
+      /****************************sidebar***********************/
+      #sidebar {
+        height: 460px;
+        width: 15%;
+        border: 0px solid;
+        position: fixed;
+        display: grid;
+        grid-template-rows: repeat(8, 40px);
+        gap: 2%;
+        padding-top: 20px;
+      }
+      #sidebar > div {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        height: 29px;
+        padding: 4px 15px;
+      }
+      #sidebar > div:hover {
+        border: 0px solid;
+        background-color: rgb(230, 247, 253);
+        border-radius: 20px;
+      }
+      #sidebar > div > p {
+        margin-top: -1%;
+        padding-left: 10%;
+      }
+      #sidebar > div > img {
+        height: 20px;
+      }
+
+      /******************************movingbody*********************/
+      #movingbody {
+        width: 60%;
+        margin: auto;
+        height: 600px;
+        padding: 0 0 0 80px;
+        margin-left: 130px;
+      }
+      #movingbody > img {
+        width: 90%;
+      }
+      /*************************sidebar******************/
+      #sidebar_2 {
+        height: 460px;
+        width: 100%;
+        position: fixed;
+        left: 75%;
+      }
+      #feedback {
+        color: aliceblue;
+        transform: rotateZ(90deg);
+        z-index: 1;
+        background-color: orangered;
+        position: fixed;
+        left: 95%;
+        top: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid;
+        width: 8%;
+        height: 45px;
+      }
+      #static {
+        z-index: 1;
+        border-radius: 30px;
+        background-color: rgb(230, 247, 253);
+        position: fixed;
+        left: 79%;
+        top: 92%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 0px solid;
+        width: 20%;
+        height: 40px;
+      }
+    </style>
+    <!----------------STYLE ENDS HERE-------------------------->
+  </head>
+  <body>
+    <div id="static">
+      <div>Get started with Hotjar</div>
+      <div>+</div>
+    </div>
+
+    <div id="feedback">
+      <h5>feedback</h5>
+    </div>
+    <!---------------navbar---------------------------->
+    <div
+      style="
+        position: fixed;
+        margin-top: -15vh;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        width: 96%;
+      "
+    >
+      <div id="navbar">
+        <div>
+          <img
+            style="width: 12%; padding-left: 15px"
+            src="https://insights.hotjar.com/static/app/img/logo-hotjar.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            style="width: 7%; padding: 0 20px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbIP5cCBkFBz_JUQjtyX0pOosLe6nZA2q4tA&usqp=CAU"
+            alt=""
+          />
+          <img
+            style="width: 6%"
+            src="data:image/png;base64,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"
+            alt=""
+          />
+        </div>
+        <div>
+          <h5 id="logout"><a href="../homepage/homepage.html"> LOGOUT</a></h5>
+        </div>
+      </div>
+      <div id="navbar2">
+        <img
+          style="width: 1%"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAVFBMVEX///8eIB0AAAD6+voXGRVNTUxQUU/29vaampoABgBqamn8/fwcHxtlZmVXV1enp6eTk5OgoKC8vb11dXTr6+sMEAvQ0NBcXVy1trUSFRCwsLCOjo3Ddnw5AAABXUlEQVRoge2aa3KCMBhF84CgCcFqS7F2//ssHS2TOP6+l2nu2cCZkEPC6GeMEEIIIcR/4/Iezx8Us49unt34SVAP0dmVbk5wtb+rrXVXtDrlh9oe39Du6U9t3RmtPtrNPUDNfnvgq/oEVQ9xU4/uAFX7WKwaq06Zpi4KR+91KgvHqqvCsS92m4UbFU4rHJ2ZCkd/KwRe4UvjhaMzYxa+tFi4562aeJDupXBwZiqcVjg6s1I9H4yHcFenQm1tCD2CEG+/7qVU2w7El8vGnCo1kPV96juSu+vNSFKvUNfN2+8btfOn93sKGOL11bmWgOca9Tyn3mOmvr/h8oX42BNzz6vg0P8OEL/Pn2pHy9ut3e8kOLycuvLqd6a2as+t7jm3duZj59Y+MS+W3dT+DZYPTDm39mkvtcNXnpl7rtop93lZO3yCjTjPRJ3jYs6vUef2qPOKhjmnKYQQQgjB5gc6ZR0T5V7cDQAAAABJRU5ErkJggg=="
+          alt=""
+        />
+        &nbsp;
+        <p>Workspace #1</p>
+        &nbsp;&nbsp;
+        <p>Overview</p>
+      </div>
+    </div>
+
+    <!----------------sidebar-------------------------->
+    <div id="main_body">
+      <div id="sidebar">
+        <div>
+          <img
+            src="https://cdn.discordapp.com/attachments/707486765136740384/1012768758701490176/unknown.png"
+            alt=""
+          />
+          <p>Overview</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn.discordapp.com/attachments/707486765136740384/1012769226467061882/unknown.png"
+            alt=""
+          />
+          <p>Dashboard</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn.discordapp.com/attachments/707486765136740384/1012769563210948658/unknown.png"
+            alt=""
+          />
+          <p>Highlights</p>
+        </div>
+        ____________________________
+        <div>
+          <img
+            src="https://cdn.discordapp.com/attachments/707486765136740384/1012769749308018698/unknown.png"
+            alt=""
+          />
+          <p>Trends</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn.discordapp.com/attachments/707486765136740384/1012769979260751872/unknown.png"
+            alt=""
+          />
+          <p>Recordings</p>
+        </div>
+        <div>
+          <img
+            src="https://cdn.discordapp.com/attachments/707486765136740384/1012770413765472317/unknown.png"
+            alt=""
+          />
+          <p>Heatmaps</p>
+        </div>
+        <div>
+          <img
+            src="https://media.discordapp.net/attachments/707486765136740384/1012770532388782140/unknown.png"
+            alt=""
+          />
+          <p>Feedback</p>
+        </div>
+        <div>
+          <img
+            src="https://media.discordapp.net/attachments/707486765136740384/1012771017954963516/unknown.png"
+            alt=""
+          />
+          <p>Surveys</p>
+        </div>
+      </div>
+      <!------------------------------moving body----------------------->
+      <div id="movingbody">
+        <img
+          src="https://media.discordapp.net/attachments/707486765136740384/1012785972129316947/unknown.png"
+          alt=""
+        />
+        <img
+          src="https://media.discordapp.net/attachments/707486765136740384/1012785940864958575/unknown.png"
+          alt=""
+        />
+        <img
+          src="https://media.discordapp.net/attachments/707486765136740384/1012785914470215761/unknown.png"
+          alt=""
+        />
+        <img
+          src="https://media.discordapp.net/attachments/707486765136740384/1012785882538971207/unknown.png?width=1017&height=676"
+          alt=""
+        />
+      </div>
+      <div id="sidebar_2">
+        &nbsp;
+        <p>
+          Workspace #1
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+        </p>
+        <p style="font-size: 12px">
+          Anything your users do or say goes in this workspace.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

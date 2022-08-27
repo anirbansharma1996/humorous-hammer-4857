@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Page</title>
+    <style>
+
+.icon {
+        display: flex;
+        margin-top: -10px;
+        margin-left: 70px;
+      }
+      .icon > img {
+        width: 20%;
+      }
+      .ligth-mode {
+        background: white;
+        color: black;
+      }
+
+      #mode {
+        height: 30px;
+        border-radius: 5px;
+      }
+
+      #navbar {
+        margin: auto;
+        margin-top: -16vh;
+        width: 100%;
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: fixed;
+        z-index: 1;
+        color: aliceblue;
+        background-color: #0d1e41;
+      }
+
+      .navbar1 {
+        width: 50%;
+        margin-left: 50px;
+        display: flex;
+        gap: 40px;
+      }
+
+      #button1 {
+        margin-top: 10px;
+        margin-right: 80px;
+      }
+      #button1 {
+        display: flex;
+        gap: 20px;
+        padding-left: 100px;
+      }
+      #button1 > button:nth-child(1) {
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid blue;
+      }
+      #button1 > button:nth-child(2) {
+        width: 150px;
+        height: 32px;
+        background-color: rgb(35, 35, 245);
+        color: white;
+        border-radius: 10px;
+        border: 0px;
+      }
+      /********************************************/
+      body {
+        color: aliceblue;
+        background-color: #0d1e41;
+        margin-top: 0px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      /***************************font style********************************/
+      h2 {
+        padding: 4px;
+        font-size: 19px;
+        font-weight: 600;
+      }
+      h2:hover {
+        padding: 4px;
+        font-size: 19px;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    
+      h1 {
+        font-size: 42px;
+        font-weight: 600;
+        margin-top: -10px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        color: var(-black60);
+      }
+      img {
+        width: 90%;
+      }
+      .topbody1>img{
+        transform: rotateZ(90deg) ; ; 
+      }
+      u{
+        color: rgb(138, 210, 236);
+      }
+      h4{
+        font-weight: 400;
+      }
+      a {
+        text-decoration: none;
+        color: #efefef;
+      }
+      /********************navbar*****************/
+      #navbar_2 {
+        z-index: 1;
+        width: 100%;
+        position: fixed;
+        background-color: #ffccdd;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        height: 60px;
+        border: 1px solid;
+        color: black;
+        margin-top: -16px;
+       
+      }
+      #navbar_2 > div:nth-child(2) {
+        border: 1px solid;
+        border-radius: 50px;
+        padding: 0 10px;
+        height: 25px;
+      }
+      /********************Top_body********************/
+      #top_body {
+        margin: auto;
+        margin-top: 15vh;
+        width: 65%;
+      
+        height: auto;
+      }
+      #top_body > div {
+        height: auto;
+      }
+        /********************Top_body2********************/
+        #top_body2 {
+        margin: auto;
+        margin-top: 15vh;
+        width: 65%;
+        height: auto;
+      }
+      #top_body2 > div {
+        height: auto;
+      }
+
+      /**************animation div****************/
+      #animation{ 
+        background-image: url('https://www.hotjar.com/images/orb-dark-mode.svg') ;
+        text-align: center;
+       width: 85%;
+       border: 1px solid;
+       margin: auto;
+       height:auto;
+       padding-top: 5% ;
+      }
+      button{
+        border: 0px;
+        border-radius: 5px;
+        font-size: 17px;
+        padding: 10px;
+      }
+      #animation_info{
+        padding-left: 10%;
+        width: 65%;
+        margin: auto;
+        margin-top: 15vh;
+      }
+      /******************************review_1*************************/
+      #review_1{
+        height: auto;
+        width: 65%;
+        margin: auto;
+      }
+      #review_1>div:nth-child(even){
+        text-align: center;
+      
+      }
+      #review_1>div:nth-child(odd){
+        margin-left: 4%;
+      
+      }
+      /*************************footer-1**************/
+      #footer-1{
+        display: flex;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 40px;
+      }
+      #footer-1>div:nth-child(1){
+        width: 50%;
+        height: auto;
+     }
+     /********************pinkBox**************/
+     #box{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      width: 80%;
+      margin: auto;
+      gap: 50px;
+     }
+     #box>div{
+      color: black;
+      background-color: #ffccdd;
+      margin: auto;
+      width: 80%;
+      border: 1px solid ;
+      height: 25vh;
+     }
+     /***********************footer**************************/
+     #footer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        gap: 20px;
+      }
+      #footer > div {
+        padding-left: 10%;
+      }
+      /*****************footer_icon***************/
+      #footer_icon {
+        width: 85%;
+        margin: auto;
+        height: 30px;
+        display: flex;
+      }
+      #footer_icon > div {
+        width: 100%;
+        height: 30px;
+      }
+      #footer_icon > div:first-child {
+        width: 450%;
+      }
+      #footer_icon > div:last-child {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+     /*************************Footer-end********************/
+     #footer_end {
+        width: 85%;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+/****************************static**************************/
+
+  #static{
+    z-index: 1;
+    background-color: #0d1e41;
+    position: fixed;
+    left: 70%;
+    top: 85%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border: 1px solid;
+    width: 20%;
+    height: 60px;
+  }
+  #static:hover{
+    background-color: #153169;
+  }
+  /****************************feedback**************************/
+    #feedback{
+      transform: rotateZ(90deg) ;;
+      z-index: 1;
+    background-color:orangered;
+    position: fixed;
+    left: 95%;
+    top: 50%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border: 1px solid;
+    width: 8%;
+    height: 45px;
+    }
+     
+
+
+    </style>
+  </head>
+
+                <!----------extra---------------->
+  <body>
+    <div id="static">
+      <div>
+        ON THIS PAGE 
+      </div>
+      <div>+</div>           
+    </div>
+
+     <div id="feedback">
+      <h5>feedback</h5>
+    </div>
+    
+
+    <!---------------------------MAIN BODY HTML---------------------------------------------->
+    <div id="navbar">
+      <div class="icon">
+        <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
+        <a href="../homepage/homepage.html"><h2 style="font-size:25px;">hotjar</h2></a>
+      </div>
+      <div class="navbar1">
+        <p id="mensbtn">Products</p>
+        <p id="hotjarbtn">Why Hotjar</p>
+        <p><a href="../price/prices.html">Pricing</a></p>
+        <p id="learnbtn">Learn</p>
+        <p>Company</p>
+      </div>
+      <div id="button1">
+        <button style="width:45%;"><a href="../homepage/signin.html" style="color:rgb(1, 1, 1);"> <h5 style="margin-top:-5px;">Sign in</p> </a></button>
+        <button style="width:80%;" ><a href="../homepage/signup.html" style="color:white;"> <h6 style="margin-top:-2px; font-size: 13px;">Get Started Free</p></a></button>
+        <span onclick="Mode()"
+          ><img
+            id="mode" style="width:140%"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU"
+        /></span>
+      </div>
+    </div>
+    <div id="navbar_2">
+      <div>
+        <p>PX insights guide</p>
+      </div>
+      <div>
+        <p style="margin-top: -0px">Product analytics vs PX insights</p>
+      </div>
+      <div>
+        <p>How to improve PX</p>
+      </div>
+      <div>
+        <p>PX tools</p>
+      </div>
+      <div>
+        <p>PX metrics</p>
+      </div>
+      <div>
+        <p>PX examples</p>
+      </div>
+    </div>
+    <!----------------------TopBody Part1------------------------>
+    <div id="top_body">
+      <div class="topbody1">
+        <p>LEARN/GUIDES/PX INSIGHTS GUIDE</p>
+        <br />
+        <img
+          style="width: 2%;"
+          src="https://www.hotjar.com/images/arrow-down-ember.svg"
+          alt=""
+        />&nbsp <a href="index.html"> BACK TO GUID</a>
+        <br />
+        <br />
+        <h1 style="font-size: 40px">
+          What are product experience insights? (and why every product team
+          needs them)
+        </h1>
+        <p>
+          Product experience insights help teams see how customers really use
+          their products, making it easier to remove bugs, delight users, and
+          reduce churn...
+        </p>
+       <h5 style="border: 1px solid; width:35% ;padding:8px;background-color:aliceblue;color:black;border-radius:50px">PX INSIGHTS AND BEHAVIOR ANALYTICS</h4>
+      </div>
+      <div class="topbody2">
+        <img
+          src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F4VvlPiCkVvgrHjozm0PYHf%2F6653b8f80d57148edebb0b0849e89d16%2Fillu_general_error.png&w=1920&q=75"
+          alt=""
+        />
+      </div>
+      <div class="topbody3">
+        <br>
+        <br>
+        <h4>Have you ever wished you could put yourself in your user’s mind and know exactly what they’re <br> 
+            thinking as they interact with your product? With valuable product experience (PX) insights, you can 
+            <br> not only take a peek into the customer journey, but make the necessary product changes that elevate 
+            <br> the user experience and increase conversion.</h4>
+        <h4>This article guides you through what product experiences are, how you get them, what product teams 
+            <br> can achieve by implementing them—with actual success stories—and the differences between <br>
+             product, user, and customer experience.</h4>
+      </div>
+    </div>
+     <!------------------------TopBody Part2----------------------------------->
+    <div id="top_body2">
+        <div>
+            <h1 style="font-size:35px;">What are product experience insights?</h1>
+            <br>
+        </div>
+        <div>
+            <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F2WpHXLS54SHEIHt49bmAc2%2F1725768a51227674b63761c2216728ee%2Freed-team-reviewing-hotjar-recordings.png&w=1920&q=75" alt="">
+             <h2 style="margin-left: 50px;" >THE PRODUCT TEAM AT REED.CO.UK REVIEWING HOTJAR RECORDINGS</h2>
+        </div>
+        <br>
+        <div>
+       <h4>Product experience insights are data that helps product management teams understand exactly how <br> customers are experiencing a product. As you focus on PX insights, you can <u>improve user experience</u> <br>  and <u>customer satisfaction</u>  levels, and increase retention rates as a result.</h4>
+       <h4>Product insights are collected via tools like <u>heatmaps</u> , session recordings, and surveys, which give a <br> quick, visual overview of how frustrated, satisfied, confused, or delighted users are throughout their <br> product journey</h4>
+       <h4>Qualitative product insights are invaluable for teams who want to understand how people experience <br> a product, figure out the most impactful changes to make, and <u>get buy-in</u>  for their ideas fast.</h4>
+        </div>
+    </div>
+    <!---------------animation-------------------------->
+    <br>
+    <br>
+    <div id="animation">
+        <h1 style="font-size:30px">Improve UX with product experience <br> insights from Hotjar</h2>
+          <h4>Use Hotjar to understand how real users are experiencing your website or <br> app—then improve it for them!</p>
+          <br>
+          <button>Start now!</button>
+    </div>
+     <div id="animation_info">
+        <h3 style="font-size: 22px;">Product experience vs user experience vs customer experience: what’s <br> the difference?</h3>
+        
+        <h4> ❗<u>Customer experience</u>  (CX) covers how customers interact with a brand throughout the entire <br> <u> customer journey,</u> including the first touchpoint (e.g. visiting a product landing page), talking to <br> customer service, and using a website or product. </h4>
+
+        <h4> ❗<u> User experience</u> (UX) is a subcategory of CX that covers how users interact with a specific entity, <br> which could be a website, product, or service. UX often focuses on <u>optimizing design</u>  or a user <br> interface (UI) to improve metrics such as conversion rate.</h4>
+        
+        <h4> ❗ <u>Product experience </u> (PX) looks specifically at how users interact with a digital product and is <br> often—but not exclusively—the focus of product teams in the SaaS (Software-as-a-Service) <br> space. PX can have product-specific goals like reducing churn and increasing product usage. </h4>
+        <h4>The good news is that whether you’re using the terms CX, UX, or PX, you’re driven to understand the <br> same thing: how people behave when using your product. And you can use the same <u> product <br> management tools</u> to collect actionable insights to <u>optimize the experience.</u></h4>
+     </div>
+     <br>
+     <div id="review_1">
+      <div>
+        <h1 style="font-size:30px">Product experience insights vs product analytics</h1>
+      </div>
+      <div>
+        <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F6R9wjZtbt7j0w6u89L2bdh%2Fa305672a094053144f06b15abdafe010%2Fhotjar-product-experience-insights-feedback.png&w=1920&q=75" alt="">
+        <h2  >A Hotjar user tweets feedback on their PX</h2>
+      </div>
+      <div>
+        <h4>
+          When you think of analytics, you’re probably thinking about numbers, and that’s what <u>product <br> analytics</u>  will deliver: quantitative measurements of how customers, <i>in aggregate,</i>  are using your <br> product. 
+        </h4>
+        <h4>
+          In contrast, product experience insights are qualitative data that reveal how individual users feel, <br> think, and behave when using a product, which ultimately is a lot more actionable when coming up <br> with ways to create a successful  product. 
+        </h4>
+        <h4>
+          For example, a product analytics tool like <u> Mixpanel</u> tracks many quantitative product metrics like new <br> users, <u>retention,</u>  and churn rates.
+        </h4>
+      </div>
+      <div>
+        <br>
+        <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F48KakVdtw0XnFzasDvNLQ9%2F23020de5cf0a544f07f2e8449c8840fc%2Fmixpanel-dashboard.width-750.png&w=1920&q=75" alt="">
+        <h2 >MIXPANEL PRODUCT ANALYTICS DASHBOARD</h2>
+      </div>
+      <div>
+        <br>
+        <h4>
+          But a <u> product experience insights tool </u>like Hotjar (yup, that’s us 👋) records interactions between  <br> individual users and the product, so you can see what’s working, where people are getting stuck, and <br> <u>collect feedback to learn what they’re thinking.</u> 
+        </h4>
+      </div>
+      <div>
+        <br>
+        <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F5o6jbQJaLznpnz2MLsRnOm%2Fe7076a464bddd57e6715ed5209c27634%2FHotjar-Incoming-Feedback__1_.gif&w=1920&q=75" alt="">
+        <h2 >A Hotjar Feedback Widget</h2>
+      </div>
+      <div>
+        <br>
+        <h4>
+          You need both to succeed: product analytics to see the big picture of how your product is performing <br> in general, and product experience insights data to zoom in on how individual customers are using the <br> product. With the right data and a <u>customer-centric approach,</u>  you can get actionable ideas for <br> product improvement.
+        </h4>
+        <h4>
+         <i> For more case studies and a detailed guide on the differences between product analytics and product <br> experience insights, check out Hotjar’s comprehensive <u>article.</u> </i>
+        </h4>
+        <br>
+        <h1 style="font-size:30px">What product teams can achieve with PX insights</h1>
+        <h4>If you’re not sure where to get started, here are four ways any product manager can use PX insights to solve product challenges and turn them into opportunities:</h4>
+        <br>
+        <h1 style="font-size:20px">1. Reduce churn and increase customer retention</h3>
+        <h4>
+          Unless you’re in the business of making butter, high churn (aka low customer retention) is a major problem, especially for product teams in the SaaS space. 
+        </h4>
+        <h4>
+          PX insights help teams understand why product users churn through direct user feedback (e.g. a survey or Feedback response) and observe user behavior within the product (e.g. watching session recordings and seeing where people get stuck
+        </h4>
+        <br>
+      </div>
+      <div style="width:100%; background-color:rgb(8, 8, 100); padding: 15px;" >
+        <div>
+          <h4 style="font-size:20px;">See it in action: the one question that reduced churn for Hussle and Hotjar</h4>
+          <br>
+          <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F3m4un1jLjFpDQDjacDyysI%2F1a6c993e56927b9b5667fba3b926ee2d%2Fhussle-cancelation-survey-hotjar.png&w=1920&q=75" alt="">
+          <p>A HOTJAR SURVEY ASKING HUSSLE USERS WHY THEY'RE CANCELING THEIR SUBSCRIPTION</p>
+          <br>  
+        </div>
+        <div>
+         
+          <h4 style="text-align: left;">Luke Calton, Hussle’s Product Lead, exported survey data as a CSV file, grouped similar responses into themes, and found that 26% of churning users chose to buy membership directly from a gym. The insight led the team to expand their product offering and allow users to buy gym membership directly through Hussle, leading to a reduction in churn and an increase in customer retention. </h4>
+          <h4 style="text-align: left;">Not bad for a one-question survey</h4>
+          <h4 style="text-align: left;">We use the same strategy: here’s how product experience insights reduce SaaS churn at Hotjar.</h4>
+        </div>
+        <br>
+      </div>
+      <div>
+        <br>
+        <br>
+        <!----------------------------2--------------------------->
+
+        <h1 style="font-size:20px">2. Prioritize the product roadmap</h1>
+      </div>
+      <div>
+        <br>
+        <br>
+        <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2FbqVX3aI201VaPDm5lp1pX%2F0f0b8807340347e87f6644fe458718a8%2Fhotjar-public-roadmap.png&w=1920&q=75" alt="">
+        <p>Hotjar’s public roadmap</p>
+      </div>
+      <div>
+        <h4>
+          Understanding user needs is important when deciding what product features or bug fixes to prioritize.. Once you find the most common problems affecting product usage (e.g. by watching session recordings or surveying users about where they’re getting stuck), you can quantify which features aren’t giving users what they need. 
+        </h4>
+        <h4>
+          With these customer insights, it becomes a whole lot easier to prioritize the product backlog with data instead of relying on guesswor
+        </h4>
+      </div>
+      <br>
+      <br>
+      <div style="width:100%; background-color:rgb(8, 8, 100); padding:25px;" >
+        <div>
+          <h4 style="font-size:20px;">See it in action: how TechSmith used Hotjar surveys to prioritize their product roadmap</h4>
+          <br>
+          <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F5TuokOIfYPtBO7Yby36xFj%2F64e4d8e96eda8fbcc0ef3d0b0c46919e%2Ftechsmith-poll.png&w=1920&q=75" alt="">
+          <p>THE SIMPLE HOTJAR SURVEY TECHSMITH USED TO FIND OUT USERS’ PRODUCT REQUIREMENTS</p>
+          <br>  
+        </div>
+        <div>
+          <!--<h4>A HOTJAR SURVEY ASKING HUSSLE USERS WHY THEY'RE CANCELING THEIR SUBSCRIPTION</h4>-->
+          <h4 style="text-align: left;">Software company TechSmith, known for products like Camtasia and Snagit, used an on-site survey to find out what users needed from their products. Using JavaScript triggers, a survey pop-up appeared for users who clicked a certain element or scrolled to a set point. </h4>
+          <h4 style="text-align: left;">Conan Heiselt, TechSmith’s UX Designer, gathered product experience insights and categorized the responses into 15 general themes, making it possible to quantify the most common issues and requests.</h4>
+          <h4 style="text-align: left;">Analyzing responses from open-ended questions makes it possible to convert qualitative data into quantitative insight and use it to prioritize the product roadmap.</h4>
+          <h4 style="text-align: left;">Hotjar Highlights helps product teams group insights—like TechSmith did— to organize and curate data to make confident decisions and prioritize brilliantly to reach business and product goals.</h4>
+        </div>
+        <br>
+      </div>
+      <br>
+      <!-------------------------3-------------------------->
+      <div>
+        <br>
+        <br>
+        <h1 style="font-size:20px;margin-left:-60%;">3. Increase customer delight</h1>
+      </div>
+      <br>
+      <div>
+        <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F139PkKRZ71u2eFlXRsZWfS%2F8a22b542551523ba196ba4b7695ca1a6%2Fhotjar-product-experience-feedback.png&w=750&q=75" alt="">
+        <p>A Hotjar user explains how they increased customer delight</p>
+        <br>
+      </div>
+      <div>
+        <h4>PX insights are not just about finding bugs to fix; you can also use them to measure and improve customer delight. Instead of settling for merely satisfying users, you focus on exceeding expectations and prioritizing customer needs, wants, and interests above everything else.</h4>
+      </div>
+      <div>
+        <br>
+        <br>
+
+        <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F4pEp7kIbUCPZp4iUQo7kVi%2F9cf8bb388ba4bfaaa14f7adec16b9192%2FHotjar-On-Site-Survey__3_.png&w=1920&q=75" alt="">
+        <p>An example of an off-site Hotjar Survey</p>
+      </div>
+      <div>
+        <br>
+        <br>
+        <h4>
+          Delighted customers are good for business since they’re more likely to stay loyal, provide valuable feedback, and promote your product. User feedback can lead to more satisfied and happier customers if you use it to find out what pleases and annoys users, and work to remove friction and pain points from the product. As you gather deeper insights to guide quality control, this customer-centric mindset helps you achieve better product-market fit.
+        </h4>
+      </div>
+      <div>
+        <!---------------------------4----------------------------------->
+        <br>
+        <br>
+        <h1 style="font-size:20px;margin-left:-33%;">4. Improve cross-functional communication</h1>
+      </div>
+        <br>
+        <br>
+        <div style="text-align:center;">
+          <img src="https://www.hotjar.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Flh3zuq09vnm2%2F1PZDPyyAoDuHzSto5tDsUW%2F904cc222aea1ebb7515543ae7a75f5db%2Freed-team-meeting-hotjar-session-recording.png&w=1920&q=75" alt="">
+          <p>A TEAM MEETING AT REED.CO.UK REVIEWING HOTJAR RECORDINGS</p>
+        </div>
+        <br>
+        <div>
+          <h4>
+            Having shareable, visual data helps different product teams—marketing, tech, social media, and management—communicate internally and achieve cross-functional collaboration across the business. It’s also a lot easier to explain why, for instance, you need the dev team to prioritize a new feature if you’ve got evidence-based insights to back up your suggestions and product ideas. 
+          </h4>
+        </div>
+        <br>
+        <br>
+      </div>
+      <!---------------animation-------------------------->
+      <br>
+      <br>
+      <div id="animation">
+          <h1 style="font-size:30px">Improve UX with product experience <br> insights from Hotjar</h2>
+            <h4>Use Hotjar to understand how real users are experiencing your website or <br> app—then improve it for them!</p>
+            <br>
+            <button>Start now!</button>
+      </div>
+     </div>
+     <br>
+     <br>
+     <br>
+     <!----------------------first footer------------------------>
+     <div id="footer-1">
+      <div>
+        <h1 style="font-size:30px">
+          Product experience FAQs
+      </h3>
+    </div>
+      <div>
+       <hr>
+      <h2>What is product experince management?</h2>
+       <hr>
+      <h2>Why are product experience insights important?</h2>
+       <hr>
+       <h2>What is the difference between product experience, user experience,and customer experience?</h2>
+       <hr>
+       <h2>How do you improve product experience?</h2> 
+       <hr>
+       <h2> What can product yeams achive with PX insights?</h2>
+       <hr>
+      </div>
+     </div>
+     <!---------------- pinkBox----------------------------->
+     <div id="box">
+      <div style="text-align: right; ">
+        <h2 style="padding:10px 20px 0">Guid index</h3>
+        <u style="color: black; padding: 20px;">All guides</u>
+        <h1 style="text-align: left; font-size: 100px; margin-top:-90px"><</h1>
+      </div>
+      <div style="padding: 10px 10px 0">
+        <h2>Product analytics vs PX <br> insights</h3>
+        <u style="color: black;">Next chapter</u>
+        <h1 style="text-align: right; font-size: 100px; margin-top:-120px">></h1>
+      </div>
+     </div>
+     <br>
+     <br>
+      <!-------------------------Footer----------------------------->
+
+    <hr style="width: 100%" />
+    <div id="footer">
+      <div>
+        <h2>Product</h2>
+        <p>Product tour</p>
+        <p>Heatmaps</p>
+        <p>session recordings</p>
+        <p>Feedback</p>
+        <p>surveys</p>
+        <hr style="margin: 10px 0" />
+        <p>Integrations</p>
+        <p>Survey templates</p>
+        <p>Highlights</p>
+        <p>Workspaces</p>
+        <p>Dashboard</p>
+        <p>Trends</p>
+      </div>
+      <div>
+        <h2>Why Hotjar</h2>
+        <p>For product teams</p>
+        <p>For product managers</p>
+        <p>For product designers</p>
+        <p>For researchers</p>
+        <p>Case studies</p>
+      </div>
+      <div>
+        <h2>Learn</h2>
+        <p>Guides</p>
+        <p>Blog</p>
+        <p>Product forge</p>
+        <p>Product updates</p>
+        <p>support</p>
+        <p>
+          Product management <br />
+          101
+        </p>
+        <p>product management <br />glossary</p>
+        <p>UX design</p>
+        <p>Product experience insights</p>
+        <p>Website tracking</p>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <p>About us</p>
+        <p>Careers</p>
+        <p>Privacy</p>
+        <p>Press</p>
+      </div>
+      <div></div>
+      <div>
+        <h2>Compliance</h2>
+        <p>Legal overview</p>
+        <p>Compliance & security</p>
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+        <p>Acceptable Use Policy</p>
+      </div>
+    </div>
+
+    <!--------------------Footer Icon-------------------------->
+
+    <hr style="width: 85%; margin: auto; margin-top: 50px" />
+    <div id="footer_icon">
+      <div></div>
+      <div>
+        <img
+          style="width: 10%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/2xYBSWqzEcgQBCSZvzi2Ba/4900f94996692c866f7bc6e8d270156d/Facebook.svg"
+          alt=""
+        />
+        <img
+          style="width: 10%; padding-left: 4%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/2gmz7xiNP3FbVtmkrX0yOk/22c37a7312bb87516b445506a15bd4ab/Twitter.svg"
+          alt=""
+        />
+        <img
+          style="width: 10%; padding-left: 4%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/1aJwui56wNjZwTTH9ZTGkk/4a8f3d1a644fb2614a86fce9582e8e09/LinkedIn.svg"
+          alt=""
+        />
+        <img
+          style="width: 10%; padding-left: 4%"
+          src="https://images.ctfassets.net/lh3zuq09vnm2/2nncGYpZv80x0X0bG857Cz/8d256f52107275c5437b8b826345fc9c/Youtube.svg"
+          alt=""
+        />
+      </div>
+    </div>
+     <!------------------------Footer-end-------------------------->
+
+     <div id="footer_end">
+      <div style="margin-top: 10px; margin-right: 10px">
+        <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
+      </div>
+      Copyright © 2014 - 2022 Hotjar Ltd. All rights reserved.
+      <div style="margin-left: 10%; display: flex">
+        <p>English (United States)</p>
+        &nbsp&nbsp&nbsp&nbsp<span style="margin-top: 10px">|</span>
+        &nbsp&nbsp&nbsp&nbsp
+        <p>Cookie info</p>
+        &nbsp&nbsp&nbsp&nbsp
+        <p>Cookie settings</p>
+        &nbsp&nbsp&nbsp&nbsp
+        <p>Do not track</p>
+      </div>
+    </div>
+  </body>
+</html>

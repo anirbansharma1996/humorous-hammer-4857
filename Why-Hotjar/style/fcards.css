@@ -1,0 +1,46 @@
+.f-cards{
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+}
+.f-cards p{
+    font-size: 17px;
+    color: grey;
+}
+#bottom_images{
+    /* width:100%; */
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 20px;
+    margin-left: 70px;
+    text-align: center;
+    /* gap:10px;     */
+    }
+    #bottom_images div{
+        width: 80%;
+    }
+    #bottom_images>div>img{
+        width: 80%;
+        cursor: pointer;
+
+    }
+    
+    
+    
+    #bottom_images img:hover{
+        transform: scale(1.1);
+    }
+    
+    #bottom_images p a{
+        font-size: 18px;
+        width:90%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #bottom_images img:hover{
+        background-position-x:center;
+    }
+    #bottom_images a:hover{
+        text-decoration: underline;
+    }
