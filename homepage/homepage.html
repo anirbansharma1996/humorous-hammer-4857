@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="./style/homepage.css">
     <link rel="stylesheet" href="./style/popup.css"> 
     <link rel="stylesheet" href="./style/slide.css">
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"> -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script> 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-     -->
+   
+     
     <style>
         /* h3{
             font-size: 15px;
@@ -476,7 +477,7 @@
 
     <div id="image_text">
         <div class="I">
-            <div>
+            <div id="dss">
                 <h2>Get started with Hotjar</h2>
                 <p>It only takes a few minutes to get started with Hotjar.Understand your<br> users—start free, today.
                 </p>
@@ -816,10 +817,13 @@
             image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6Z5lcqZwAuyKWu7IGecyckeMiiaD3_A1WrVt0z007F5RJJeAbzU1b5GKPLoKfN9YeHw&usqp=CAU`
             count = 0;
             document.getElementById('navbar').style.backgroundColor="black"
+            // document.getElementsByClassName('R').style.backgroundColor="black"
+
         }
         else {
             image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEzat6l2GI8asPIAGozP_PEhlb7Agre2f7lN2WZJrqMfgv36tVM2sgflMYgQ2Jt_-Cg&usqp=CAU`
             document.getElementById('navbar').style.backgroundColor="white"
+            // document.getElementsByClassName('R').style.backgroundColor="white"
             count = 1;
         }
     }
