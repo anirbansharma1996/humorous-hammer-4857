@@ -50,18 +50,64 @@
       .navbar1 p{
         margin: 20px;
       }
+
+      #popup1 {
+        background-color: #ffffff;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        display: none;
+        z-index: 3;
+        margin-top: -67px;
+      }
+      #popup2 {
+        background-color: #ffffff;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        display: none;
+        z-index: 3;
+        margin-top: -67px;
+      }
+      #parenttt {
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 70px;
+        padding-top: 40px;
+        background-color: #ffffff;
+      }
+
+      #parenttt1 {
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 70px;
+        background-color: #ffffff;
+        margin-top: 30px;
+      }
+      a {
+        text-decoration: none;
+       color: black;
+      }
+      #parent {
+        display: flex;
+        border: 10px solid red;
+      }
+
+
+
 </style>
 <body>
 
   <div id="navbar">
     <div class="icon">
       <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
-      <h2>hotjar</h2>
+      <h2><a href="../homepage/homepage.html" style="color:black;">Hotjar</a></h2>
     </div>
     <div class="navbar1">
       <p id="mensbtn">Products</p>
       <p id="hotjarbtn">Why Hotjar</p>
-      <!-- <p id="p_tag"> <a href="../price/prices.html"> Pricing</a></p> -->
       <p id="p_tag">price</p>
       <p id="learnbtn">Learn</p>
       <p>Company</p>
@@ -78,6 +124,114 @@
       /></span>
     </div>
   </div>
+
+<!-------------------------------------------------------->
+<div id="popup1">
+  <div id="parenttt">
+    <div>
+      <img
+        src="https://images.ctfassets.net/lh3zuq09vnm2/2tNvAdB4QZnKkk8er4q3SY/00972c63148acdd80bba5deb1e3ca20d/Product_teams_.svg"
+        alt=""
+      />
+      <a href="../Why-Hotjar/index.html"><h4>For product team</h4></a>
+      <p>Collaborate on user insights</p>
+    </div>
+    <div>
+      <img
+        src="https://images.ctfassets.net/lh3zuq09vnm2/rei0bZGIntzeRG0WxjqMU/458bf0957e41b9a5fb0322613df89ebf/icon-product-management.svg"
+        alt=""
+      />
+      <h4>For product managers</h4>
+      <p>Build products users love</p>
+    </div>
+    <div>
+      <img
+        src="https://images.ctfassets.net/lh3zuq09vnm2/2zSp0IQk0E9iOi36cn8n4n/eb85b848d9853ec849a934feeca55f4e/icon-product-design.svg"
+        alt=""
+      />
+      <h4>For product designers</h4>
+      <p>Create designs that resonate</p>
+    </div>
+    <div>
+      <img
+        src="https://images.ctfassets.net/lh3zuq09vnm2/7cgrCG4MpaK39UueExbDYI/71315bdec4d36e36cf57a23195cc92a4/icon-research.svg"
+        alt=""
+      />
+      <h4>For researchers</h4>
+      <p>Discover insights others miss</p>
+    </div>
+    <div>
+      <img
+        src="https://images.ctfassets.net/lh3zuq09vnm2/7bu3ttUQaMiusVYgmA5W0E/cb5706443bda65ea5dd0dd4c4ee73ca3/icon-case-studies.svg"
+        alt=""
+      />
+      <h4>Case studies</h4>
+
+      <p>Learn how others use Hotjar</p>
+    </div>
+  </div>
+</div>
+
+<!-- third pop funcationality -->
+
+<div id="popup2">
+  <div id="parenttt1">
+    <div>
+      <img
+        src="https://images.ctfassets.net/lh3zuq09vnm2/29cHXX50MaQFbFbNuuEobF/ef757d222544a89e87e2c23642a499eb/icon-guides.svg"
+        alt=""
+      />
+      <h4><a href="../learnPage/index.html"> Guides</a></h4>
+      <p>Get the most out of Hotjar</p>
+    </div>
+    <div>
+      <img
+        src="https://images.ctfassets.net/lh3zuq09vnm2/6E1bW5je6USepU41R2psoP/025fc489632d42f5455f7253653477a9/Blog.svg"
+        alt=""
+      />
+      <h4>Blog</h4>
+      <p>News, analysis, tips, and tutorials</p>
+    </div>
+    <div>
+      <img
+        src="https://images.ctfassets.net/lh3zuq09vnm2/69OiEBqKuuE9y84cHDYFYD/8fb8702f45048de7342abacc186e7f78/Product-forge.svg"
+        alt=""
+      />
+      <h4>Product forge</h4>
+      <p>Cutting-edge product insights</p>
+    </div>
+    <div>
+      <img
+        src="https://images.ctfassets.net/lh3zuq09vnm2/6WkKq86kztFCChLxHqxJ53/63ffc9f2001da8b5ad7292d53808278c/updates.svg"
+        alt=""
+      />
+      <h4>Product updates</h4>
+      <p>What’s new</p>
+    </div>
+    <div>
+      <img
+        src="https://images.ctfassets.net/lh3zuq09vnm2/77BtJYrFoyCLErPB8o2dnA/4621264b773c3f9625ce987ece5bb4b6/Support.svg"
+        alt=""
+      />
+      <h4>Support</h4>
+
+      <p>Learn how to set up and use Hotjar</p>
+    </div>
+    <div>
+      <img
+        src="https://images.ctfassets.net/lh3zuq09vnm2/01sD7ikwsm8A9PzqXxeovt/d718ae8df27d248c66166bddf71aac42/Vector.svg"
+        alt=""
+      />
+      <h4>Hotjar learning</h4>
+      <p>Courses to help you flourish</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!--------------------------------------------------------------->
+
     <section class="header-bg-parent">
         <div class="header-col1">
             <p>WHY HOTJAR / FOR PRODUCT TEAMS</p>
@@ -439,7 +593,6 @@
         </div>
     </div>
      <!-- ...footer-cards...... -->
-<<<<<<< HEAD
  <!-- ...footer... -->
 
      <hr style="width: 100%" />
@@ -552,118 +705,8 @@
       </div>
     </div>
 <!-- .......footer end.... -->
-=======
-
->>>>>>> main
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- ...........swiper........... -->
-   <!-------------------------Footer----------------------------->
 
-   <hr style="width: 100%" />
-   <div id="footer">
-     <div>
-       <h2>Product</h2>
-       <p>Product tour</p>
-       <p>Heatmaps</p>
-       <p>session recordings</p>
-       <p>Feedback</p>
-       <p>surveys</p>
-       <hr style="margin: 10px 0" />
-       <p>Integrations</p>
-       <p>Survey templates</p>
-       <p>Highlights</p>
-       <p>Workspaces</p>
-       <p>Dashboard</p>
-       <p>Trends</p>
-     </div>
-     <div>
-       <h2>Why Hotjar</h2>
-       <p>For product teams</p>
-       <p>For product managers</p>
-       <p>For product designers</p>
-       <p>For researchers</p>
-       <p>Case studies</p>
-     </div>
-     <div>
-       <h2>Learn</h2>
-       <p>Guides</p>
-       <p>Blog</p>
-       <p>Product forge</p>
-       <p>Product updates</p>
-       <p>support</p>
-       <p>
-         Product management <br />
-         101
-       </p>
-       <p>product management <br />glossary</p>
-       <p>UX design</p>
-       <p>Product experience insights</p>
-       <p>Website tracking</p>
-     </div>
-     <div>
-       <h2>Company</h2>
-       <p>About us</p>
-       <p>Careers</p>
-       <p>Privacy</p>
-       <p>Press</p>
-     </div>
-     <div></div>
-     <div>
-       <h2>Compliance</h2>
-       <p>Legal overview</p>
-       <p>Compliance & security</p>
-       <p>Terms of Service</p>
-       <p>Privacy Policy</p>
-       <p>Acceptable Use Policy</p>
-     </div>
-   </div>
-
-   <!--------------------Footer Icon-------------------------->
-
-   <hr style="width: 85%; margin: auto; margin-top: 50px" />
-   <div id="footer_icon">
-     <div></div>
-     <div>
-       <img
-         style="width: 10%"
-         src="https://images.ctfassets.net/lh3zuq09vnm2/2xYBSWqzEcgQBCSZvzi2Ba/4900f94996692c866f7bc6e8d270156d/Facebook.svg"
-         alt=""
-       />
-       <img
-         style="width: 10%; padding-left: 4%"
-         src="https://images.ctfassets.net/lh3zuq09vnm2/2gmz7xiNP3FbVtmkrX0yOk/22c37a7312bb87516b445506a15bd4ab/Twitter.svg"
-         alt=""
-       />
-       <img
-         style="width: 10%; padding-left: 4%"
-         src="https://images.ctfassets.net/lh3zuq09vnm2/1aJwui56wNjZwTTH9ZTGkk/4a8f3d1a644fb2614a86fce9582e8e09/LinkedIn.svg"
-         alt=""
-       />
-       <img
-         style="width: 10%; padding-left: 4%"
-         src="https://images.ctfassets.net/lh3zuq09vnm2/2nncGYpZv80x0X0bG857Cz/8d256f52107275c5437b8b826345fc9c/Youtube.svg"
-         alt=""
-       />
-     </div>
-   </div>
-    <!------------------------Footer-end-------------------------->
-
-    <div id="footer_end">
-     <div style="margin-top: 10px; margin-right: 10px">
-       <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
-     </div>
-     Copyright © 2014 - 2022 Hotjar Ltd. All rights reserved.
-     <div style="margin-left: 10%; display: flex">
-       <p>English (United States)</p>
-       &nbsp&nbsp&nbsp&nbsp<span style="margin-top: 10px">|</span>
-       &nbsp&nbsp&nbsp&nbsp
-       <p>Cookie info</p>
-       &nbsp&nbsp&nbsp&nbsp
-       <p>Cookie settings</p>
-       &nbsp&nbsp&nbsp&nbsp
-       <p>Do not track</p>
-     </div>
-   </div>
 </body>
 </html>
 <script src="./script/./extrenaljq.js"></script>
@@ -727,4 +770,13 @@
   },
   // And if we need scrollbar
 });
+</script>
+<script src="../homepage/scripts/homepage.js"></script>
+<script src="../homepage/scripts/homepage2.js"></script>
+<script src="../homepage/scripts/homepage3.js"></script>
+<script>
+  document.getElementById("p_tag").addEventListener("click", myfunc);
+  function myfunc() {
+    window.location.href = "../price/prices.html";
+  }
 </script>
