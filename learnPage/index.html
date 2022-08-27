@@ -6,6 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn Page</title>
     <style>
+      /***************************************************************/
+      #popup1 {
+        background-color: #0d1e41;
+        color: aliceblue;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        display: none;
+      }
+      #popup2 {
+        color: aliceblue;
+        background-color: #0d1e41;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        display: none;
+        z-index: 1;
+        margin-top: -3px;
+      }
+
+      #parenttt11 {
+        color: aliceblue;
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 70px;
+        background-color: #0d1e41;
+        padding-top: 40px;
+      }
+
+      #parenttt1 {
+        color: aliceblue;
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 70px;
+        background-color: #0d1e41;
+        margin-top: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      #parent {
+        display: flex;
+        border: 10px solid red;
+      }
+
+      /***************************************************************/
       .icon {
         display: flex;
         margin-top: -10px;
@@ -25,6 +74,7 @@
       }
 
       #navbar {
+        box-shadow: rgba(0, 0, 0, 0.28) 2.95px 1.95px 2.6px;
         margin: auto;
         margin-top: -13vh;
         width: 100%;
@@ -32,11 +82,13 @@
         height: 80px;
         justify-content: space-between;
         align-items: center;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: fixed;
         z-index: 1;
         color: aliceblue;
         background-color: #0d1e41;
+      }
+      .navbar1 > p:hover {
+        text-decoration: underline;
       }
 
       .navbar1 {
@@ -95,7 +147,6 @@
         width: 5%;
       }
       #main_body {
-    
         margin-top: 70px;
       }
 
@@ -123,7 +174,6 @@
       a {
         text-decoration: none;
         color: aliceblue;
-        
       }
 
       /*****************************top body******************************/
@@ -291,11 +341,13 @@
     <div id="feedback">
       <h5>feedback</h5>
     </div>
- <!-------------------------NAVBAR-------------------------------------->
+    <!-------------------------NAVBAR-------------------------------------->
     <div id="navbar">
       <div class="icon">
         <img src="https://www.hotjar.com/images/hotjar-logo-small.svg" alt="" />
-        <a href="../homepage/homepage.html"><h2 style="font-size:25px;">hotjar</h2></a>
+        <a href="../homepage/homepage.html"
+          ><h2 style="font-size: 25px">hotjar</h2></a
+        >
       </div>
       <div class="navbar1">
         <p id="mensbtn">Products</p>
@@ -305,8 +357,16 @@
         <p>Company</p>
       </div>
       <div id="button1">
-        <button><a href="../homepage/signin.html" style="color:rgb(1, 1, 1);">Sign in</a></button>
-        <button ><a href="../homepage/signup.html" style="color:white;">Get Started Free</a></button>
+        <button>
+          <a href="../homepage/signin.html" style="color: rgb(1, 1, 1)"
+            >Sign in</a
+          >
+        </button>
+        <button>
+          <a href="../homepage/signup.html" style="color: white"
+            >Get Started Free</a
+          >
+        </button>
         <span onclick="Mode()"
           ><img
             id="mode"
@@ -314,6 +374,125 @@
         /></span>
       </div>
     </div>
+    <!-------------------------------------------------------------------------------------------------------->
+    <!-- pop funcationality -->
+
+    <!-- second popup funcationality -->
+
+    <div id="popup1">
+      <div id="parenttt11">
+        <div>
+          <img
+            style="width: 10%"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/2tNvAdB4QZnKkk8er4q3SY/00972c63148acdd80bba5deb1e3ca20d/Product_teams_.svg"
+            alt=""
+          />
+          <h4>For product team</h4>
+          <p>Collaborate on user insights</p>
+        </div>
+        <div>
+          <img
+            style="width: 10%"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/rei0bZGIntzeRG0WxjqMU/458bf0957e41b9a5fb0322613df89ebf/icon-product-management.svg"
+            alt=""
+          />
+          <h4>For product managers</h4>
+          <p>Build products users love</p>
+        </div>
+        <div>
+          <img
+            style="width: 10%"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/2zSp0IQk0E9iOi36cn8n4n/eb85b848d9853ec849a934feeca55f4e/icon-product-design.svg"
+            alt=""
+          />
+          <h4>For product designers</h4>
+          <p>Create designs that resonate</p>
+        </div>
+        <div>
+          <img
+            style="width: 10%"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/7cgrCG4MpaK39UueExbDYI/71315bdec4d36e36cf57a23195cc92a4/icon-research.svg"
+            alt=""
+          />
+          <h4>For researchers</h4>
+          <p>Discover insights others miss</p>
+        </div>
+        <div>
+          <img
+            style="width: 10%"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/7bu3ttUQaMiusVYgmA5W0E/cb5706443bda65ea5dd0dd4c4ee73ca3/icon-case-studies.svg"
+            alt=""
+          />
+          <h4>Case studies</h4>
+
+          <p>Learn how others use Hotjar</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- third pop funcationality -->
+
+    <div id="popup2">
+      <div id="parenttt1">
+        <div>
+          <img
+            style="width: 10%"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/29cHXX50MaQFbFbNuuEobF/ef757d222544a89e87e2c23642a499eb/icon-guides.svg"
+            alt=""
+          />
+          <h4><a href="../learnPage/index.html"> Guides</a></h4>
+          <p>Get the most out of Hotjar</p>
+        </div>
+        <div>
+          <img
+            style="width: 10%"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/6E1bW5je6USepU41R2psoP/025fc489632d42f5455f7253653477a9/Blog.svg"
+            alt=""
+          />
+          <h4>Blog</h4>
+          <p>News, analysis, tips, and tutorials</p>
+        </div>
+        <div>
+          <img
+            style="width: 10%"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/69OiEBqKuuE9y84cHDYFYD/8fb8702f45048de7342abacc186e7f78/Product-forge.svg"
+            alt=""
+          />
+          <h4>Product forge</h4>
+          <p>Cutting-edge product insights</p>
+        </div>
+        <div>
+          <img
+            style="width: 10%"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/6WkKq86kztFCChLxHqxJ53/63ffc9f2001da8b5ad7292d53808278c/updates.svg"
+            alt=""
+          />
+          <h4>Product updates</h4>
+          <p>What’s new</p>
+        </div>
+        <div>
+          <img
+            style="width: 10%"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/77BtJYrFoyCLErPB8o2dnA/4621264b773c3f9625ce987ece5bb4b6/Support.svg"
+            alt=""
+          />
+          <h4>Support</h4>
+
+          <p>Learn how to set up and use Hotjar</p>
+        </div>
+        <div>
+          <img
+            style="width: 10%"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/01sD7ikwsm8A9PzqXxeovt/d718ae8df27d248c66166bddf71aac42/Vector.svg"
+            alt=""
+          />
+          <h4>Hotjar learning</h4>
+          <p>Courses to help you flourish</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------->
+
     <!------------------------ header-part ------------------->
 
     <div id="main_body">
@@ -1156,3 +1335,7 @@
     </div>
   </body>
 </html>
+
+<script src="../homepage/scripts/homepage.js"></script>
+<script src="../homepage/scripts/homepage2.js"></script>
+<script src="../homepage/scripts/homepage3.js"></script>
